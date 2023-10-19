@@ -1,34 +1,35 @@
 select * from SACH
 insert into SACH(TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG,NHAXUATBAN,MAPHATHANH, MADM)  VALUES
-  							--(N'Toeic Analyst Second Edition (Kèm CD)', 144000 ,73 ,'20200208', N'Nxb Tổng hợp TP.HCM', 24, 9), --Anne Taylor
-							('Very Easy Toeic - Second Edition', 134000 ,64 ,'20180407', N'Nxb Tổng hợp TP.HCM', 27, 9), --Anne Taylor
-							('Developing Skills For The Toeic Test', 146000 ,23 ,'20190205', N'Nxb Tổng hợp TP.HCM', 23, 9), --Paul Edmunds
-							( N'Marugoto - Ngôn Ngữ Và Văn Hóa Nhật Bản - Trung Cấp 2 - B1', 220000 ,91 ,'20180429', N'Nxb Đại học Quốc gia TPHCM', 29, 9), --The Japan Foundation
-							(N'Ngữ Pháp Pali', 180000 ,25 ,'20200421', N'Nxb Thế giới', 21, 9), --Charles Duroselle
-							(N'Very Easy Toeic (Tái Bản)', 110000 ,15 ,'20200102', N'NXB Compass Publishing', 24, 9), --Garrett Byrne
-							(N'Mind Map 24H English - Giao Tiếp - Học Tiếng Anh Giao Tiếp Thực Chiến Cực Kỳ Hiệu Quả Thông Qua Sơ Đồ Tư Duy', 318000 ,36 ,'20201118', N'NXB Hồng Đức', 19, 9), --Huyền Windy
-							(N'Hộp Flash Cards - 600 Essential Words For The TOEIC (Tái Bản 2021)', 140000 ,12 ,'20210207', N'Nxb Tổng hợp TP.HCM', 17, 9), -- Dr. Lin Lougheed
-							(N'Hộp Flash Cards - 600 Essential Words For The IELTS', 130000 ,76 ,'20220807', N'Nxb Tổng hợp TP.HCM', 15, 9), --Dr. Lin Lougheed
-							('Barron''s_IELTS Practice Exams 3rd Edition', 238000 ,77 ,'20200120', N'Nxb Tổng hợp TP.HCM', 16, 9), -- Dr. Lin Lougheed
-							(N'Essential Words For The IELTS 3rd Edition (Tái Bản)', 208000 ,44 ,'20230110', N'Nxb Tổng hợp TP.HCM', 18, 9),
-							('Very Easy Toeic 1 - Introduction', 228000 ,38 ,'20211210', N'NXB Compass Publishing', 26, 9), --Mary Albright, Garrett Byrne, Mary Chadwick, Sam Robinson
-							('Ielts Vocab - No Worries!', 169000 ,153 ,'20220408', N'NXB ĐH Kinh tế Quốc dân', 20, 9), --Vũ Hải	
-							(N'Tiếng Nhật Công Nghệ Thông Tin Trong Ngành Phần Mềm', 95000 ,52 ,'20230702', N'Nxb Trẻ', 4, 9), --Nhiều tác giả
-							('Building Skills For The TOEFL iBT Beginning', 364000 ,51 ,'20230404', N'Nxb Tổng hợp TP.HCM', 1, 9), --Nhiều tác giả
-							(N'Tự Học Tiếng Anh Trong 24 Ngày (Tái Bản)', 40000 , 13 ,'20200308', N'NXB ĐH Kinh tế Quốc dân', 2, 9), --Nguyễn Đại
-							('Easy Toeic (Kèm 1 Audio CD)', 163000 , 45 ,'20220408', N'Nxb Tổng hợp TP.HCM', 8, 9), -- Young Sook Sohn, Brian J.Stuart
-							('Ielts Vocab - No Worries!', 169000 , 53 ,'20200108', N'NXB ĐH Kinh tế Quốc dân', 7, 9), -- vu hai 
-							(N'Tự Học Viết Tiếng Nhật Căn Bản', 41000 ,13 ,'20210403', N'Nxb Tổng hợp TP.HCM', 3, 9), --Jim Gleeson
-							('Starter Toeic Third Edition', 169000 ,43 ,'20190102', N'NXB First New', 5, 9), --Compass
-							(N'Tự Học Viết Tiếng Nhật (Tập 1) - 200 Chữ Kanji Căn Bản', 72000 ,23 ,'20210208', N'Nxb Đại học Quốc gia TPHCM', 10, 9), --Eriko Sato
-							(N'Happy Reader - Những Bài Diễn Văn Nổi Tiếng Thế Giới (Tái Bản)', 58000 ,56 ,'20180208', N'Nxb Tổng hợp TP.HCM', 6, 9), --Park Jong Bae
-							(N'Tự Học Viết Tiếng Nhật Căn Bản - KATAKANA (Tái Bản 2022)', 41000 , 41 ,'20200201', N'Nxb Đại học Quốc gia Hà Nội', 12, 9), --Jim Glesson
-							(N'Bùng Nổ Tiếng Anh - 27 Giới Từ Hữu Ích Trong Tiếng Anh Giao Tiếp', 199000 , 100 ,'20190408', N'Nxb Thế giới', 14, 9), --  Moon Deok , Jihu Ju
-							(N'Ngôn Ngữ Và Văn Hóa Nhật Bản - Trung Cấp 1 - B1', 200000 ,50 ,'20210206', N'Nxb Đại học Quốc gia TPHCM', 11, 9), --The Japan Foundation
-							(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 1', 98000 ,40 ,'20210528', N'Nxb Tổng hợp TP.HCM', 15, 9), --Masateru Takatsu
-							(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 2', 98000 ,45 ,'20210818', N'Nxb Tổng hợp TP.HCM', 13, 9),
-							(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 3', 98000 ,37 ,'20220718', N'Nxb Tổng hợp TP.HCM', 20, 9),
-							(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 4', 98000 ,97 ,'20230828', N'Nxb Tổng hợp TP.HCM', 22, 9),
+  							  							--(N'Toeic Analyst Second Edition (Kèm CD)', 144000 ,73 ,'20200208', N'Nxb Tổng hợp TP.HCM', 24, 9),
+							--('Very Easy Toeic - Second Edition', 134000 ,64 ,'20180407', N'Nxb Tổng hợp TP.HCM', 27, 9), -- Anne Taylor
+							--('Developing Skills For The Toeic Test', 146000 ,23 ,'20190205', N'Nxb Tổng hợp TP.HCM', 23, 9), --Paul Edmunds
+							--( N'Marugoto - Ngôn Ngữ Và Văn Hóa Nhật Bản - Trung Cấp 2 - B1', 220000 ,91 ,'20180429', N'Nxb Đại học Quốc gia TPHCM', 29, 9), --The Japan Foundation
+							--(N'Ngữ Pháp Pali', 180000 ,25 ,'20200421', N'Nxb Thế giới', 21, 9), --Charles Duroselle
+							--(N'Very Easy Toeic (Tái Bản)', 110000 ,15 ,'20200102', N'NXB Compass Publishing', 24, 9), --Garrett Byrne
+							--(N'Mind Map 24H English - Giao Tiếp - Học Tiếng Anh Giao Tiếp Thực Chiến Cực Kỳ Hiệu Quả Thông Qua Sơ Đồ Tư Duy', 318000 ,36 ,'20201118', N'NXB Hồng Đức', 19, 9), --Huyền Windy
+							--(N'Hộp Flash Cards - 600 Essential Words For The TOEIC (Tái Bản 2021)', 140000 ,12 ,'20210207', N'Nxb Tổng hợp TP.HCM', 17, 9), -- Dr. Lin Lougheed
+							--(N'Hộp Flash Cards - 600 Essential Words For The IELTS', 130000 ,76 ,'20220807', N'Nxb Tổng hợp TP.HCM', 15, 9), --Dr. Lin Lougheed
+							--('Barron''s_IELTS Practice Exams 3rd Edition', 238000 ,77 ,'20200120', N'Nxb Tổng hợp TP.HCM', 16, 9), -- Dr. Lin Lougheed
+							--(N'Essential Words For The IELTS 3rd Edition (Tái Bản)', 208000 ,44 ,'20230110', N'Nxb Tổng hợp TP.HCM', 18, 9),
+							--('Very Easy Toeic 1 - Introduction', 228000 ,38 ,'20211210', N'NXB Compass Publishing', 26, 9), --Mary Albright, Garrett Byrne, Mary Chadwick, Sam Robinson
+							--('Ielts Vocab - No Worries!', 169000 ,153 ,'20220408', N'NXB ĐH Kinh tế Quốc dân', 20, 9), --Vũ Hải	
+							--(N'Tiếng Nhật Công Nghệ Thông Tin Trong Ngành Phần Mềm', 95000 ,52 ,'20230702', N'Nxb Trẻ', 4, 9), --Nhiều tác giả
+							--('Building Skills For The TOEFL iBT Beginning', 364000 ,51 ,'20230404', N'Nxb Tổng hợp TP.HCM', 1, 9), --Nhiều tác giả
+							--(N'Tự Học Tiếng Anh Trong 24 Ngày (Tái Bản)', 40000 , 13 ,'20200308', N'NXB ĐH Kinh tế Quốc dân', 2, 9), --Nguyễn Đại
+							--('Easy Toeic (Kèm 1 Audio CD)', 163000 , 45 ,'20220408', N'Nxb Tổng hợp TP.HCM', 8, 9), -- Young Sook Sohn, Brian J.Stuart
+							--('Ielts Vocab - From Beginning!', 129000 , 23 ,'20210108', N'NXB ĐH Kinh tế Quốc dân', 7, 9),						
+							--(N'Tự Học Viết Tiếng Nhật Căn Bản', 41000 ,13 ,'20210403', N'Nxb Tổng hợp TP.HCM', 3, 9), --Jim Gleeson
+							--('Starter Toeic Third Edition', 169000 ,43 ,'20190102', N'NXB First New', 5, 9), --Compass
+							--(N'Tự Học Viết Tiếng Nhật (Tập 1) - 200 Chữ Kanji Căn Bản', 72000 ,23 ,'20210208', N'Nxb Đại học Quốc gia TPHCM', 10, 9), --Eriko Sato
+							--(N'Happy Reader - Những Bài Diễn Văn Nổi Tiếng Thế Giới (Tái Bản)', 58000 ,56 ,'20180208', N'Nxb Tổng hợp TP.HCM', 6, 9), --Park Jong Bae
+							--(N'Tự Học Viết Tiếng Nhật Căn Bản - KATAKANA (Tái Bản 2022)', 41000 , 41 ,'20200201', N'Nxb Đại học Quốc gia Hà Nội', 12, 9), --Jim Glesson
+							--(N'Bùng Nổ Tiếng Anh - 27 Giới Từ Hữu Ích Trong Tiếng Anh Giao Tiếp', 199000 , 100 ,'20190408', N'Nxb Thế giới', 14, 9), --  Moon Deok , Jihu Ju
+							--(N'Ngôn Ngữ Và Văn Hóa Nhật Bản - Trung Cấp 1 - B1', 200000 ,50 ,'20210206', N'Nxb Đại học Quốc gia TPHCM', 11, 9), --The Japan Foundation
+							--(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 1', 98000 ,40 ,'20210528', N'Nxb Tổng hợp TP.HCM', 15, 9), --Masateru Takatsu
+							--(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 2', 98000 ,45 ,'20210818', N'Nxb Tổng hợp TP.HCM', 13, 9),
+							--(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 3', 98000 ,37 ,'20220718', N'Nxb Tổng hợp TP.HCM', 20, 9),
+							--(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 4', 98000 ,97 ,'20230828', N'Nxb Tổng hợp TP.HCM', 22, 9),
+							-- thieu 1 cuon
 --=======================================================================================================================================================
 						  	(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 1 - Từ 1 Đến 20, Số Tự Nhiên Thật Thú Vị', 109000 ,18 ,'20180208', N'Nxb Thế giới', 20, 10), --Park Young Hoon
 							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 2 - Số Nào Lớn Hơn, Số Nào Nhỏ Hơn', 109000 ,24 ,'20180407', N'Nxb Thế giới', 20, 10),
