@@ -31,37 +31,37 @@ insert into SACH(TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG,NHAXUATBAN,MAPHATHANH,
 							--(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 4', 98000 ,97 ,'20230828', N'Nxb Tổng hợp TP.HCM', 22, 9),
 							-- thieu 1 cuon
 --=======================================================================================================================================================
-						  	(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 1 - Từ 1 Đến 20, Số Tự Nhiên Thật Thú Vị', 109000 ,18 ,'20180208', N'Nxb Thế giới', 20, 10), --Park Young Hoon
-							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 2 - Số Nào Lớn Hơn, Số Nào Nhỏ Hơn', 109000 ,24 ,'20180407', N'Nxb Thế giới', 20, 10),
-							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 3 - Phép Cộng Trừ Chẳng Khó', 109000 ,23 ,'20200205', N'Nxb Thế giới', 20, 10),
-							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 4 - Cùng Em Luyện Cộng Trừ', 109000 ,32 ,'20210202', N'Nxb Thế giới', 20, 10),
-							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 5 - Cộng Trừ Khắp Quanh Ta', 109000 ,25 ,'20220421', N'Nxb Thế giới', 20, 10),
-							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 6 - Em Cộng Trừ Thành Thạo', 109000 ,92 ,'20230802', N'Nxb Thế giới', 20, 10),
-							(N'Bé Tập Tô Phát Triển Tư Duy - Câu Đố Về Các Loài Cây', 25000 ,22 ,'20210918', N'Nxb Lao động', 19, 10), -- MOM, Khanh Vũ
-							(N'Vở Nhận Biết Và Tập Viết ABC Qua Các Trò Chơi Trí Tuệ - Tập 2 (Từ 4-6 Tuổi) (Tái Bản)', 25000 ,12 ,'20210207', N'Nxb Lao động', 17, 10), --Kawa, Bảo Việt
-							(N'Bé Tập Tô Phát Triển Tư Duy - Câu Đố Về Đồ Vật', 20000 ,126 ,'20220807', N'Nxb Lao động', 15, 10), -- mom, khanh vu
-							(N'Vở Nhận Biết Và Tập Viết ABC Qua Các Trò Chơi Trí Tuệ - Tập 1 (2021)', 30000 ,97 ,'20200120', N'Nxb Lao động', 21, 10), --Kawa, Bảo Việt
-							(N'Top 1 Môn Toán (Combo 2 cuốn)', 409000 ,49 ,'20230110', N'NXB Đà Nẵng', 18, 10), --Nhiều tác giả
-							(N'Tóm Tắt Kiến Thức Toán Phổ Thông', 145000 ,38 ,'20211210', N'NXB Thế giới', 26, 10), --Đỗ Minh Triết
-							(N'Toán Tiểu Học Tương Tác - Kỳ Thú Phân Số Và Số Thập Phân', 89000 ,113 ,'20220408', N'NXB Dân Trí', 22, 10), --	 Rosie Hore
-							(N'Toán Tiểu Học Tương Tác - Kỳ Thú Đơn Vị Đo Lường', 85000 ,52 ,'20230702', N'Nxb Dân Trí', 22, 10),
-							(N'Toán Tiểu Học Tương Tác - Kỳ Thú Phép Nhân', 85000 ,51 ,'20230404', N'Nxb Dân Trí', 22, 10),
-							(N'Học Thế Nào Bây Giờ? - Hướng Dẫn Trẻ Học Cách Tự Chủ - Dành Cho Học Sinh Tiểu Học', 99000 , 13 ,'20200308', N'NXB Khoa học xã hội', 2, 10), --  Luana Rinaldo
-							(N'Super Môn Toán - Tập 1: Hình Học Không Gian 11&12', 79000 ,45 ,'20200208', N'Nxb Đại học Quốc gia Hà Nội', 9, 10), --Trần Công Diêu
-							(N'Top 1 Môn Toán Tập 7 - Phương Pháp Tọa Độ Trong Không Gian OXYZ', 220000 , 53 ,'20200108', N'NXB Đà Nẵng', 7, 10), 
-							(N'Top 1 Môn Toán Tập 1 Hàm Số Và Ứng Dụng Của Đạo Hàm', 189000 ,13 ,'20200213', N'Nxb Đà Nẵng', 3, 10), -- Trần Công Diêu
-							(N'Ôn Luyện Thi Tốt Nghiệp THPT Môn Ngữ Văn Theo Định Hướng Đổi Mới', 80000 ,43 ,'20190102', N'NXB Thanh Niên', 5, 10), --Nhiều tác giả
-							(N'Cẩm Nang Định Hướng Đột Phá Học Tiếng Anh', 200000 ,23 ,'20210208', N'Nxb Thế giới', 10, 10), -- Nhiều tác giả
-							(N'Bộ Đề Kiểm Tra Đánh Giá Năng Lực - Môn Lịch Sử - Lớp 9', 80000 ,56 ,'20180208', N'Nxb Đại học Quốc gia Hà Nội', 11, 10), --Nguyễn Văn Ninh
-							(N'Ôn Luyện Thi Vào Lớp 10 THPT Năm 2020 Môn Ngữ Văn', 55000 , 41 ,'20200201', N'Nxb Thanh Niên', 15, 10), -- Nhiều tác giả
-							(N'E-Test Luyện Đề Môn Toán - Chinh Phục Kì Thi THPT Quốc Gia', 139000 , 100 ,'20190408', N'Nxb Đại học Quốc gia Hà Nội', 14, 10), --Nguyễn Thị Lanh
-							(N'Bài Tập Bổ Trợ Và Phát Triển Năng Lực Môn Tiếng Anh Lớp 10 - Tập 1', 45000 ,50 ,'20210206', N'Nxb Đại học Quốc gia Hà Nội', 12, 10), --Nguyễn Hồng Quân
-							(N'Ôn Luyện Thi THPT Quốc Gia Năm 2020 Môn Ngữ Văn', 50000 ,40 ,'20200128', N'Nxb Đại học Quốc gia Hà Nội', 24, 10), --Nhiều tác giả
-							(N'Ôn Luyện Thi THPT Quốc Gia Năm 2020 Môn Toán', 50000 ,55 ,'20190817', N'Nxb Đại học Quốc gia Hà Nội', 23, 10), --Nhiều tác giả
-							(N'Phát Triển Năng Lực Thi Trắc Nghiệm Môn Địa Lí', 109000 ,17 ,'20230218', N'Nxb Đại học Quốc gia Hà Nội', 29, 10), --Đỗ Ngọc Tiến
-							(N'Trọng Tâm Kiến Thức Và Phát Triển Năng Lực Thi Trắc Nghiệm Môn Giáo Dục Công Dân', 109000 ,97 ,'20230828', N'Nxb Đại học Quốc gia Hà Nội', 21, 10), --Nhiều tác giả
-							(N'Bài Giảng Ôn Thi Theo Chủ Đề Hình Học 11', 104000 ,23 ,'20230208', N'Nxb Đại học Quốc gia Hà Nội', 30, 10), -- Nhiều tác giả
-							(N'Luyện Thi Olympic Khoa Học - Lớp 4 (Song Ngữ)', 128000 ,63 ,'20221218', N'NXB Dân Trí', 30, 10), -- NXB Sheth
+						  		--(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 1 - Từ 1 Đến 20, Số Tự Nhiên Thật Thú Vị', 109000 ,18 ,'20180208', N'Nxb Thế giới', 20, 10), --Park Young Hoon
+							--(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 2 - Số Nào Lớn Hơn, Số Nào Nhỏ Hơn', 109000 ,24 ,'20180407', N'Nxb Thế giới', 20, 10),
+							--(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 3 - Phép Cộng Trừ Chẳng Khó', 109000 ,23 ,'20200205', N'Nxb Thế giới', 20, 10),
+							--N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 4 - Cùng Em Luyện Cộng Trừ', 109000 ,32 ,'20210202', N'Nxb Thế giới', 20, 10),
+							--(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 5 - Cộng Trừ Khắp Quanh Ta', 109000 ,25 ,'20220421', N'Nxb Thế giới', 20, 10),
+							--(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 6 - Em Cộng Trừ Thành Thạo', 109000 ,92 ,'20230802', N'Nxb Thế giới', 20, 10),
+							--(N'Bé Tập Tô Phát Triển Tư Duy - Câu Đố Về Các Loài Cây', 25000 ,22 ,'20210918', N'Nxb Lao động', 19, 10), -- MOM, Khanh Vũ
+							--(N'Vở Nhận Biết Và Tập Viết ABC Qua Các Trò Chơi Trí Tuệ - Tập 2 (Từ 4-6 Tuổi) (Tái Bản)', 25000 ,12 ,'20210207', N'Nxb Lao động', 17, 10), --Kawa, Bảo Việt
+							--(N'Bé Tập Tô Phát Triển Tư Duy - Câu Đố Về Đồ Vật', 20000 ,126 ,'20220807', N'Nxb Lao động', 15, 10), -- mom, khanh vu
+							--(N'Vở Nhận Biết Và Tập Viết ABC Qua Các Trò Chơi Trí Tuệ - Tập 1 (2021)', 30000 ,97 ,'20200120', N'Nxb Lao động', 21, 10), --Kawa, Bảo Việt
+							--(N'Top 1 Môn Toán (Combo 2 cuốn)', 409000 ,49 ,'20230110', N'NXB Đà Nẵng', 18, 10), --Nhiều tác giả
+							--(N'Tóm Tắt Kiến Thức Toán Phổ Thông', 145000 ,38 ,'20211210', N'NXB Thế giới', 26, 10), --Đỗ Minh Triết
+							--N'Toán Tiểu Học Tương Tác - Kỳ Thú Phân Số Và Số Thập Phân', 89000 ,113 ,'20220408', N'NXB Dân Trí', 22, 10), --	 Rosie Hore
+							--(N'Toán Tiểu Học Tương Tác - Kỳ Thú Đơn Vị Đo Lường', 85000 ,52 ,'20230702', N'Nxb Dân Trí', 22, 10),
+							--(N'Toán Tiểu Học Tương Tác - Kỳ Thú Phép Nhân', 85000 ,51 ,'20230404', N'Nxb Dân Trí', 22, 10),
+							--(N'Học Thế Nào Bây Giờ? - Hướng Dẫn Trẻ Học Cách Tự Chủ - Dành Cho Học Sinh Tiểu Học', 99000 , 13 ,'20200308', N'NXB Khoa học xã hội', 2, 10), --  Luana Rinaldo
+							--(N'Super Môn Toán - Tập 1: Hình Học Không Gian 11&12', 79000 ,45 ,'20200208', N'Nxb Đại học Quốc gia Hà Nội', 9, 10), --Trần Công Diêu
+							--(N'Top 1 Môn Toán Tập 7 - Phương Pháp Tọa Độ Trong Không Gian OXYZ', 220000 , 53 ,'20200108', N'NXB Đà Nẵng', 7, 10), 
+							--(N'Top 1 Môn Toán Tập 1 Hàm Số Và Ứng Dụng Của Đạo Hàm', 189000 ,13 ,'20200213', N'Nxb Đà Nẵng', 3, 10), 
+							--(N'Ôn Luyện Thi Tốt Nghiệp THPT Môn Ngữ Văn Theo Định Hướng Đổi Mới', 80000 ,43 ,'20190102', N'NXB Thanh Niên', 5, 10), --Nhiều tác giả
+							--(N'Cẩm Nang Định Hướng Đột Phá Học Tiếng Anh', 200000 ,23 ,'20210208', N'Nxb Thế giới', 10, 10), -- Nhiều tác giả
+							--(N'Bộ Đề Kiểm Tra Đánh Giá Năng Lực - Môn Lịch Sử - Lớp 9', 80000 ,56 ,'20180208', N'Nxb Đại học Quốc gia Hà Nội', 11, 10), --Nguyễn Văn Ninh
+							--(N'Ôn Luyện Thi Vào Lớp 10 THPT Năm 2020 Môn Ngữ Văn', 55000 , 41 ,'20200201', N'Nxb Thanh Niên', 15, 10), -- Nhiều tác giả
+							--(N'E-Test Luyện Đề Môn Toán - Chinh Phục Kì Thi THPT Quốc Gia', 139000 , 100 ,'20190408', N'Nxb Đại học Quốc gia Hà Nội', 14, 10), --Nguyễn Thị Lanh
+							--(N'Bài Tập Bổ Trợ Và Phát Triển Năng Lực Môn Tiếng Anh Lớp 10 - Tập 1', 45000 ,50 ,'20210206', N'Nxb Đại học Quốc gia Hà Nội', 12, 10), --Nguyễn Hồng Quân
+							--(N'Ôn Luyện Thi THPT Quốc Gia Năm 2020 Môn Ngữ Văn', 50000 ,40 ,'20200128', N'Nxb Đại học Quốc gia Hà Nội', 24, 10), --Nhiều tác giả
+							--(N'Ôn Luyện Thi THPT Quốc Gia Năm 2020 Môn Toán', 50000 ,55 ,'20190817', N'Nxb Đại học Quốc gia Hà Nội', 23, 10), --Nhiều tác giả
+							--(N'Phát Triển Năng Lực Thi Trắc Nghiệm Môn Địa Lí', 109000 ,17 ,'20230218', N'Nxb Đại học Quốc gia Hà Nội', 29, 10), --Đỗ Ngọc Tiến
+							--(N'Trọng Tâm Kiến Thức Và Phát Triển Năng Lực Thi Trắc Nghiệm Môn Giáo Dục Công Dân', 109000 ,97 ,'20230828', N'Nxb Đại học Quốc gia Hà Nội', 21, 10), --Nhiều tác giả
+							--(N'Bài Giảng Ôn Thi Theo Chủ Đề Hình Học 11', 104000 ,23 ,'20230208', N'Nxb Đại học Quốc gia Hà Nội', 30, 10), -- Nhiều tác giả
+							--(N'Luyện Thi Olympic Khoa Học - Lớp 4 (Song Ngữ)', 128000 ,63 ,'20221218', N'NXB Dân Trí', 30, 10), -- NXB Sheth
 --=======================================================================================================================================================		 									
 						(N'Lịch Treo Tường 2018 - The Little Prince', 100000 , 73 ,'20200328', null, 20, 11),
 						(N'Lịch Để Bàn 2019 - VietNam Football Calendar 2019', 89000 ,23 ,'20201018', N'NXB Hồng Đức', 1, 11),
