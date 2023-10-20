@@ -1,3 +1,10 @@
+INSERT INTO [dbo].[shipper](TENCTY, SDTCTY)
+VALUES
+('VIETNAMPOST', '1900545481'),
+('GHN', '1900636677'),
+('DHL TRACKING', '190055555');
+
+
 select * from SACH
 insert into SACH(TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG,NHAXUATBAN,MAPHATHANH, MADM)  VALUES
   							  							--(N'Toeic Analyst Second Edition (Kèm CD)', 144000 ,73 ,'20200208', N'Nxb Tổng hợp TP.HCM', 24, 9),
