@@ -318,3 +318,36 @@ VALUES
 (N'Công Văn Chung', N'Nam', N'trưởng phòng', '19911210', '20200509', N'523 Phan Kế Bính, Quận 1, TP.HCM', '094-444-6626', 19224000)
 
 select * from NHANVIEN
+-- insert don hang
+insert into DONHANG (TENSHIPPER, SDTSHIPPER, DIACHIGH, MAKH, MANV, MASHIPPER, PTDATHANG, NGAYDATHANG, NGAYDUDINHSHIP)
+values
+(N'Nguyễn Tuấn Tài','351-664-9650','585 Surrey Avenue',2,5,1, N'trả khi nhận hàng','20230630','20230705'),
+(N'Huỳnh Tất Hiếu' ,'213-866-1388','20 Onsgard Drive',1,5,2,N'trả khi nhận hàng','20230713','20230811'),
+(N'Nguyễn Anh Hoàng','294-944-1863','519 5th Circle',30,2,3,N'trả khi nhận hàng' ,'20231008','20231128'),
+(N'Tạ Phi Hùng','419-204-0067','055 Marcy Plaza',21,3,1,N'trả khi nhận hàng','20230728','20230830'),
+(N'Phạm Hiệp Hà','612-157-0122','16944 Starling Junction',15,2,3,N'trả khi nhận hàng','20231024','20231125'),
+(N'Chử Quang Trung','926-302-2755','0 Hoffman Plaza',22,6,2,N'trả khi nhận hàng','20230116','20230216'),
+(N'Nguyễn Chí Bảo','164-538-4350','3036 Anderson Way',14,9,1,N'trả khi nhận hàng','20230617','20230627'),
+(N'Đỗ Minh Toàn','693-694-2941','98 Sunnyside Terrace',22,5,3,N'trả khi nhận hàng','20230406','20230416'),
+(N'Huỳnh Bảo Quốc','955-959-1567','67359 Manitowish Plaza',23,3,1,N'trả khi nhận hàng','20230406','20230416'),
+(N'Phạm Trí Thắng','635-858-2611','7511 Bonner Circle',11,4,2,N'trả khi nhận hàng','20230922','20230902'),
+(N'Nguyễn Phi Nhung','847-856-7507','5 Ridgeview Plaza',4,24,1,N'trả khi nhận hàng','20230928','20230930'),
+(N'Mạc Nguyệt Lan','644-713-1821','5531 Blackbird Lane',2,30,3,N'trả khi nhận hàng','20231029','20231029'),
+(N'Lưu Gia Minh','315-770-6707','9627 Dahle Terrace',3,6,3,N'trả khi nhận hàng','20221123','20221128'),
+(N'Nguyễn Thiên Ðức','392-131-8413','796 2nd Trail',10,15,2,N'trả khi nhận hàng','20230802','20230809'),
+(N'Thạch Phước An','773-525-1401','1495 Sachs Street',13,12,1,N'trả khi nhận hàng','20230921','20230930'),
+(N'Phan Hồng Quý','628-236-6324','7 Caliangt Court',16,14,1,N'trả khi nhận hàng','20230324','20230330'),
+(N'Trần Ngọc Đại','665-563-1951','99 Ludington Hill',19,17,2,N'trả bằng thẻ','20230903','20230913'),
+(N'Nguyễn Cao Tiến','567-944-7660','8 Porter Crossing',25,18,2,N'trả khi nhận hàng','20230926','20230929'),
+(N'Lâm Quốc Việt','797-626-6455','3148 Arkansas Center',21,20,2,N'trả bằng thẻ','20230918','20230921'),
+(N'Nguyễn Khắc Triệu','966-595-9825','1 Buhler Pass',22,21,1,N'trả khi nhận hàng','20230704','20230714'),
+(N'Tống Tất Hiếu','824-304-7953','6 Superior Crossing',2,25,1,N'trả khi nhận hàng','20230915','20230920'),
+(N'Bành Ðình Toàn','160-240-1369','9 La Follette Street',3,28,2,N'trả bằng thẻ','20231014','20231018'),--
+(N'Lâm Kim Sơn','591-172-0966','96 Mockingbird Lane',5,24,3,N'trả khi nhận hàng','20230112','20230128'),
+(N'Tạ Quốc Ðại','457-505-2579','0 Pierstorff Crossing',5,23,2,N'trả khi nhận hàng','20230904','20230914'),
+(N'Trần Việt Long','683-679-9827','8851 Heffernan Circle',1,15,1,N'trả khi nhận hàng','20230128','20230222'),
+(N'Đinh Hữu Nam','164-575-4236','84835 Farragut Lane',2,12,2,N'trả bằng thẻ','20230812','20230816'),
+(N'Nguyễn Ngọc Thạch','611-192-7537','2 Myrtle Center',1,8,3,N'trả bằng thẻ','20230411','20230415'),
+(N'Nguyễn Nguyên Ðan','403-364-2999','77236 North Terrace',2,5,2,N'trả khi nhận hàng','20230223','20230228'),
+(N'Thủy Bá Phước','131-989-0401','079 Sunbrook Parkway',3,9,1,N'trả bằng thẻ','20230703','20230712'),
+(N'Dương Sơn Quyền','965-574-4428','8 Fairfield Circle',6,3,1,N'trả bằng thẻ','20230523','20230601')
