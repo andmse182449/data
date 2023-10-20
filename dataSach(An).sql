@@ -16,7 +16,52 @@ values
 (30,'75A9116A-3987-41AC-81F2-F055E6F6375D', '5*'),
 (8,'C5D536E2-5B2D-4EAE-A870-F5B11CC5DE60', '2*'),
 (5,'121C62AA-6CB6-481E-BE81-D74ABDAD92A4', '5*')
+INSERT INTO [dbo].[DANHMUC] (TenDM)
+VALUES
+( N'Sách Ngoại Văn'),
+( N'Sách Kinh Tế'),
+( N'Sách Văn Học Trong Nước'),
+( N'Sách Văn Học Nước Ngoài'),
+(N'Sách Thưởng Thức - Đời Sống'),
+( N'Sách Thiếu Nhi'),
+(N'Sách Phát Triển Bản Thân'),
+( N'Sách Tin Học - Ngoại Ngữ'),
+(N'Sách Chuyên Ngành'),
+( N'Sách Giáo Khoá - Giáo Trình'),
+( N'Tạp Chí - Văn Phòng Phẩm')
 
+INSERT INTO [dbo].[PHATHANHSACH] (TENNPT)
+VALUES
+( N'NHÃ NAM'),
+(N'ALPHA BOOKS'),
+(N'ĐÔNG TÂY'),
+( N'NXB VĂN HÓA VĂN NGHỆ'),
+( N'NHÀ SÁCH HOA SEN'),
+( N'NXB TRẺ'),
+(N'ĐÔNG A DC'),
+(N'CỔ NGUYỆT'),
+( N'COMICOLA'),
+( N'CTCP TINH VĂN'),
+( N'CTCP SÁCH AN TIÊM'),
+(N'CORGI CHILDRENS'),
+( N'CÔNG TY TRUYỀN ĐĂNG'),
+( N'CTCP QUANG MINH'),
+( N'CTY HẢI GIANG'),
+( N'1980BOOKS'),
+( N'BẮC HÀ'),
+(N'BẢO KHÔI'),
+( N'BIZBOOKS'),
+( N'BLUEWAY'),
+( N'CADASA'),
+(N'CẨM PHONG BOOKS'),
+( N'CAO VĂN QUANG'),
+( N'BRISTISH BOOKS'),
+( N'BẢO NHI'),
+( N'BESTBOOK'),
+( N'AZ VIỆT NAM'),
+( N'CTTNHH PHẦN MỀM TIN HỌC ANH NGỌC'),
+( N'CỬA HÀNG THỊNH PHONG'),
+(N'CTY SÁCH LẠC HỒNG');
 select * from SACH
 insert into SACH(TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG,NHAXUATBAN,MAPHATHANH, MADM)  VALUES
   							  							--(N'Toeic Analyst Second Edition (Kèm CD)', 144000 ,73 ,'20200208', N'Nxb Tổng hợp TP.HCM', 24, 9),
