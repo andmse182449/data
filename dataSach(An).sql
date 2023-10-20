@@ -168,7 +168,7 @@ values
 ('Dr. Lin Lougheed', '19890725'),
 (N'Vũ Hải', '19700122'),
 (N'Hoàng Văn Khánh', '19721103'),
-(N'Nhiều tác giả', '19700302'),
+(N'Nhiều tác giả', null),
 ('The Japan', '19600902'),
 ('Masateru Takatsu', '19670101'),
 ('Park Jong Bae', '19771002'),
