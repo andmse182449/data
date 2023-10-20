@@ -277,3 +277,37 @@ INSERT INTO SANGTAC VALUES
 (	16,'8E2EBA38-B0A1-41BC-8223-E0B84E249204'	,2023	),
 (	16,'23246356-960D-425B-981C-E1FFE0F150CD'	,2020	),
 (	16,'99828F55-3D90-4E3A-8F85-E6CDE63E169D'	,2020	)
+INSERT INTO [dbo].[NHANVIEN](TENNV, GIOITINH, VITRI, NGAYSINH, NGAYTHUE, DIACHINV, SDT, LUONG)
+VALUES
+(N'Dương Văn An', N'Nam', N'nhân viên', '19900915', '20210812', N'223 Lê Lợi, Quận 2, TP.HCM', '090-132-5127', 9000000),
+(N'Trần Thị Chi', N'Nữ', N'nhân viên', '19920421', '20191218', N'536 Nguyễn Huệ, Quận 3, TP.HCM', '098-726-4512', 8500000),
+(N'Hoàng Văn Liễu', N'Nam', N'trưởng phòng', '19771002', '20180624', N'623 Cách Mạng Tháng Tám, Quận 1, TP.HCM', '093-489-7440', 210000000),
+(N'Nam Thị Diêu', N'Nữ', N'nhân viên', '19760618', '20191102', N'02 Trần Hưng Đạo, Quận 5, TP.HCM', '097-521-5261', 8500000),
+(N'Điêu Văn Hoàng', N'Nam', N'trưởng phòng', '19770225', '20181009', N'231 Phạm Ngũ Lão, Quận 9, TP.HCM', '091-648-7245', 20000000),
+(N'Lại Thị Hiền', N'Nam', N'nhân viên', '20000310', '20210507', N'552 Điện Biên Phủ, Quận Bình Thạnh, TP.HCM', '095-532-6523', 9900000),
+(N'Nguyễn Văn Giang', N'Nam', N'nhân viên', '19970830', '20180723', N'854 Lý Tự Trọng, Quận 2, TP.HCM', '092-532-1235', 10000000),
+(N'Võ Thị Hương', N'Nữ', N'nhân viên', '19920307', '20190930', N'245 Hai Bà Trưng, Quận 3, TP.HCM', '094-729-5532', 10500000),
+(N'Hoàng Văn Lương', N'Nam', N'trưởng phòng', '19911012', '20180215', N'532 Nguyễn Du, Quận 1, TP.HCM', '096-326-8453', 11200000),
+(N'Nguyễn Thị Kiều', N'Nữ', N'nhân viên', '19801228', '20200427', N'179 Hồ Bieu Chanh, Quận Phú Nhuận, TP.HCM', '090-136-5321', 11500000),
+(N'Dương Văn Chính', N'Nam', N'nhân viên', '19880503', '20210611', N'094 Võ Văn Kiệt, Quận 5, TP.HCM', '093-643-5123', 12000000),
+(N'Trần Thị Mỹ', N'Nữ', N'nhân viên', '19810920', '20190820', N'247 Phan Kế Bính, Quận 1, TP.HCM', '098-633-4421', 17250000),
+(N'Phạm Hoàng Liên', N'Nữ', N'trưởng phòng', '19840114', '20200403', N'235 Nguyễn Đình Chính, Quận Phú Nhuận, TP.HCM', '095-335-1122', 7750000),
+(N'Võ Thị Hoa', N'Nữ', N'nhân viên', '19910406', '20200319', N'171 Lý Thường Kiệt, Quận 10, TP.HCM', '097-556-7743', 8150000),
+(N'Nguyễn Nam Trí', N'Nam', N'nhân viên', '19801229', '20180905', N'11 Ngô Thời Nhiệm, Quận 3, TP.HCM', '094-231-3345', 8740000),
+(N'Lê Thị Quyên', N'Nữ', N'nhân viên', '19920917', '20200708', N'34 Lê Đình Dương, Quận Tân Bình, TP.HCM', '092-523-5332', 19250000),
+(N'Lê Nguyễn Văn Hà', N'Nam', N'trưởng phòng', '19811007', '20200214', N'66 Võ Thị Sáu, Quận 9, TP.HCM', '096-532-5788', 20750000),
+(N'Dương Thị Hồng', N'Nữ', N'nhân viên', '19800512', '20181222', N'443 Lê Quý Đôn, Quận 3, TP.HCM', '091-352-0875', 11250000),
+(N'Trương Văn Thiện', N'Nam', N'nhân viên', '19810804', '20210228', N'93 Hoàng Sa, Quận 1, TP.HCM', '095-346-7085', 11750000),
+(N'Nguyễn Văn Ý', N'Nam', N'nhân viên', '19920324', '20200111', N'90 Lê Thị Hồng Gấm, Quận 1, TP.HCM', '090-223-7345', 11220000),
+(N'Võ Hồng Liên Vy', N'Nữ', N'nhân viên', '19910607', '20181116', N'17 Nguyễn Thái Bình, Quận Tân Bình, TP.HCM', '098-632-9234', 12750000),
+(N'Trần Thị Mai Xuân', N'Nữ', N'nhân viên', '20000922', '20200825', N'36 Cao Thắng, Quận 3, TP.HCM', '093-543-8347', 7225000),
+(N'Công Văn Mỹ', N'Nữ', N'nhân viên', '19900121', '20180331', N'44 Võ Duy Ninh, Quận Bình Thạnh, TP.HCM', '094-663-2378', 7725000),
+(N'Lê Xuân Ánh', N'Nữ', N'nhân viên', '20000121', '20200526', N'33 Phan Văn Hân, Quận Bình Thạnh, TP.HCM', '097-053-6342', 8225000),
+(N'Mai Anh Trúc', N'Nữ', N'trưởng phòng', '19800429', '20180708', N'348 Lý Thái Tổ, Quận 10, TP.HCM', '092-349-0452', 18725000),
+(N'Nguyễn Văn Chín', N'Nam', N'nhân viên', '20000903', '20210104', N'774 Lê Lai, Quận 1, TP.HCM', '090-178-3456', 9225000),
+(N'Vũ Thị Mai Huyền', N'Nữ', N'nhân viên', '19900711', '20201002', N'777 Hồ Văn Huê, Quận Phú Nhuận, TP.HCM', '095-432-3492', 9725000),
+(N'Hoàn Văn Lực', N'Nam', N'nhân viên', '19901202', '20220807', N'347 Đinh Công Tráng, Quận 2, TP.HCM', '098-734-1366', 10215000),
+(N'Đào Thị Liêu', N'Nữ', N'nhân viên', '19921005', '20200715', N'123 Phan Xích Long, Quận Phú Nhuận, TP.HCM', '096-244-3322', 10725000),
+(N'Công Văn Chung', N'Nam', N'trưởng phòng', '19911210', '20200509', N'523 Phan Kế Bính, Quận 1, TP.HCM', '094-444-6626', 19224000)
+
+select * from NHANVIEN
