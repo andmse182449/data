@@ -32,7 +32,7 @@ VALUES
 (N'Andrew Matthews', '1968-02-29'),
 (N'Stephen R. Covey', '1966-03-24'),
 (N'Paulo Coelho', '1967-06-22'),
-(N'Đọc Vị Bất Kì Ai', '1962-12-31'),
+(N'Quốc Bảo', '1962-12-31'),
 (N'Robin Sharma', '1964-11-05'),
 (N'Trác Nhã', '1965-02-17'),
 (N'Koga Fumitake', '1961-10-28'),
