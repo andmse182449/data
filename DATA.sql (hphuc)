@@ -747,6 +747,49 @@ values
 
 select * from TACGIA
 -- insert hop tac
+-- data tác giả của bill
+insert into TACGIA (TENTG, NGAYSINHTG)
+values
+(N'Nguyễn Ngọc Tư', '1961-03-14'),
+(N'Kim Hà Vi', '1970-09-19'),
+(N'Dương Hướng', '1974-07-30'),
+(N'Nam Cao', '1965-12-22'),
+(N'Trung Sỹ', '1982-11-08'),
+(N'Hà Chương', '1978-02-17'),
+(N'Xuân Quỳnh', '1969-06-25'),
+(N'Ngô Đức Hùng', '1987-04-10'),
+(N'Thạch Lam', '1980-06-03'),
+(N'Trần Đặng', '1984-11-01'),
+(N'Lê Bích', '1962-05-19'),
+(N'Na Lê', '1973-10-15'),
+(N'Hoàng Hải Vân', '1968-08-27'),
+(N'Sơn Nam', '1975-03-26'),
+(N'Cổ Học Tinh Hoa Nguyễn Văn Ngọc', '1989-09-05'),
+(N'Phạm Trung Tuyến', '1966-01-12'),
+(N'Nguyễn Đức Liên', '1988-12-03'),
+(N'Nguyễn Tuân', '1981-07-21'),
+(N'Nguyễn Đan Thy', '1964-04-06'),
+(N'Ngô Tú Ngân', '1971-12-08'),
+(N'Nguyên Sinh', '1963-09-28'),
+(N'Hoài Điệp', '1983-06-20'),
+(N'Nguyên Ngọc', '1985-05-15'),
+(N'Huế Lyly', '1977-01-25'),
+(N'Higashino Keigo', '1986-02-28'),
+(N'Sumino Yoru', '1979-04-02'),
+(N'Jeffery Deaver', '1972-08-11'),
+(N'Miura Shion', '1967-03-03'),
+(N'Imamura Natsuko', '1990-10-29'),
+(N'Astrid Lindgren', '1960-07-09'),
+(N'Kim Ngư Trương', '1987-11-26'),
+(N'Georges Simenon', '1976-09-02'),
+(N'Peter James', '1961-12-18'),
+(N'Jay Mathews', '1989-07-13'),
+(N'Kazuo Ishiguro', '1965-02-07'),
+(N'Schwab', '1982-03-31'),
+(N'Cathy Bonidan', '1984-10-23'),
+(N'Toni Morrison', '1968-05-14'),
+(N'Shirley Jackson', '1974-04-19'),
+(N'Mika Waltari', '1973-06-07');
 
 insert into HOPTAC (MATG, MAPHATHANH, NGAYKIHOPDONG, NGAYHETHAN)
 values 
