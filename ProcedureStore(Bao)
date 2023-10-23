@@ -1,0 +1,88 @@
+--Input: Nhap ma khach hang
+--Output: tong so mat hang da mua va binh luan ve nhung san pham do
+create procedure proc_1 (@makh int, @tongsl1 int output)
+as
+	begin
+		set @tongsl1 = (select count(b.MASACH)
+						from [dbo].[DONHANG] a, DONHANG_CHITIET b 
+						where a.MADH = b.MADH and @makh = a.MAKH
+						group by b.MADH)
+		select c.TENSACH, c.GIATIEN
+		from DONHANG a, DONHANG_CHITIET b, SACH c
+		where a.MADH = b.MADH and a.MAKH = @makh and b.MASACH = c.MASACH
+
+		select c.TENSACH, a.DANHGIA
+		from [dbo].[BINHLUAN] a, [dbo].[KHACHHANG] b, SACH c
+		where a.MAKH = b.MAKH and @makh = b.MAKH and a.MASACH = c.MASACH
+	end
+go
+declare @tongsolanmua int;
+execute proc_1 @makh = 10, @tongsl1 = @tongsolanmua output;
+print N'Tổng số lượng mặt hàng mà khách hàng đã mua: ' + CAST(@tongsolanmua AS NVARCHAR);
+go
+--Input: ten tac gia
+--Output: sach ma tac gia sang tac
+create procedure proc_2 (@tentg nvarchar(max))
+as
+	begin
+		select c.TENSACH, c.GIATIEN, c.NHAXUATBAN
+		from SANGTAC a, TACGIA b, SACH c
+		where b.MATG = a.MATG and a.MASACH = c.MASACH and b.TENTG = @tentg
+	end
+go
+execute proc_2 @tentg = ' Michael Lewis'
+go
+
+--input: nhap thang va nam
+--output: nhung quyen sach ban chay trong thang
+create procedure proc_3(@month int, @year int)
+as
+	begin
+		select b.TENSACH, b.GIATIEN, b.NHAXUATBAN
+		from [dbo].[DONHANG] a, SACH b, DONHANG_CHITIET c
+		where a.MADH = c.MADH and b.MASACH = c.MASACH and month(a.NGAYDATHANG) = @month and year(a.NGAYDATHANG) = @year
+		having count(c.MASACH) > 2
+	end
+go
+
+--input: thang va nam
+--output: sach moi nhap ve
+create procedure proc_4(@year int, @month int)
+as
+	begin
+		select a.TENSACH, a.GIATIEN
+		from [dbo].[SACH] a
+		where year(a.NGAYNHAPHANG) = @year and month(a.NGAYNHAPHANG) = @month
+	end
+go
+execute proc_4 @year = 2023, @month = 10
+go
+
+--input: ten danh muc
+--output: nhung quyen sach thuoc ve danh muc do
+create procedure proc_5(@tendm nvarchar(200))
+as
+	begin
+		select b.TENSACH, b.GIATIEN
+		from [dbo].[DANHMUC] a, SACH b
+		where a.MaDM = b.MADM and a.TenDM = @tendm
+	end
+go
+
+execute proc_5 @tendm = N'Sách Ngoại Văn'
+go
+
+--input: ten khach hang
+--output: tong tien don hang cua nhung don hang ma khach hang da mua
+create procedure proc_6(@tenkh nvarchar(200))
+as
+	begin
+		select c.MADH, sum(b.GIATIEN)
+		from [dbo].[KHACHHANG] a, [dbo].[SACH] b, [dbo].[DONHANG_CHITIET] c, [dbo].[DONHANG] d
+		where a.MAKH = d.MAKH and b.MASACH = c.MASACH and c.MADH = d.MADH and a.TENKH = @tenkh
+		group by c.MADH
+	end
+go
+
+execute proc_6 @tenkh = N'Đinh Nhật Nam'
+go
