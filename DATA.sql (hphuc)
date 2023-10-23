@@ -791,6 +791,15 @@ values
 (N'Shirley Jackson', '1974-04-19'),
 (N'Mika Waltari', '1973-06-07');
 
+---------------------UPDATE tác giả--------------------------------
+UPDATE TACGIA
+SET TENTG = N'Hoàng Phúc'
+WHERE MATG = 143;
+
+UPDATE TACGIA
+SET TENTG = N'Quốc Bảo'
+WHERE MATG = 115;
+---------------------UPDATE tác giả--------------------------------
 insert into HOPTAC (MATG, MAPHATHANH, NGAYKIHOPDONG, NGAYHETHAN)
 values 
 (17, 5, '20050614', '20260819'),
