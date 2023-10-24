@@ -41,8 +41,10 @@ as
 		select b.TENSACH, b.GIATIEN, b.NHAXUATBAN
 		from [dbo].[DONHANG] a, SACH b, DONHANG_CHITIET c
 		where a.MADH = c.MADH and b.MASACH = c.MASACH and month(a.NGAYDATHANG) = @month and year(a.NGAYDATHANG) = @year
-		having count(c.MASACH) > 2
+		having count(c.MASACH) >= 2
 	end
+go
+execute proc_3 @month = 6, @year = 2023
 go
 
 --input: thang va nam
