@@ -20,6 +20,7 @@ declare @tongsolanmua int;
 execute proc_1 @makh = 10, @tongsl1 = @tongsolanmua output;
 print N'Tổng số lượng mặt hàng mà khách hàng đã mua: ' + CAST(@tongsolanmua AS NVARCHAR);
 go
+--================================================================================================
 --Input: ten tac gia
 --Output: sach ma tac gia sang tac
 create procedure proc_2 (@tentg nvarchar(max))
@@ -32,7 +33,7 @@ as
 go
 execute proc_2 @tentg = ' Michael Lewis'
 go
-
+--================================================================================================
 --input: nhap thang va nam
 --output: nhung quyen sach ban chay trong thang
 create procedure proc_3(@month int, @year int)
@@ -46,7 +47,7 @@ as
 go
 execute proc_3 @month = 6, @year = 2023
 go
-
+--================================================================================================
 --input: thang va nam
 --output: sach moi nhap ve
 create procedure proc_4(@year int, @month int)
@@ -59,7 +60,7 @@ as
 go
 execute proc_4 @year = 2023, @month = 10
 go
-
+--================================================================================================
 --input: ten danh muc
 --output: nhung quyen sach thuoc ve danh muc do
 create procedure proc_5(@tendm nvarchar(200))
@@ -73,7 +74,7 @@ go
 
 execute proc_5 @tendm = N'Sách Ngoại Văn'
 go
-
+--================================================================================================
 --input: ten khach hang
 --output: tong tien don hang cua nhung don hang ma khach hang da mua
 create procedure proc_6(@tenkh nvarchar(200))
@@ -88,6 +89,7 @@ go
 
 execute proc_6 @tenkh = N'Đinh Nhật Nam'
 go
+--================================================================================================
 -- procedure đầu vào là tên sách, đầu ra là tất cả số lượng đánh giá 
 create procedure proc_7(@tensach nvarchar(max))
 as
@@ -101,7 +103,7 @@ go
 execute proc_7 @tensach = 'IELTS Analyst Second Edition' 
 go
 -- procedure tìm sách có tên chứa ".....', lấy ra thông tin gồm tên đầy đủ của sách, tên tác giả, giá tiền và nhà xuất bản
-
+--================================================================================================
 create procedure proc_8(@ten nvarchar(max))
 as
 	begin
@@ -113,8 +115,9 @@ go
 -- thuc
 execute proc_8 @ten = 'Second'
 go
+--================================================================================================
 -- function tìm tổng số sách mà tác giả có tên tương ứng đã viết 
-create function func_1(@tentacgia nvarchar(max))
+create function func_9(@tentacgia nvarchar(max))
 returns int
 as 
 	begin
@@ -129,5 +132,7 @@ as
 go
 -- thuc thi 
 declare @t int
-set @t = dbo.func_1('NXB Sheth')
+set @t = dbo.func_9('NXB Sheth')
 print N'Tổng Số sách đã sáng tác: '+ convert(char(100),@t)
+go
+--================================================================================================
