@@ -1,0 +1,256 @@
+use VINABOOK
+go
+--Input: Nhap ma khach hang
+--Output: tong so mat hang da mua va binh luan ve nhung san pham do
+create procedure proc_1 (@makh int, @tongsl1 int output)
+as
+	begin
+		set @tongsl1 = (select count(b.MASACH)
+						from [dbo].[DONHANG] a, DONHANG_CHITIET b 
+						where a.MADH = b.MADH and @makh = a.MAKH
+						group by b.MADH)
+		select c.TENSACH, c.GIATIEN
+		from DONHANG a, DONHANG_CHITIET b, SACH c
+		where a.MADH = b.MADH and a.MAKH = @makh and b.MASACH = c.MASACH
+
+		select c.TENSACH, a.DANHGIA
+		from [dbo].[BINHLUAN] a, [dbo].[KHACHHANG] b, SACH c
+		where a.MAKH = b.MAKH and @makh = b.MAKH and a.MASACH = c.MASACH
+	end
+go
+declare @tongsolanmua int;
+execute proc_1 @makh = 10, @tongsl1 = @tongsolanmua output;
+print N'Tổng số lượng mặt hàng mà khách hàng đã mua: ' + CAST(@tongsolanmua AS NVARCHAR);
+go
+--Input: ten tac gia
+--Output: sach ma tac gia sang tac
+create procedure proc_2 (@tentg nvarchar(max))
+as
+	begin
+		select c.TENSACH, c.GIATIEN, c.NHAXUATBAN
+		from SANGTAC a, TACGIA b, SACH c
+		where b.MATG = a.MATG and a.MASACH = c.MASACH and b.TENTG = @tentg
+	end
+go
+execute proc_2 @tentg = ' Michael Lewis'
+go
+
+--input: nhap thang va nam
+--output: nhung quyen sach ban chay trong thang
+create procedure proc_3(@month int, @year int)
+as
+	begin
+		select b.TENSACH, b.GIATIEN, b.NHAXUATBAN
+		from [dbo].[DONHANG] a, SACH b, DONHANG_CHITIET c
+		where a.MADH = c.MADH and b.MASACH = c.MASACH and month(a.NGAYDATHANG) = @month and year(a.NGAYDATHANG) = @year
+		group by b.TENSACH, b.GIATIEN, b.NHAXUATBAN
+		having count(c.MASACH) >= 2
+	end
+go
+execute proc_3 @month = 6, @year = 2023
+go
+
+--input: thang va nam
+--output: sach moi nhap ve
+create procedure proc_4(@year int, @month int)
+as
+	begin
+		select a.TENSACH, a.GIATIEN
+		from [dbo].[SACH] a
+		where year(a.NGAYNHAPHANG) = @year and month(a.NGAYNHAPHANG) = @month
+	end
+go
+execute proc_4 @year = 2023, @month = 10
+go
+
+--input: ten danh muc
+--output: nhung quyen sach thuoc ve danh muc do
+create procedure proc_5(@tendm nvarchar(200))
+as
+	begin
+		select b.TENSACH, b.GIATIEN
+		from [dbo].[DANHMUC] a, SACH b
+		where a.MaDM = b.MADM and a.TenDM = @tendm
+	end
+go
+
+execute proc_5 @tendm = N'Sách Ngoại Văn'
+go
+
+--input: ten khach hang
+--output: tong tien don hang cua nhung don hang ma khach hang da mua
+create procedure proc_6(@tenkh nvarchar(200))
+as
+	begin
+		select c.MADH, sum(b.GIATIEN)
+		from [dbo].[KHACHHANG] a, [dbo].[SACH] b, [dbo].[DONHANG_CHITIET] c, [dbo].[DONHANG] d
+		where a.MAKH = d.MAKH and b.MASACH = c.MASACH and c.MADH = d.MADH and a.TENKH = @tenkh
+		group by c.MADH
+	end
+go
+
+execute proc_6 @tenkh = N'Đinh Nhật Nam'
+go
+-- procedure đầu vào là tên sách, đầu ra là tất cả số lượng đánh giá 
+create procedure proc_7(@tensach nvarchar(max))
+as
+	begin
+		select b.DANHGIA, COUNT(DANHGIA) N'Số lượng đánh giá'
+		from sach s join BINHLUAN b on s.MASACH = b.MASACH and s.TENSACH = @tensach
+		group by b.DANHGIA
+	end
+go
+-- thuc
+execute proc_7 @tensach = 'IELTS Analyst Second Edition' 
+go
+-- procedure tìm sách có tên chứa ".....', lấy ra thông tin gồm tên đầy đủ của sách, tên tác giả, giá tiền và nhà xuất bản
+
+create procedure proc_8(@ten nvarchar(max))
+as
+	begin
+		select  s.TENSACH, tg.TENTG ,s.GIATIEN, s.NHAXUATBAN
+		from sach s join SANGTAC st on s.MASACH = st.MASACH join TACGIA tg on tg.MATG = st.MATG
+		where TENSACH like '%' + @ten + '%'
+	end
+go
+-- thuc
+execute proc_8 @ten = 'Second'
+go
+-- function tìm tổng số sách mà tác giả có tên tương ứng đã viết 
+create function func_1(@tentacgia nvarchar(max))
+returns int
+as 
+	begin
+		declare @tong int 
+		set @tong = (
+		select count(s.MASACH)
+		from SANGTAC s join TACGIA tg on s.MATG = tg.MATG 
+		where tg.TENTG = @tentacgia
+		)
+		return @tong
+	end
+go
+-- thuc thi 
+declare @t int
+set @t = dbo.func_1('NXB Sheth')
+print N'Tổng Số sách đã sáng tác: '+ convert(char(100),@t)
+go
+
+-- function tìm số tác giả có nhiều sách nhất
+create function func_2()
+returns table
+as 
+		return 
+		(
+					select TACGIA.TENTG, COUNT(SANGTAC.MASACH) as N'SỐ LƯỢNG TÁC PHẨM'
+					from TACGIA
+					join SANGTAC on TACGIA.MATG = SANGTAC.MATG
+					group by TACGIA.TENTG
+					having count(SANGTAC.MASACH) >= all (select count(SANGTAC.MASACH)
+													from TACGIA
+													join SANGTAC on TACGIA.MATG = SANGTAC.MATG
+													group by TACGIA.TENTG)
+		)
+go
+-- thuc thi 
+select * from dbo.func_2()
+go
+
+
+-- hinh nhu dang sai
+-- tạo function tìm những cuốn sách có tổng đánh giá cao nhất
+create function func_3()
+returns table
+as 
+		return 
+		(
+					select SACH.TENSACH, AVG(DANHGIA) as N'ĐÁNH GIÁ'
+					from SACH
+					join BINHLUAN on BINHLUAN.MASACH = SACH.MASACH
+					group by SACH.TENSACH
+					having (SUM(DANHGIA) / COUNT(DANHGIA)) >= all (select (SUM(DANHGIA) / COUNT(DANHGIA))
+													from SACH
+													join BINHLUAN on BINHLUAN.MASACH = SACH.MASACH
+													group by SACH.TENSACH)
+		)
+go
+-- thuc thi 
+select * from dbo.func_3()
+go
+
+-- tạo function tìm cuốn sách có lượt bình luận cao nhất
+create function func_4()
+returns table
+as 
+		return 
+		(
+					select SACH.MASACH ,SACH.TENSACH, count(DANHGIA) as N'SỐ LƯỢT BÌNH LUẬN'
+					from SACH
+					join BINHLUAN on BINHLUAN.MASACH = SACH.MASACH
+					group by SACH.MASACH ,SACH.TENSACH
+					having COUNT(DANHGIA) >= all (select COUNT(DANHGIA)
+													from SACH
+													join BINHLUAN on BINHLUAN.MASACH = SACH.MASACH
+													group by SACH.MASACH ,SACH.TENSACH)
+		)
+go
+-- thuc thi 
+select * from dbo.func_4()
+go
+
+-- tìm những tác giả viết từ 2 cuốn sách trở lên
+create function func_5()
+returns table
+as 
+		return 
+		(
+					select TACGIA.TENTG, COUNT(SANGTAC.MASACH) as N'SỐ LƯỢNG TÁC PHẨM'
+					from TACGIA
+					join SANGTAC on SANGTAC.MATG = TACGIA.MATG
+					group by TACGIA.TENTG
+					having COUNT(SANGTAC.MASACH) >= 2
+		)
+go
+-- thuc thi 
+select * from dbo.func_4()
+go
+
+-- tìm những tác giả có tuổi lớn hơn 80
+create function func_5()
+returns table
+as 
+		return 
+		(
+					select TACGIA.TENTG, (year(GETDATE()) - YEAR(NGAYSINHTG)) as N'TUỔI TÁC GIẢ'
+					from TACGIA
+					group by TACGIA.TENTG, TACGIA.NGAYSINHTG
+					having (YEAR(GETDATE()) - year(NGAYSINHTG)) >= 80
+		)
+go
+-- thuc thi 
+select * from dbo.func_5()
+go
+
+-- tìm đơn hàng có giá cao nhất
+create function func_6()
+returns table
+as 
+		return 
+		(
+				select c.MADH, sum(b.GIATIEN) as N'TỔNG TIỀN'
+				from KHACHHANG a, SACH b, DONHANG_CHITIET c, DONHANG d
+				where a.MAKH = d.MAKH 
+				and b.MASACH = c.MASACH
+				and c.MADH = d.MADH
+				group by c.MADH
+				having SUM(GIATIEN) >= all (select sum(b.GIATIEN)
+											from KHACHHANG a, SACH b, DONHANG_CHITIET c, DONHANG d
+											where a.MAKH = d.MAKH 
+											and b.MASACH = c.MASACH
+											and c.MADH = d.MADH
+											group by c.MADH)
+		)
+go
+-- thuc thi 
+select * from dbo.func_6()
+go
