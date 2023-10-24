@@ -100,3 +100,16 @@ go
 -- thuc
 execute proc_7 @tensach = 'IELTS Analyst Second Edition' 
 go
+-- procedure tìm sách có tên chứa ".....', lấy ra thông tin gồm tên đầy đủ của sách, tên tác giả, giá tiền và nhà xuất bản
+
+create procedure proc_8(@ten nvarchar(max))
+as
+	begin
+		select  s.TENSACH, tg.TENTG ,s.GIATIEN, s.NHAXUATBAN
+		from sach s join SANGTAC st on s.MASACH = st.MASACH join TACGIA tg on tg.MATG = st.MATG
+		where TENSACH like '%' + @ten + '%'
+	end
+go
+-- thuc
+execute proc_8 @ten = 'Second'
+go
