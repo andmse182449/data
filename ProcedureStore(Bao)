@@ -113,3 +113,21 @@ go
 -- thuc
 execute proc_8 @ten = 'Second'
 go
+-- function tìm tổng số sách mà tác giả có tên tương ứng đã viết 
+create function func_1(@tentacgia nvarchar(max))
+returns int
+as 
+	begin
+		declare @tong int 
+		set @tong = (
+		select count(s.MASACH)
+		from SANGTAC s join TACGIA tg on s.MATG = tg.MATG 
+		where tg.TENTG = @tentacgia
+		)
+		return @tong
+	end
+go
+-- thuc thi 
+declare @t int
+set @t = dbo.func_1('NXB Sheth')
+print N'Tổng Số sách đã sáng tác: '+ convert(char(100),@t)
