@@ -63,12 +63,8 @@ begin
     GROUP BY t.ptgiam
 	)
 WHERE MADH IN (SELECT MADH FROM inserted) 
-      
-        -- Update the total order amount for the orders in 'inserted'
-        UPDATE DONHANG
-        SET tongtien_donhang = tongtien_donhang + @additionalCost
-        WHERE MADH IN (SELECT MADH FROM inserted)
---==============================================
+
+--======
 	update DONHANG set trangthai = 1 where MADH in (select MADH from inserted)
 	end
 	else 
