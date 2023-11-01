@@ -3,16 +3,6 @@
    Trigger 2 : xong 
    Trigger 3 : update trang thai
    Trigger 4 : update membership 
-   BẢNG PROCEDURE
-   PROC1: Điều chỉnh số lượng sách trong đơn hàng chi tiết và điều chỉnh số tiền trong đơn hàng 
-   PROC2: Tìm sách bằng tên tác giả 
-   PROC3:
-   --Input: Nhap ma khach hang
-   --Output: tong so mat hang da mua va đánh giá về những sản phẩm đó 
-   PROC4:
---input: nhap thang va nam
---output: nhung quyen sach ban chay trong thang
-   PROC5: procedure tìm sách có tên chứa ".....', lấy ra thông tin gồm tên đầy đủ của sách, tên tác giả, giá tiền và nhà xuất bản
    BẢNG FUNCTION
    FUNC1: tính lãi trong tháng nào ,năm nào
    FUNC2: tính tổng số tiền đã chi của khách hàng 
