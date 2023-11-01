@@ -2,7 +2,7 @@
  BẢNG FUNCTION
    FUNC1: Function tính lãi trong tháng và năm đã cho
    FUNC2: Function tính tổng số tiền đã chi của khách hàng (phục vụ cho việc cập nhật tích lũy)
-   FUNC3: Function in ra lịch sử đặt hàng của khách hàng trong tháng và năm đã cho
+   FUNC3: Function in ra lịch sử đặt hàng của khách hàng
 */
 
 
