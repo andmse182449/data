@@ -92,6 +92,7 @@ VALUES
 ('GHN', '1900636677'),
 ('DHL TRACKING', '190055555');
 
+
 -- NXB ĐH Kinh tế Quốc dân
 -- NXB Trẻ 
 -- NXB Tổng hợp TP.HCM
@@ -103,483 +104,482 @@ VALUES
 
 
 --SachNgoaiVan
-INSERT INTO [dbo].[SACH](TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MAPHATHANH, MADM)
+SELECT * FROM SACH
+INSERT INTO [dbo].[SACH](TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MADM)
 VALUES
-(N'Born Of Dragons And Fairies', 197000, 54, '2/14/2022', N'NXB Trẻ', 9, 1), -- Nhiều tác giả
-(N'Me Before You: A Novel (Movie Tie-In)', 123000, 47, '5/23/2023', N'NXB ĐH Kinh tế Quốc dân', 15, 1), --  Jojo Moyes
-(N'Harry Potter Boxed Set', 230000, 32, '9/5/2022', N'NXB First New', 2, 1), --  J. K. Rowling
-(N'The Hunger Games Trilogy', 149000, 11, '12/25/2022', N'NXB Compass Publishing', 27, 1), --  Suzanne Collins
-(N'New Way Ahead - A Listening And Speaking Course', 205000, 28, '3/21/2022', N'NXB ĐH Quốc Gia TP.HCM', 23, 1),
-(N'Gateway B2+: Audio CD', 277000, 31, '10/10/2023', N'NXB Tổng hợp TP.HCM', 6, 1), --  David Spencer
-(N'Origin', 103000, 15, '8/2/2022', N'NXB Hồng Đức', 11, 1), --  Dan Brown
-(N'Perfect Ielts Speaking', 125000, 26, '7/15/2023', N'NXB ĐH Kinh tế Quốc dân', 19, 1),
-(N'Me Before You: A Novel (Movie Tie-In)', 151000, 36, '1/1/2022', N'NXB Trẻ', 4, 1), --  Jojo Moyes
-(N'The Book Thief', 136000, 46, '6/6/2022', N'NXB Tổng hợp TP.HCM', 3, 1), --  Markus Zusak
-(N'Harry Potter Box Set: The Complete Collection', 292000, 7, '3/15/2022', N'NXB ĐH Quốc Gia Hà Nội', 20, 1), --  J. K. Rowling
-(N'The Alchemist', 253000, 14, '9/15/2023', N'NXB Compass Publishing', 28, 1), --  Paulo Coelho
-(N'Oxf Word Skills Adv Pk Stuart RedmanOxf Word Skills Adv PK', 262000, 78, '11/11/2022', N'NXB Hồng Đức', 10, 1), --  Stuart Redman	
-(N'Oxf Word Skills Int Pk', 115000, 53, '4/20/2022', N'NXB First New', 28, 1), --  Stuart Redman
-(N'Oxf Word Skills Basic Pk', 296000, 48, '2/28/2022', N'NXB ĐH Quốc Gia TP.HCM', 1, 1), --  Stuart Redman
-(N'Oxford Learners Pocket Word Skills Pack', 299000, 56, '5/1/2023', N'NXB Trẻ', 21, 1), --  Redman Stuart
-(N'Oxf AM Dict Vocab Builder', 208000, 28, '10/15/2022', N'NXB Tổng hợp TP.HCM', 5, 1), --  Keith S. Folse
-(N'Oxf PHOTO Dict', 113000, 59, '7/30/2022', N'NXB Compass Publishing', 24, 1), --  Jane Taylor
-(N'Secret Garden', 159000, 67, '1/14/2022', N'NXB ĐH Kinh tế Quốc dân', 22, 1), --  Johanna Basford
-(N'Laser B1: Class Audio CDs', 266000, 29, '8/28/2022', N'NXB ĐH Kinh tế Quốc dân', 29, 1), -- Muzykal'naya
-(N'Laser B2 (2 Ed.) FCE: Workbook with key with Audio CD', 207000, 67, '6/10/2022', N'NXB First New', 30, 1), --  R. Nicholas A. Nebel
-(N'Our Discovery Island Ame 6: Picture Cards', 211000, 4, '4/30/2023', N'NXB Trẻ', 13, 1), --  PRENTICE HALL	
-(N'World Link (2 Ed.) 2: Workbook', 297000, 22, '9/10/2022', N'NXB ĐH Quốc Gia TP.HCM', 25, 1), --  Susan Stempleski
-(N'Listening Advantage 2: Student book with Audio CD', 218000, 45, '11/15/2022', N'NXB Hồng Đức', 14, 1), --  Tamami Wada
-(N'Active Skills For Communication Intro: Student Book', 227000, 46, '3/1/2022', N'NXB Tổng hợp TP.HCM', 17, 1), --  Chuck Sandy
-(N'Speakout Adv: Workbook with Key with Audio CD', 219000, 50, '2/3/2022', N'NXB ĐH Quốc Gia Hà Nội', 16, 1), --  Antonia Clare
-(N'Speakout Pre-Inter: Workbook with Key with Audio CD', 282000, 19, '12/5/2022', N'NXB Compass Publishing', 26, 1), --  Antonia Clare
-(N'Speakout Inter: Workbook with Key with Audio CD', 298000, 78, '5/5/2023', N'NXB Tổng hợp TP.HCM', 7, 1), --  Antonia Clare
-(N'Market Leader ( 3 Ed.) Upper-Inter: Practice file with CD', 243000, 43, '7/20/2022', N'NXB ĐH Kinh tế Quốc dân', 8, 1), --  John Rogers
-(N'IELTS Graduation: Student Book', 263000, 49, '9/22/2022', N'NXB Compass Publishing', 12, 1); --  Dickie Dolby
+(N'Born Of Dragons And Fairies', 197000, 54, '2/14/2022', N'NXB Trẻ', 1), -- Nhiều tác giả
+(N'Me Before You: A Novel (Movie Tie-In)', 123000, 47, '5/23/2023', N'NXB ĐH Kinh tế Quốc dân', 1), --  Jojo Moyes
+(N'Harry Potter Boxed Set', 230000, 32, '9/5/2022', N'NXB First New', 1), --  J. K. Rowling
+(N'The Hunger Games Trilogy', 149000, 11, '12/25/2022', N'NXB Compass Publishing', 1), --  Suzanne Collins
+(N'New Way Ahead - A Listening And Speaking Course', 205000, 28, '3/21/2022', N'NXB ĐH Quốc Gia TP.HCM', 1),
+(N'Gateway B2+: Audio CD', 277000, 31, '10/10/2023', N'NXB Tổng hợp TP.HCM', 1), --  David Spencer
+(N'Origin', 103000, 15, '8/2/2022', N'NXB Hồng Đức', 1), --  Dan Brown
+(N'Perfect Ielts Speaking', 125000, 26, '7/15/2023', N'NXB ĐH Kinh tế Quốc dân', 1),
+(N'Me Before You: A Novel (Movie Tie-In)', 151000, 36, '1/1/2022', N'NXB Trẻ', 1), --  Jojo Moyes
+(N'The Book Thief', 136000, 46, '6/6/2022', N'NXB Tổng hợp TP.HCM', 1), --  Markus Zusak
+(N'Harry Potter Box Set: The Complete Collection', 292000, 7, '3/15/2022', N'NXB ĐH Quốc Gia Hà Nội', 1), --  J. K. Rowling
+(N'The Alchemist', 253000, 14, '9/15/2023', N'NXB Compass Publishing', 1), --  Paulo Coelho
+(N'Oxf Word Skills Adv Pk Stuart RedmanOxf Word Skills Adv PK', 262000, 78, '11/11/2022', N'NXB Hồng Đức', 1), --  Stuart Redman	
+(N'Oxf Word Skills Int Pk', 115000, 53, '4/20/2022', N'NXB First New', 1), --  Stuart Redman
+(N'Oxf Word Skills Basic Pk', 296000, 48, '2/28/2022', N'NXB ĐH Quốc Gia TP.HCM', 1), --  Stuart Redman
+(N'Oxford Learners Pocket Word Skills Pack', 299000, 56, '5/1/2023', N'NXB Trẻ', 1), --  Redman Stuart
+(N'Oxf AM Dict Vocab Builder', 208000, 28, '10/15/2022', N'NXB Tổng hợp TP.HCM', 1), --  Keith S. Folse
+(N'Oxf PHOTO Dict', 113000, 59, '7/30/2022', N'NXB Compass Publishing', 1), --  Jane Taylor
+(N'Secret Garden', 159000, 67, '1/14/2022', N'NXB ĐH Kinh tế Quốc dân', 1), --  Johanna Basford
+(N'Laser B1: Class Audio CDs', 266000, 29, '8/28/2022', N'NXB ĐH Kinh tế Quốc dân', 1), -- Muzykal'naya
+(N'Laser B2 (2 Ed.) FCE: Workbook with key with Audio CD', 207000, 67, '6/10/2022', N'NXB First New', 1), --  R. Nicholas A. Nebel
+(N'Our Discovery Island Ame 6: Picture Cards', 211000, 4, '4/30/2023', N'NXB Trẻ', 1), --  PRENTICE HALL	
+(N'World Link (2 Ed.) 2: Workbook', 297000, 22, '9/10/2022', N'NXB ĐH Quốc Gia TP.HCM', 1), --  Susan Stempleski
+(N'Listening Advantage 2: Student book with Audio CD', 218000, 45, '11/15/2022', N'NXB Hồng Đức', 1), --  Tamami Wada
+(N'Active Skills For Communication Intro: Student Book', 227000, 46, '3/1/2022', N'NXB Tổng hợp TP.HCM', 1), --  Chuck Sandy
+(N'Speakout Adv: Workbook with Key with Audio CD', 219000, 50, '2/3/2022', N'NXB ĐH Quốc Gia Hà Nội', 1), --  Antonia Clare
+(N'Speakout Pre-Inter: Workbook with Key with Audio CD', 282000, 19, '12/5/2022', N'NXB Compass Publishing', 1), --  Antonia Clare
+(N'Speakout Inter: Workbook with Key with Audio CD', 298000, 78, '5/5/2023', N'NXB Tổng hợp TP.HCM', 1), --  Antonia Clare
+(N'Market Leader ( 3 Ed.) Upper-Inter: Practice file with CD', 243000, 43, '7/20/2022', N'NXB ĐH Kinh tế Quốc dân', 1), --  John Rogers
+(N'IELTS Graduation: Student Book', 263000, 49, '9/22/2022', N'NXB Compass Publishing', 1); --  Dickie Dolby
 
 
 
 ------------------------------------------------nho them ID
 -- kinh te
-insert into [dbo].[SACH] (MASACH, TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MAPHATHANH, MADM)
+insert into [dbo].[SACH] (TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MADM)
 values
-(Default, N'Bong Bóng Kinh Tế Và Làn Sóng Vỡ Nợ Quốc Gia', 97000, 33, '1990-01-29', N'NXB ĐH Kinh tế Quốc dân', 20, 2),
-(Default, N'Lược Sử Kinh Tế Học', 139000, 45, '2000-12-04', N'NXB Tổng hợp TP.HCM', 21, 2),
-(Default, N'Làm Quen Kinh Tế Học Qua Biếm Họa (Tập 1) – Kinh Tế Vi Mô', 100000, 23, '2020-02-18', N'NXB Trẻ ',22, 2),
-(Default, N'Làm Quen Kinh Tế Học Qua Biếm Họa (Tập 2) – Kinh Tế Vĩ Mô ', 99000, 37, '2023-05-18', N'NXB ĐH Quốc Gia Hà Nội', 23, 2),
-(Default, N'Làm Chủ Tư Duy, Thay Đổi Vận Mệnh',220000 , 26, '2000-08-04', N'NXB Trẻ ', 24, 2),
-(Default, N'Economix – Các Nền Kinh Tế Vận Hành (Và Không Vận Hành) Thế Nào Và Tại Sao', 192000, 1, '2021-10-10', N'NXB First New', 25, 2),
-(Default, N'Lời Thú Tội Mới Của Một Sát Thủ Kinh Tế', 162000, 15, '1987-02-09', N'NXB Hồng Đức', 26, 2),
-(Default, N'Cách Nền Kinh Tế Vận Hành', 50000, 18, '1980-01-12', N'NXB First New', 27, 2),
-(Default, N'Tầm Nhìn Thay Đổi Quốc Gia', 133000, 2, '1987-07-09', N'NXB ĐH Quốc Gia TP.HCM', 28, 2),
-(Default, N'Tư Bản Thế Kỷ 21', 150000, 15, '1990-02-09', N'NXB Hồng Đức', 29, 2),
-(Default, N'Đô-La Hay Lá Nho? ', 123000, 24, '2000-09-05', N'NXB ĐH Quốc Gia Hà Nội', 30, 2),
-(Default, N'Fỉnh Fờ Lũ Ngốc – Kinh Tế Học Thao Túng Và Bịp Bợm – Phishing For Phools', 199000, 22, '2002-03-04', N'NXB First New', 11, 2),
-(Default, N'Kinh Tế Học Hài Hước ', 189000, 30, '2003-12-01', N'NXB ĐH Quốc Gia TP.HCM', 12, 2),
-(Default, N'Sự Giàu Và Nghèo Của Các Dân Tộc', 119000, 6, '2017-01-10', N'NXB First New', 14, 2),
-(Default, N'Từ Tốt Đến Vĩ Đại', 185000, 11, '2015-06-14', N'NXB ĐH Quốc Gia Hà Nội', 15, 2),
-(Default, N'Tinh Hoa Kinh Tế Học', 196000, 20, '2013-08-27', N'NXB Hồng Đức', 16, 2),
-(Default, N'Kiếm Lời Từ Một Trật Tự Thế Giới Mới', 100000, 10, '2012-11-05', N'NXB Tổng hợp TP.HCM', 17, 2),
-(Default, N'Nền Kinh Tế Tăng Trưởng Và Sụp Đổ Như Thế Nào?', 147000, 19, '2000-10-27', N'NXB Trẻ ', 18, 2),
-(Default, N'Dầu Mỏ, Tiền Bạc Và Quyền Lực', 111000, 9, '2004-10-10', N'NXB Tổng hợp TP.HCM', 19, 2),
-(Default, N'Tất Cả Chúng Ta Đều Hành Xử Cảm Tính', 167000, 31, '2004-10-01', N'NXB Tổng hợp TP.HCM', 13, 2),
-(Default, N'Cuộc Đào Thoát Vĩ Đại', 159000, 36, '2003-02-16', N'NXB ĐH Quốc Gia TP.HCM', 1, 2),
-(Default, N'Nghĩ lớn để thành công', 99000, 23, '2001-12-01', N'NXB First New', 2, 2),
-(Default, N'Thấu Hiểu Người Mua', 180000, 19, '1972-07-05', N'NXB Compass Publishing', 3, 2),
-(Default, N'Thôi miên bằng ngôn từ', 200000, 23, '1986-05-07', N'NXB Compass Publishing', 4, 2),
-(Default, N'Bán niềm tin', 195000, 29, '1993-06-23', N'NXB Hồng Đức', 5, 2),
-(Default, N'Đừng bao giờ đi ăn một mình', 85000, 11, '2009-01-18', N'NXB ĐH Kinh tế Quốc dân', 6, 2),
-(Default, N'Đánh cắp ý tưởng', 199000, 14, '2007-09-19', N'NXB Trẻ ', 7, 2), 
-(Default, N'Bí mật DotCom ', 150000, 25, '1985-01-14', N'NXB Tổng hợp TP.HCM', 8, 2), 
-(Default, N'Bí mật tư duy triệu phú', 199000, 22, '1974-05-26', N'NXB Trẻ ', 9, 2), -- T.Harv Eker
-(Default, N'Nhà đầu tư thông minh', 100000, 7, '1999-12-10', N'NXB ĐH Quốc Gia TP.HCM', 10, 2) -- Benjamin Graham
+(N'Bong Bóng Kinh Tế Và Làn Sóng Vỡ Nợ Quốc Gia', 97000, 33, '1990-01-29', N'NXB ĐH Kinh tế Quốc dân', 2),
+( N'Lược Sử Kinh Tế Học', 139000, 45, '2000-12-04', N'NXB Tổng hợp TP.HCM', 2),
+(N'Làm Quen Kinh Tế Học Qua Biếm Họa (Tập 1) – Kinh Tế Vi Mô', 100000, 23, '2020-02-18', N'NXB Trẻ ', 2),
+(N'Làm Quen Kinh Tế Học Qua Biếm Họa (Tập 2) – Kinh Tế Vĩ Mô ', 99000, 37, '2023-05-18', N'NXB ĐH Quốc Gia Hà Nội', 2),
+(N'Làm Chủ Tư Duy, Thay Đổi Vận Mệnh',220000 , 26, '2000-08-04', N'NXB Trẻ ', 2),
+( N'Economix – Các Nền Kinh Tế Vận Hành (Và Không Vận Hành) Thế Nào Và Tại Sao', 192000, 1, '2021-10-10', N'NXB First New', 2),
+(N'Lời Thú Tội Mới Của Một Sát Thủ Kinh Tế', 162000, 15, '1987-02-09', N'NXB Hồng Đức', 2),
+(N'Cách Nền Kinh Tế Vận Hành', 50000, 18, '1980-01-12', N'NXB First New', 2),
+(N'Tầm Nhìn Thay Đổi Quốc Gia', 133000, 2, '1987-07-09', N'NXB ĐH Quốc Gia TP.HCM', 2),
+(N'Tư Bản Thế Kỷ 21', 150000, 15, '1990-02-09', N'NXB Hồng Đức', 2),
+(N'Đô-La Hay Lá Nho? ', 123000, 24, '2000-09-05', N'NXB ĐH Quốc Gia Hà Nội', 2),
+( N'Fỉnh Fờ Lũ Ngốc – Kinh Tế Học Thao Túng Và Bịp Bợm – Phishing For Phools', 199000, 22, '2002-03-04', N'NXB First New', 2),
+(N'Kinh Tế Học Hài Hước ', 189000, 30, '2003-12-01', N'NXB ĐH Quốc Gia TP.HCM', 2),
+(N'Sự Giàu Và Nghèo Của Các Dân Tộc', 119000, 6, '2017-01-10', N'NXB First New', 2),
+(N'Từ Tốt Đến Vĩ Đại', 185000, 11, '2015-06-14', N'NXB ĐH Quốc Gia Hà Nội', 2),
+(N'Tinh Hoa Kinh Tế Học', 196000, 20, '2013-08-27', N'NXB Hồng Đức', 2),
+(N'Kiếm Lời Từ Một Trật Tự Thế Giới Mới', 100000, 10, '2012-11-05', N'NXB Tổng hợp TP.HCM', 2),
+(N'Nền Kinh Tế Tăng Trưởng Và Sụp Đổ Như Thế Nào?', 147000, 19, '2000-10-27', N'NXB Trẻ ', 2),
+(N'Dầu Mỏ, Tiền Bạc Và Quyền Lực', 111000, 9, '2004-10-10', N'NXB Tổng hợp TP.HCM', 2),
+( N'Tất Cả Chúng Ta Đều Hành Xử Cảm Tính', 167000, 31, '2004-10-01', N'NXB Tổng hợp TP.HCM', 2),
+( N'Cuộc Đào Thoát Vĩ Đại', 159000, 36, '2003-02-16', N'NXB ĐH Quốc Gia TP.HCM', 2),
+( N'Nghĩ lớn để thành công', 99000, 23, '2001-12-01', N'NXB First New', 2),
+( N'Thấu Hiểu Người Mua', 180000, 19, '1972-07-05', N'NXB Compass Publishing', 2),
+( N'Thôi miên bằng ngôn từ', 200000, 23, '1986-05-07', N'NXB Compass Publishing', 2),
+( N'Bán niềm tin', 195000, 29, '1993-06-23', N'NXB Hồng Đức', 2),
+( N'Đừng bao giờ đi ăn một mình', 85000, 11, '2009-01-18', N'NXB ĐH Kinh tế Quốc dân', 2),
+( N'Đánh cắp ý tưởng', 199000, 14, '2007-09-19', N'NXB Trẻ ', 2), 
+( N'Bí mật DotCom ', 150000, 25, '1985-01-14', N'NXB Tổng hợp TP.HCM', 2), 
+( N'Bí mật tư duy triệu phú', 199000, 22, '1974-05-26', N'NXB Trẻ ', 2), -- T.Harv Eker
+( N'Nhà đầu tư thông minh', 100000, 7, '1999-12-10', N'NXB ĐH Quốc Gia TP.HCM', 2) -- Benjamin Graham
 
 -- insert sach trong nuoc
-insert into [dbo].[SACH] (TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MAPHATHANH, MADM)
+insert into [dbo].[SACH] (TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MADM)
 values 
-(N'Dám Lựa Chọn', 19000, 14, '1999-04-17', N'NXB Tổng hợp TP.HCM', 1, 3),
-(N'Bến Không Chồng - Bản Đặc Biệt', 20000, 7, '20000829', N'NXB Trẻ', 2, 3),
-(N'Đời Thừa', 13000, 29, '20010612', N'NXB ĐH Kinh tế Quốc dân', 3, 3),
-(N'Thung Lũng Đồng Vang', 14000, 2, '20020123', N'NXB Hồng Đức', 4, 3),
-(N'Nhắm Mắt Nhìn Sao', 17000, 18, '20031105', N'NXB Compass Publishing', 5, 3),
-(N'Trong Đáy Mắt Trời Xanh Là Vĩnh Viễn', 19000, 5, '20040318', N'NXB ĐH Quốc Gia Hà Nội', 6, 3),
-(N'Để Yên Cho Bác Sĩ "Hiền"', 16000, 21, '20050914', N'NXB Tổng hợp TP.HCM', 7, 3),
-(N'Việt Nam Danh Tác - Ngày Mới', 11000, 11, '20080726', N'NXB First New', 8, 3),
-(N'1111 - Nhật Ký Sáu Vạn Dặm Trên Yên Xe Cà Tàng', 12000, 27, '20071203', N'NXB Tổng hợp TP.HCM', 9, 3),
-(N'Đời Về Cơ Bản Là Buồn Cười (Tái Bản 2022)', 13000, 9, '20081008', N'NXB Trẻ', 10, 3),
-(N'Chuyện Đi Làm Hết Lòng', 14000, 22, '20111125', N'NXB ĐH Quốc Gia Hà Nội', 11, 3),
-(N'ÔNG TƯỚNG TÌNH BÁO BÍ ẨN VÀ NHỮNG ĐIỆP VỤ SIÊU HẠNG', 15000, 13, '20071209', N'NXB Compass Publishing', 12, 3),
-(N'Đong Tấm Lòng (Tái Bản 2021)', 19000, 26, '20030115', N'NXB Tổng hợp TP.HCM', 13, 3),
-(N'Tạp Văn Nguyễn Ngọc Tư (Tái Bản 2020)', 14000, 17, '20010311', N'NXB Trẻ', 14, 3),
-(N'Hương Rừng Cà Mau (Bìa Cứng)', 12000, 3, '20110424', N'NXB Compass Publishing', 15, 3),
-(N'Cổ Học Tinh Hoa', 11000, 16, '20031112', N'NXB ĐH Quốc Gia Hà Nội', 16, 3),
-(N'ÔNG TƯỚNG TÌNH BÁO BÍ ẨN VÀ NHỮNG ĐIỆP VỤ SIÊU HẠNG', 23000, 0, '20000311', N'NXB ĐH Quốc Gia TP.HCM', 17, 3),
-(N'Ishura - Tu la dị giới tập 1 (Tân ma vương đại chiến) Bản thường', 21000, 30, '20010413', N'NXB ĐH Kinh tế Quốc dân', 18, 3),
-(N'Vui Vẻ Không Quạu Nha 2 - Một Cuốn Sách Buồn… Cười Ở Đây Zui Nè', 19000, 20, '20051104', N'NXB Compass Publishing', 19, 3),
-(N'Tiện Nhân Ở Phố', 14000, 6, '20000422', N'NXB ĐH Quốc Gia TP.HCM', 20, 3),
-(N'Trên Những Dặm Đường', 24000, 24, '20021203', N'NXB ĐH Quốc Gia Hà Nội', 21, 3),
-(N'Việt Nam Danh Tác – Chùa Đàn', 22000, 15, '20110125', N'NXB Compass Publishing', 22, 3),
-(N'Nguồn Cội - Chuyện Về Những Người Hai Quê Hương', 11000, 1, '20120211', N'NXB Tổng hợp TP.HCM', 23, 3),
-(N'"Lời Nguyền" Gái Miền Tây', 19000, 19, '20001124', N'NXB ĐH Quốc Gia TP.HCM', 24, 3),
-(N'Hoa Giữa Trời', 21000, 4, '20071128', N'NXB Tổng hợp TP.HCM', 25, 3),
-(N'Đám Ma Tôi', 13000, 23, '20000117', N'NXB First New', 26, 3),
-(N'Những Ngã Tư Và Những Cột Đèn', 19000, 25, '20110227', N'NXB Trẻ', 27, 3),
-(N'Dọc Đường', 22000, 10, '20001103', N'NXB ĐH Kinh tế Quốc dân', 28, 3),
-(N'Ép Mình Phải Xinh Phải Dữ', 28000, 8, '20040526', N'NXB Hồng Đức', 29, 3),
-(N'Gió Lẻ Và 9 Câu Chuyện Khác' , 20000 , 28 , ' 20200127 ' , N' NXB tre' , 30, 3) 
+(N'Dám Lựa Chọn', 19000, 14, '1999-04-17', N'NXB Tổng hợp TP.HCM', 3),
+(N'Bến Không Chồng - Bản Đặc Biệt', 20000, 7, '20000829', N'NXB Trẻ', 3),
+(N'Đời Thừa', 13000, 29, '20010612', N'NXB ĐH Kinh tế Quốc dân', 3),
+(N'Thung Lũng Đồng Vang', 14000, 2, '20020123', N'NXB Hồng Đức', 3),
+(N'Nhắm Mắt Nhìn Sao', 17000, 18, '20031105', N'NXB Compass Publishing', 3),
+(N'Trong Đáy Mắt Trời Xanh Là Vĩnh Viễn', 19000, 5, '20040318', N'NXB ĐH Quốc Gia Hà Nội', 3),
+(N'Để Yên Cho Bác Sĩ "Hiền"', 16000, 21, '20050914', N'NXB Tổng hợp TP.HCM', 3),
+(N'Việt Nam Danh Tác - Ngày Mới', 11000, 11, '20080726', N'NXB First New', 3),
+(N'1111 - Nhật Ký Sáu Vạn Dặm Trên Yên Xe Cà Tàng', 12000, 27, '20071203', N'NXB Tổng hợp TP.HCM', 3),
+(N'Đời Về Cơ Bản Là Buồn Cười (Tái Bản 2022)', 13000, 9, '20081008', N'NXB Trẻ', 3),
+(N'Chuyện Đi Làm Hết Lòng', 14000, 22, '20111125', N'NXB ĐH Quốc Gia Hà Nội', 3),
+(N'ÔNG TƯỚNG TÌNH BÁO BÍ ẨN VÀ NHỮNG ĐIỆP VỤ SIÊU HẠNG', 15000, 13, '20071209', N'NXB Compass Publishing', 3),
+(N'Đong Tấm Lòng (Tái Bản 2021)', 19000, 26, '20030115', N'NXB Tổng hợp TP.HCM', 3),
+(N'Tạp Văn Nguyễn Ngọc Tư (Tái Bản 2020)', 14000, 17, '20010311', N'NXB Trẻ', 3),
+(N'Hương Rừng Cà Mau (Bìa Cứng)', 12000, 3, '20110424', N'NXB Compass Publishing', 3),
+(N'Cổ Học Tinh Hoa', 11000, 16, '20031112', N'NXB ĐH Quốc Gia Hà Nội', 3),
+(N'ÔNG TƯỚNG TÌNH BÁO BÍ ẨN VÀ NHỮNG ĐIỆP VỤ SIÊU HẠNG', 23000, 0, '20000311', N'NXB ĐH Quốc Gia TP.HCM', 3),
+(N'Ishura - Tu la dị giới tập 1 (Tân ma vương đại chiến) Bản thường', 21000, 30, '20010413', N'NXB ĐH Kinh tế Quốc dân', 3),
+(N'Vui Vẻ Không Quạu Nha 2 - Một Cuốn Sách Buồn… Cười Ở Đây Zui Nè', 19000, 20, '20051104', N'NXB Compass Publishing', 3),
+(N'Tiện Nhân Ở Phố', 14000, 6, '20000422', N'NXB ĐH Quốc Gia TP.HCM', 3),
+(N'Trên Những Dặm Đường', 24000, 24, '20021203', N'NXB ĐH Quốc Gia Hà Nội', 3),
+(N'Việt Nam Danh Tác – Chùa Đàn', 22000, 15, '20110125', N'NXB Compass Publishing', 3),
+(N'Nguồn Cội - Chuyện Về Những Người Hai Quê Hương', 11000, 1, '20120211', N'NXB Tổng hợp TP.HCM', 3),
+(N'"Lời Nguyền" Gái Miền Tây', 19000, 19, '20001124', N'NXB ĐH Quốc Gia TP.HCM', 3),
+(N'Hoa Giữa Trời', 21000, 4, '20071128', N'NXB Tổng hợp TP.HCM', 3),
+(N'Đám Ma Tôi', 13000, 23, '20000117', N'NXB First New', 3),
+(N'Những Ngã Tư Và Những Cột Đèn', 19000, 25, '20110227', N'NXB Trẻ', 3),
+(N'Dọc Đường', 22000, 10, '20001103', N'NXB ĐH Kinh tế Quốc dân', 3),
+(N'Ép Mình Phải Xinh Phải Dữ', 28000, 8, '20040526', N'NXB Hồng Đức', 3),
+(N'Gió Lẻ Và 9 Câu Chuyện Khác' , 20000 , 28 , ' 20200127 ' , N' NXB tre' , 3) 
 
-insert into SACH(TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG,NHAXUATBAN,MAPHATHANH, MADM) 
+insert into SACH(TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG,NHAXUATBAN, MADM) 
 VALUES
-(N'Thời Khắc Sinh Tử', 194000 ,23 ,'20200208', N'Nxb Tổng hợp TP.HCM', 22, 4),
-(N'Ngây Thơ Như Nàng', 124000 ,43 ,'20200208', N'Nxb Tổng hợp TP.HCM', 24, 4),
-(N'Người Ai Cập - Quyền Lực Và Tình Yêu', 134000 ,64 ,'20180407', N'Nxb Tổng hợp TP.HCM', 27, 4), 
-(N'Người Đàn Ông Mang Tên', 36000 ,42 ,'20190205', N'Nxb Tổng hợp TP.HCM', 23, 4), 
-(N'Hoàng Hôn Của Bầy Mãnh Thú', 120000 ,12 ,'20180429', N'Nxb Đại học Quốc gia TPHCM', 29, 4), 
-(N'Dear Ralph Lauren', 160000 ,25 ,'20200421', N'Nxb Thế giới', 21, 4), 
-(N'Hy Vọng Mong Manh', 110000 ,15 ,'20200102', N'NXB Compass Publishing', 24, 4), 
-(N'Người Đàn Ông Mang Tên Ove', 318000 ,36 ,'20201118', N'NXB Hồng Đức', 19, 4),
-(N'Mèo Vờn Chuột - Cat And Mouse', 140000 ,12 ,'20210207', N'Nxb Tổng hợp TP.HCM', 17, 4), 
-(N'Ta Vẫn Luôn Sống Trong Lâu Đài Shirley Jackson', 130000 ,76 ,'20220807', N'Nxb Tổng hợp TP.HCM', 15, 4), 
-(N'Ảo Dạ (Tái Bản 2021)', 238000 ,77 ,'20200120', N'Nxb Tổng hợp TP.HCM', 16, 4), 
-(N'Dại Khờ, Đau Đớn, Mong Manh', 208000 ,44 ,'20230110', N'Nxb Tổng hợp TP.HCM', 18, 4),
-(N'Lời Hứa', 228000 ,38 ,'20211210', N'NXB Compass Publishing', 26, 4), 
-(N'Lá Bài Chủ', 169000 ,153 ,'20220408', N'NXB ĐH Kinh tế Quốc dân', 20, 4), 
-(N'Khúc Ngẫu Hứng Trước Ga Mahoro', 95000 ,52 ,'20230702', N'Nxb Trẻ', 4, 4), 
-(N'Cô Gái Mặc Váy Tím', 364000 ,51 ,'20230404', N'Nxb Tổng hợp TP.HCM', 1, 4), 
-(N'Lại Thằng Nhóc Emil (Tái Bản 2022)', 40000 , 13 ,'20200308', N'NXB ĐH Kinh tế Quốc dân', 2, 4), 
-(N'Dấn Thân', 163000 , 45 ,'20220408', N'Nxb Tổng hợp TP.HCM', 8, 4),
-(N'Tỏ Bày Với Nhân Gian', 129000 , 23 ,'20210108', N'NXB ĐH Kinh tế Quốc dân', 7, 4),						
-(N'Người Con', 41000 ,13 ,'20210403', N'Nxb Tổng hợp TP.HCM', 3, 4), 
-(N'Cánh Cổng Sát Nhân', 169000 ,43 ,'20190102', N'NXB First New', 5, 4), 
-(N'Một Chỗ Trong Đời', 72000 ,23 ,'20210208', N'Nxb Đại học Quốc gia TPHCM', 10, 4), 
-(N'Kẻ Bám Đuổi', 58000 ,53 ,'20180208', N'Nxb Tổng hợp TP.HCM', 6, 4), 
-(N'Kẻ Tầm Xương', 41000 , 21 ,'20200201', N'Nxb Đại học Quốc gia Hà Nội', 12, 4), 
-(N'Bụi Sao', 199000 , 235 ,'20190408', N'Nxb Thế giới', 14, 4), 
-(N'Escalante - Người Thầy Xuất Sắc Nhất Nước Mỹ', 200000 ,50 ,'20210206', N'Nxb Đại học Quốc gia TPHCM', 11, 4), 
-(N'Một Họa Sĩ Phù Thế', 98000 ,35 ,'20210528', N'Nxb Tổng hợp TP.HCM', 15, 4), 
-(N'Thanh Gươm Do Dự', 98000 ,22 ,'20210818', N'Nxb Tổng hợp TP.HCM', 13, 4),
-(N'Leonardo Da Vinci Walter Isaacson (Tái Bản)', 98000 ,37 ,'20220718', N'Nxb Tổng hợp TP.HCM', 20, 4),
-(N'Lời Nguyền Của Màn Đêm', 98000 ,12 ,'20230828', N'Nxb Tổng hợp TP.HCM', 22, 4),	
-(N'Bản Thú Tội Dang Dở', 98000 ,37 ,'20220718', N'Nxb Tổng hợp TP.HCM', 20, 4),
-(N'Mắt Nào Xanh Nhất', 98000 ,97 ,'20230828', N'Nxb Tổng hợp TP.HCM', 22, 4)
+(N'Thời Khắc Sinh Tử', 194000 ,23 ,'20200208', N'Nxb Tổng hợp TP.HCM', 4),
+(N'Ngây Thơ Như Nàng', 124000 ,43 ,'20200208', N'Nxb Tổng hợp TP.HCM', 4),
+(N'Người Ai Cập - Quyền Lực Và Tình Yêu', 134000 ,64 ,'20180407', N'Nxb Tổng hợp TP.HCM', 4), 
+(N'Người Đàn Ông Mang Tên', 36000 ,42 ,'20190205', N'Nxb Tổng hợp TP.HCM', 4), 
+(N'Hoàng Hôn Của Bầy Mãnh Thú', 120000 ,12 ,'20180429', N'Nxb Đại học Quốc gia TPHCM', 4), 
+(N'Dear Ralph Lauren', 160000 ,25 ,'20200421', N'Nxb Thế giới', 4), 
+(N'Hy Vọng Mong Manh', 110000 ,15 ,'20200102', N'NXB Compass Publishing', 4), 
+(N'Người Đàn Ông Mang Tên Ove', 318000 ,36 ,'20201118', N'NXB Hồng Đức', 4),
+(N'Mèo Vờn Chuột - Cat And Mouse', 140000 ,12 ,'20210207', N'Nxb Tổng hợp TP.HCM', 4), 
+(N'Ta Vẫn Luôn Sống Trong Lâu Đài Shirley Jackson', 130000 ,76 ,'20220807', N'Nxb Tổng hợp TP.HCM', 4), 
+(N'Ảo Dạ (Tái Bản 2021)', 238000 ,77 ,'20200120', N'Nxb Tổng hợp TP.HCM', 4), 
+(N'Dại Khờ, Đau Đớn, Mong Manh', 208000 ,44 ,'20230110', N'Nxb Tổng hợp TP.HCM', 4),
+(N'Lời Hứa', 228000 ,38 ,'20211210', N'NXB Compass Publishing', 4), 
+(N'Lá Bài Chủ', 169000 ,153 ,'20220408', N'NXB ĐH Kinh tế Quốc dân', 4), 
+(N'Khúc Ngẫu Hứng Trước Ga Mahoro', 95000 ,52 ,'20230702', N'Nxb Trẻ', 4), 
+(N'Cô Gái Mặc Váy Tím', 364000 ,51 ,'20230404', N'Nxb Tổng hợp TP.HCM', 4), 
+(N'Lại Thằng Nhóc Emil (Tái Bản 2022)', 40000 , 13 ,'20200308', N'NXB ĐH Kinh tế Quốc dân', 4), 
+(N'Dấn Thân', 163000 , 45 ,'20220408', N'Nxb Tổng hợp TP.HCM', 4),
+(N'Tỏ Bày Với Nhân Gian', 129000 , 23 ,'20210108', N'NXB ĐH Kinh tế Quốc dân', 4),						
+(N'Người Con', 41000 ,13 ,'20210403', N'Nxb Tổng hợp TP.HCM', 4), 
+(N'Cánh Cổng Sát Nhân', 169000 ,43 ,'20190102', N'NXB First New', 4), 
+(N'Một Chỗ Trong Đời', 72000 ,23 ,'20210208', N'Nxb Đại học Quốc gia TPHCM', 4), 
+(N'Kẻ Bám Đuổi', 58000 ,53 ,'20180208', N'Nxb Tổng hợp TP.HCM', 4), 
+(N'Kẻ Tầm Xương', 41000 , 21 ,'20200201', N'Nxb Đại học Quốc gia Hà Nội', 4), 
+(N'Bụi Sao', 199000 , 235 ,'20190408', N'Nxb Thế giới', 4), 
+(N'Escalante - Người Thầy Xuất Sắc Nhất Nước Mỹ', 200000 ,50 ,'20210206', N'Nxb Đại học Quốc gia TPHCM', 4), 
+(N'Một Họa Sĩ Phù Thế', 98000 ,35 ,'20210528', N'Nxb Tổng hợp TP.HCM', 4), 
+(N'Thanh Gươm Do Dự', 98000 ,22 ,'20210818', N'Nxb Tổng hợp TP.HCM', 4),
+(N'Leonardo Da Vinci Walter Isaacson (Tái Bản)', 98000 ,37 ,'20220718', N'Nxb Tổng hợp TP.HCM', 4),
+(N'Lời Nguyền Của Màn Đêm', 98000 ,12 ,'20230828', N'Nxb Tổng hợp TP.HCM', 4),	
+(N'Bản Thú Tội Dang Dở', 98000 ,37 ,'20220718', N'Nxb Tổng hợp TP.HCM', 4),
+(N'Mắt Nào Xanh Nhất', 98000 ,97 ,'20230828', N'Nxb Tổng hợp TP.HCM', 4)
 
 
 -- thuong thuc cuoc song
-insert into [dbo].[SACH] (MASACH, TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MAPHATHANH, MADM)
+insert into [dbo].[SACH] (TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MADM)
 values
-(Default, N'Đánh Thức Con Người Phi Thường Trong Bạn', 200000, 27, '1990-01-29', N'NXB ĐH Kinh tế Quốc dân', 1, 5),
-(Default, N'Bảy Thói Quen Của Người Thành Đạt', 132000, 13, '2000-12-04', N'NXB Tổng hợp TP.HCM', 2, 5),
-(Default, N' Những Nguyên Tắc Thành Công', 100000, 8, '2020-02-18', N'NXB Trẻ ', 3, 5),
-(Default, N'Người Dám Cho Đi', 99000, 17, '2023-05-18', N'NXB ĐH Quốc Gia Hà Nội', 4, 5),
-(Default, N'Làm Chủ Tư Duy, Thay Đổi Vận Mệnh',190000 , 12, '2000-08-04', N'NXB Trẻ ', 5, 5),
-(Default, N'Nghĩ Giàu Làm Giàu', 87000, 1, '2021-10-10', N'NXB First New', 6, 5),
-(Default, N' Mặt Phải', 162000, 15, '1987-02-09', N'NXB Hồng Đức', 7, 5),
-(Default, N'Bảy Chiến Lược Thịnh Vượng Và Hạnh Phúc', 73000, 18, '1980-01-12', N'NXB First New', 8, 5),
-(Default, N'Sức Mạnh Của Sự Toàn Tâm Toàn Ý', 79000, 2, '1987-07-09', N'NXB ĐH Quốc Gia TP.HCM', 9, 5),
-(Default, N'Bí Quyết Tay Trắng Thành Triệu Phú', 110000, 5, '1990-02-09', N'NXB Hồng Đức', 10, 5),
-(Default, N'Rèn luyện tư duy Logic', 123000, 4, '2000-09-05', N'NXB ĐH Quốc Gia Hà Nội', 11, 5),
-(Default, N' Hãy sống cuộc đời như bạn muốn ', 199000, 22, '2002-03-04', N'NXB First New', 12, 5),
-(Default, N'Cân bằng cảm xúc cả lúc bão giông', 122000, 30, '2003-12-01', N'NXB ĐH Quốc Gia TP.HCM', 13, 5),
-(Default, N' Những điều giữ tôi còn sống', 119000, 6, '2017-01-10', N'NXB First New', 14, 5),
-(Default, N'Suy nghĩ tích cực', 185000, 11, '2015-06-14', N'NXB ĐH Quốc Gia Hà Nội', 15, 5),
-(Default, N'15 Nguyên tắc vàng về phát triển bản thân ', 196000, 20, '2013-08-27', N'NXB Hồng Đức', 16, 5),
-(Default, N'Những quy luật của bản chất con người', 56000, 10, '2012-11-05', N'NXB Tổng hợp TP.HCM', 17, 5),
-(Default, N'10 phút tĩnh tâm', 147000, 19, '2000-10-27', N'NXB Trẻ ', 18, 5),
-(Default, N' 30 Ngày thay đổi bản thân', 221000, 9, '2004-10-10', N'NXB Tổng hợp TP.HCM', 19, 5),
-(Default, N' Người dám cho đ', 167000, 28, '2004-10-01', N'NXB Tổng hợp TP.HCM', 20, 5),
-(Default, N'Đời ngắn đừng ngủ dài ', 159000, 26, '2003-02-16', N'NXB ĐH Quốc Gia TP.HCM', 21, 5),
-(Default, N'Ai rồi cũng qua – để không Hối hận', 99999, 23, '2001-12-01', N'NXB First New', 22, 5),
-(Default, N'Tối đa hóa năng lực của bản thân ', 180000, 26, '1972-07-05', N'NXB Compass Publishing', 23, 5),
-(Default, N'Sức Mạnh Của Thói Quen ', 200000, 22, '1986-05-07', N'NXB Compass Publishing', 24, 5),
-(Default, N'Tôi Tài Giỏi, Bạn cũng thế!', 158000, 21, '1993-06-23', N'NXB Hồng Đức', 25, 5),
-(Default, N'Trên Đường Băng', 89000, 29, '2009-01-18', N'NXB ĐH Kinh tế Quốc dân', 26, 5),
-(Default, N'Đắc Nhân Tâm', 199000, 14, '2007-09-19', N'NXB Trẻ ', 27, 5), -- Dale Carnegie
-(Default, N'Nhà Giả Kim ', 80000, 25, '1985-01-14', N'NXB Tổng hợp TP.HCM', 28, 5), -- Paulo Coelho
-(Default, N'Thức Tỉnh Mục Đích Sống ', 199000, 10, '1974-05-26', N'NXB Trẻ ', 29, 5), -- Eckhart Tolle
-(Default, N'7 Thói Quen Để Thành Đạt ', 100000, 19, '1999-12-10', N'NXB ĐH Quốc Gia TP.HCM', 30, 5) -- Stephen R. Covey
+( N'Đánh Thức Con Người Phi Thường Trong Bạn', 200000, 27, '1990-01-29', N'NXB ĐH Kinh tế Quốc dân', 5),
+(N'Bảy Thói Quen Của Người Thành Đạt', 132000, 13, '2000-12-04', N'NXB Tổng hợp TP.HCM', 5),
+( N' Những Nguyên Tắc Thành Công', 100000, 8, '2020-02-18', N'NXB Trẻ ', 5),
+( N'Người Dám Cho Đi', 99000, 17, '2023-05-18', N'NXB ĐH Quốc Gia Hà Nội', 5),
+( N'Làm Chủ Tư Duy, Thay Đổi Vận Mệnh',190000 , 12, '2000-08-04', N'NXB Trẻ ', 5),
+( N'Nghĩ Giàu Làm Giàu', 87000, 1, '2021-10-10', N'NXB First New', 5),
+( N' Mặt Phải', 162000, 15, '1987-02-09', N'NXB Hồng Đức', 5),
+( N'Bảy Chiến Lược Thịnh Vượng Và Hạnh Phúc', 73000, 18, '1980-01-12', N'NXB First New', 5),
+( N'Sức Mạnh Của Sự Toàn Tâm Toàn Ý', 79000, 2, '1987-07-09', N'NXB ĐH Quốc Gia TP.HCM', 5),
+( N'Bí Quyết Tay Trắng Thành Triệu Phú', 110000, 5, '1990-02-09', N'NXB Hồng Đức', 5),
+(N'Rèn luyện tư duy Logic', 123000, 4, '2000-09-05', N'NXB ĐH Quốc Gia Hà Nội', 5),
+(N' Hãy sống cuộc đời như bạn muốn ', 199000, 22, '2002-03-04', N'NXB First New',  5),
+(N'Cân bằng cảm xúc cả lúc bão giông', 122000, 30, '2003-12-01', N'NXB ĐH Quốc Gia TP.HCM',  5),
+(N' Những điều giữ tôi còn sống', 119000, 6, '2017-01-10', N'NXB First New',  5),
+(N'Suy nghĩ tích cực', 185000, 11, '2015-06-14', N'NXB ĐH Quốc Gia Hà Nội',  5),
+(N'15 Nguyên tắc vàng về phát triển bản thân ', 196000, 20, '2013-08-27', N'NXB Hồng Đức', 5),
+(N'Những quy luật của bản chất con người', 56000, 10, '2012-11-05', N'NXB Tổng hợp TP.HCM', 5),
+(N'10 phút tĩnh tâm', 147000, 19, '2000-10-27', N'NXB Trẻ ',  5),
+(N' 30 Ngày thay đổi bản thân', 221000, 9, '2004-10-10', N'NXB Tổng hợp TP.HCM', 5),
+(N' Người dám cho đ', 167000, 28, '2004-10-01', N'NXB Tổng hợp TP.HCM', 5),
+(N'Đời ngắn đừng ngủ dài ', 159000, 26, '2003-02-16', N'NXB ĐH Quốc Gia TP.HCM', 5),
+(N'Ai rồi cũng qua – để không Hối hận', 99999, 23, '2001-12-01', N'NXB First New', 5),
+(N'Tối đa hóa năng lực của bản thân ', 180000, 26, '1972-07-05', N'NXB Compass Publishing', 5),
+(N'Sức Mạnh Của Thói Quen ', 200000, 22, '1986-05-07', N'NXB Compass Publishing', 5),
+(N'Tôi Tài Giỏi, Bạn cũng thế!', 158000, 21, '1993-06-23', N'NXB Hồng Đức', 5),
+(N'Trên Đường Băng', 89000, 29, '2009-01-18', N'NXB ĐH Kinh tế Quốc dân', 5),
+( N'Đắc Nhân Tâm', 199000, 14, '2007-09-19', N'NXB Trẻ ', 5), -- Dale Carnegie
+( N'Nhà Giả Kim ', 80000, 25, '1985-01-14', N'NXB Tổng hợp TP.HCM', 5), -- Paulo Coelho
+(N'Thức Tỉnh Mục Đích Sống ', 199000, 10, '1974-05-26', N'NXB Trẻ ',  5), -- Eckhart Tolle
+(N'7 Thói Quen Để Thành Đạt ', 100000, 19, '1999-12-10', N'NXB ĐH Quốc Gia TP.HCM', 5) -- Stephen R. Covey
 
-INSERT INTO [dbo].[SACH] (TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MAPHATHANH, MADM)
+INSERT INTO [dbo].[SACH] (TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MADM)
 VALUES
-    (N'Chơi Cùng Momo - Chú Bé Quả Đào', 124000, 70, '12/15/2021', N'NXB Trẻ', 23, 6),
-    (N'Phương Pháp Đếm 1-2-3 Kỳ', 187000, 93, '2/3/2023', N'NXB ĐH Kinh tế Quốc dân', 16, 6),
-    (N'Hiểu tâm tư trẻ qua cử chỉ', 145000, 63, '7/22/2021', N'NXB First New', 7, 6),
-    (N'Bà Bác Khủng Khiếp', 132000, 88, '11/5/2022', N'NXB Compass Publishing', 10, 6),
-    (N'Hỏi Đáp Cùng Em!', 120000, 57, '3/11/2023', N'NXB ĐH Quốc Gia TP.HCM', 1, 6),
-    (N'Fly Me To The Moon', 163000, 89, '10/9/2022', N'NXB Tổng hợp TP.HCM', 29, 6),
-    (N'Hồi Ức Không Tên', 198000, 76, '5/30/2021', N'NXB Hồng Đức', 30, 6),
-    (N'Món Quà Của Merry', 114000, 68, '1/18/2022', N'NXB ĐH Kinh tế Quốc dân', 13, 6),
-    (N'Chập Chững Lớn Lên - Lần Nữa', 143000, 71, '9/8/2022', N'NXB Trẻ', 8, 6),
-    (N'Chập Chững Lớn Lên - Cảm Ơn', 176000, 64, '12/4/2021', N'NXB Tổng hợp TP.HCM', 15, 6),
-    (N'Cáo Trong Đêm - Fox At Night', 111000, 54, '5/23/2023', N'NXB ĐH Quốc Gia Hà Nội', 26, 6),
-    (N'Cáo Đạp Xe - Fox And The Bike', 199000, 98, '4/12/2022', N'NXB Compass Publishing', 5, 6),
-    (N'Buổi Cắm Trại Hoàn Hảo', 182000, 51, '11/20/2023', N'NXB Hồng Đức', 20, 6),
-    (N'Chiếc Sofa Hoàn Hảo - The Perfect Sofa', 109000, 85, '2/15/2022', N'NXB First New', 4, 6),
-    (N'Tớ Không Biết Bay - I Can Fly', 168000, 72, '10/1/2021', N'NXB ĐH Quốc Gia TP.HCM', 18, 6),
-    (N'Coraline', 195000, 62, '8/17/2021', N'NXB Trẻ', 27, 6),
-    (N'Hoàng Tử Bé', 134000, 58, '7/13/2023', N'NXB Tổng hợp TP.HCM', 3, 6),
-    (N'Ehon Nhật Bản', 187000, 91, '3/1/2022', N'NXB Compass Publishing', 24, 6),
-    (N'Thân Gửi Sở Thú', 121000, 80, '6/9/2022', N'NXB ĐH Kinh tế Quốc dân', 2, 6),
-    (N'Hai Đứa Trẻ', 199000, 73, '1/7/2023', N'NXB ĐH Kinh tế Quốc dân', 12, 6),
-    (N'Mùa Hè Kinh Hãi', 147000, 60, '9/25/2022', N'NXB First New', 22, 6),
-    (N'Thanh Đồng Quỳ Hoa', 192000, 66, '8/14/2022', N'NXB Trẻ', 28, 6),
-    (N'Peter Pan', 115000, 74, '4/28/2023', N'NXB ĐH Quốc Gia TP.HCM', 6, 6),
-    (N'Mỗi Em Bé Là Một Thiên Tài', 131000, 81, '7/5/2022', N'NXB Hồng Đức', 9, 6),
-    (N'Khoa Học Chẳng Khó', 165000, 56, '12/28/2021', N'NXB Tổng hợp TP.HCM', 11, 6),
-    (N'Quốc kỳ và Quốc gia', 186000, 75, '5/11/2023', N'NXB ĐH Quốc Gia Hà Nội', 25, 6),
-    (N'Anne tóc đỏ dưới chái nhà xanh', 173000, 86, '6/16/2021', N'NXB Compass Publishing', 14, 6),
-    (N'Bách Khoa Vũ Trụ', 141000, 69, '11/13/2023', N'NXB Tổng hợp TP.HCM', 17, 6),
-    (N'Truyện cổ Grimm', 124000, 55, '3/25/2022', N'NXB ĐH Kinh tế Quốc dân', 21, 6),
-    (N'Truyện cổ Anderson', 156000, 97, '2/20/2023', N'NXB Compass Publishing', 19, 6);
+    (N'Chơi Cùng Momo - Chú Bé Quả Đào', 124000, 70, '12/15/2021', N'NXB Trẻ', 6),
+    (N'Phương Pháp Đếm 1-2-3 Kỳ', 187000, 93, '2/3/2023', N'NXB ĐH Kinh tế Quốc dân', 6),
+    (N'Hiểu tâm tư trẻ qua cử chỉ', 145000, 63, '7/22/2021', N'NXB First New', 6),
+    (N'Bà Bác Khủng Khiếp', 132000, 88, '11/5/2022', N'NXB Compass Publishing', 6),
+    (N'Hỏi Đáp Cùng Em!', 120000, 57, '3/11/2023', N'NXB ĐH Quốc Gia TP.HCM', 6),
+    (N'Fly Me To The Moon', 163000, 89, '10/9/2022', N'NXB Tổng hợp TP.HCM', 6),
+    (N'Hồi Ức Không Tên', 198000, 76, '5/30/2021', N'NXB Hồng Đức',  6),
+    (N'Món Quà Của Merry', 114000, 68, '1/18/2022', N'NXB ĐH Kinh tế Quốc dân', 6),
+    (N'Chập Chững Lớn Lên - Lần Nữa', 143000, 71, '9/8/2022', N'NXB Trẻ',  6),
+    (N'Chập Chững Lớn Lên - Cảm Ơn', 176000, 64, '12/4/2021', N'NXB Tổng hợp TP.HCM', 6),
+    (N'Cáo Trong Đêm - Fox At Night', 111000, 54, '5/23/2023', N'NXB ĐH Quốc Gia Hà Nội',  6),
+    (N'Cáo Đạp Xe - Fox And The Bike', 199000, 98, '4/12/2022', N'NXB Compass Publishing', 6),
+    (N'Buổi Cắm Trại Hoàn Hảo', 182000, 51, '11/20/2023', N'NXB Hồng Đức', 6),
+    (N'Chiếc Sofa Hoàn Hảo - The Perfect Sofa', 109000, 85, '2/15/2022', N'NXB First New', 6),
+    (N'Tớ Không Biết Bay - I Can Fly', 168000, 72, '10/1/2021', N'NXB ĐH Quốc Gia TP.HCM', 6),
+    (N'Coraline', 195000, 62, '8/17/2021', N'NXB Trẻ', 6),
+    (N'Hoàng Tử Bé', 134000, 58, '7/13/2023', N'NXB Tổng hợp TP.HCM', 6),
+    (N'Ehon Nhật Bản', 187000, 91, '3/1/2022', N'NXB Compass Publishing', 6),
+    (N'Thân Gửi Sở Thú', 121000, 80, '6/9/2022', N'NXB ĐH Kinh tế Quốc dân',  6),
+    (N'Hai Đứa Trẻ', 199000, 73, '1/7/2023', N'NXB ĐH Kinh tế Quốc dân', 6),
+    (N'Mùa Hè Kinh Hãi', 147000, 60, '9/25/2022', N'NXB First New',  6),
+    (N'Thanh Đồng Quỳ Hoa', 192000, 66, '8/14/2022', N'NXB Trẻ',  6),
+    (N'Peter Pan', 115000, 74, '4/28/2023', N'NXB ĐH Quốc Gia TP.HCM',  6),
+    (N'Mỗi Em Bé Là Một Thiên Tài', 131000, 81, '7/5/2022', N'NXB Hồng Đức',  6),
+    (N'Khoa Học Chẳng Khó', 165000, 56, '12/28/2021', N'NXB Tổng hợp TP.HCM', 6),
+    (N'Quốc kỳ và Quốc gia', 186000, 75, '5/11/2023', N'NXB ĐH Quốc Gia Hà Nội', 6),
+    (N'Anne tóc đỏ dưới chái nhà xanh', 173000, 86, '6/16/2021', N'NXB Compass Publishing', 6),
+    (N'Bách Khoa Vũ Trụ', 141000, 69, '11/13/2023', N'NXB Tổng hợp TP.HCM', 6),
+    (N'Truyện cổ Grimm', 124000, 55, '3/25/2022', N'NXB ĐH Kinh tế Quốc dân', 6),
+    (N'Truyện cổ Anderson', 156000, 97, '2/20/2023', N'NXB Compass Publishing', 6);
 
 
 --SachPhatTrien
-INSERT INTO [dbo].[SACH](TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MAPHATHANH, MADM)
+INSERT INTO [dbo].[SACH](TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MADM)
 VALUES
-(N'Đắc Nhân Tâm', 195000, 57, '3/11/2023', N'NXB Trẻ', 19, 7),
-(N'Trên Đường Băng', 134000, 55, '8/17/2021', N'NXB ĐH Kinh tế Quốc dân', 21, 7),
-(N'Đừng Bao Giờ Đi Ăn Một Mình', 109000, 70, '6/9/2022', N'NXB First New', 17, 7),
-(N'Bạn Đắt Giá Bao Nhiêu', 145000, 73, '1/18/2022', N'NXB Compass Publishing', 14, 7),
-(N'Đời Thay Đổi Khi Chúng Ta Thay Đổi', 143000, 85, '5/23/2023', N'NXB ĐH Quốc Gia TP.HCM', 25, 7),
-(N'7 Thói Quen Hiệu Quả', 168000, 54, '10/9/2022', N'NXB Tổng hợp TP.HCM', 11, 7),
-(N'Nhà Giả Kim', 186000, 88, '12/15/2021', N'NXB Hồng Đức', 9, 7),
-(N'Đọc Vị Bất Kì Ai', 131000, 74, '9/25/2022', N'NXB ĐH Kinh tế Quốc dân', 6, 7),
-(N'Đời Ngắn Ngủ Dài', 198000, 63, '4/28/2023', N'NXB Trẻ', 28, 7),
-(N'Khéo Ăn Nói Sẽ Có Được Thiên Hạ', 121000, 75, '11/20/2023', N'NXB Tổng hợp TP.HCM', 22, 7),
-(N'Dám Bị Ghét', 111000, 66, '7/22/2021', N'NXB ĐH Quốc Gia Hà Nội', 12, 7),
-(N'Cân Bằng Cảm Xúc, Cả Lúc Bão Giông', 114000, 91, '12/4/2021', N'NXB Compass Publishing', 2, 7),
-(N'Buổi Sáng Diệu Kỳ', 124000, 64, '3/1/2022', N'NXB Hồng Đức', 24, 7),
-(N'Làm Ra Làm Chơi Ra Chơi', 147000, 71, '7/13/2023', N'NXB First New', 3, 7),
-(N'Đời Ngắn Đừng Ngủ Dài', 120000, 98, '2/15/2022', N'NXB ĐH Quốc Gia TP.HCM', 27, 7),
-(N'Trí tuệ xúc cảm', 163000, 72, '11/5/2022', N'NXB Trẻ', 18, 7),
-(N'Bước chậm lại giữa thế gian vội vã', 173000, 80, '2/3/2023', N'NXB Tổng hợp TP.HCM', 4, 7),
-(N'Phi Lý Trí', 199000, 93, '6/16/2021', N'NXB Compass Publishing', 20, 7),
-(N'Vạch Ranh Giới', 141000, 56, '5/30/2021', N'NXB ĐH Kinh tế Quốc dân', 5, 7),
-(N'Gan ơi là gan', 176000, 89, '7/5/2022', N'NXB ĐH Kinh tế Quốc dân', 26, 7),
-(N'Luật Hấp Dẫn - Tái bản 2023', 182000, 68, '8/14/2022', N'NXB First New', 15, 7),
-(N'Tư Duy Như Một Kẻ Lập Dị', 132000, 86, '10/1/2021', N'NXB Trẻ', 8, 7),
-(N'Dám Tha Thứ - Dare To Forgive', 115000, 60, '3/25/2022', N'NXB ĐH Quốc Gia TP.HCM', 13, 7),
-(N'Ai Lấy Miếng Pho Mát Của Tôi', 124000, 76, '1/7/2023', N'NXB Hồng Đức', 30, 7),
-(N'Câu Hỏi Là Câu Trả Lời', 187000, 62, '11/13/2023', N'NXB Tổng hợp TP.HCM', 29, 7),
-(N'Khác Biệt Hay Là Chết', 187000, 51, '2/20/2023', N'NXB ĐH Quốc Gia Hà Nội', 1, 7),
-(N'Dám Thành Công', 156000, 57, '5/11/2023', N'NXB Compass Publishing', 10, 7),
-(N'Thế Giới Trong Bạn', 199000, 69, '6/16/2021', N'NXB Tổng hợp TP.HCM', 7, 7),
-(N'Jiddu Krishnamurti', 124000, 97, '5/30/2021', N'NXB ĐH Kinh tế Quốc dân', 16, 7),
-(N'Sức Mạnh Của Ngôn Từ', 187000, 58, '7/5/2022', N'NXB Compass Publishing', 23, 7);
+(N'Đắc Nhân Tâm', 195000, 57, '3/11/2023', N'NXB Trẻ',7),
+(N'Trên Đường Băng', 134000, 55, '8/17/2021', N'NXB ĐH Kinh tế Quốc dân', 7),
+(N'Đừng Bao Giờ Đi Ăn Một Mình', 109000, 70, '6/9/2022', N'NXB First New',  7),
+(N'Bạn Đắt Giá Bao Nhiêu', 145000, 73, '1/18/2022', N'NXB Compass Publishing', 7),
+(N'Đời Thay Đổi Khi Chúng Ta Thay Đổi', 143000, 85, '5/23/2023', N'NXB ĐH Quốc Gia TP.HCM',  7),
+(N'7 Thói Quen Hiệu Quả', 168000, 54, '10/9/2022', N'NXB Tổng hợp TP.HCM', 7),
+(N'Nhà Giả Kim', 186000, 88, '12/15/2021', N'NXB Hồng Đức', 7),
+(N'Đọc Vị Bất Kì Ai', 131000, 74, '9/25/2022', N'NXB ĐH Kinh tế Quốc dân',7),
+(N'Đời Ngắn Ngủ Dài', 198000, 63, '4/28/2023', N'NXB Trẻ', 7),
+(N'Khéo Ăn Nói Sẽ Có Được Thiên Hạ', 121000, 75, '11/20/2023', N'NXB Tổng hợp TP.HCM', 7),
+(N'Dám Bị Ghét', 111000, 66, '7/22/2021', N'NXB ĐH Quốc Gia Hà Nội', 7),
+(N'Cân Bằng Cảm Xúc, Cả Lúc Bão Giông', 114000, 91, '12/4/2021', N'NXB Compass Publishing', 7),
+(N'Buổi Sáng Diệu Kỳ', 124000, 64, '3/1/2022', N'NXB Hồng Đức', 7),
+(N'Làm Ra Làm Chơi Ra Chơi', 147000, 71, '7/13/2023', N'NXB First New', 7),
+(N'Đời Ngắn Đừng Ngủ Dài', 120000, 98, '2/15/2022', N'NXB ĐH Quốc Gia TP.HCM',7),
+(N'Trí tuệ xúc cảm', 163000, 72, '11/5/2022', N'NXB Trẻ', 7),
+(N'Bước chậm lại giữa thế gian vội vã', 173000, 80, '2/3/2023', N'NXB Tổng hợp TP.HCM', 7),
+(N'Phi Lý Trí', 199000, 93, '6/16/2021', N'NXB Compass Publishing', 7),
+(N'Vạch Ranh Giới', 141000, 56, '5/30/2021', N'NXB ĐH Kinh tế Quốc dân',7),
+(N'Gan ơi là gan', 176000, 89, '7/5/2022', N'NXB ĐH Kinh tế Quốc dân', 7),
+(N'Luật Hấp Dẫn - Tái bản 2023', 182000, 68, '8/14/2022', N'NXB First New', 7),
+(N'Tư Duy Như Một Kẻ Lập Dị', 132000, 86, '10/1/2021', N'NXB Trẻ', 7),
+(N'Dám Tha Thứ - Dare To Forgive', 115000, 60, '3/25/2022', N'NXB ĐH Quốc Gia TP.HCM', 7),
+(N'Ai Lấy Miếng Pho Mát Của Tôi', 124000, 76, '1/7/2023', N'NXB Hồng Đức', 7),
+(N'Câu Hỏi Là Câu Trả Lời', 187000, 62, '11/13/2023', N'NXB Tổng hợp TP.HCM', 7),
+(N'Khác Biệt Hay Là Chết', 187000, 51, '2/20/2023', N'NXB ĐH Quốc Gia Hà Nội', 7),
+(N'Dám Thành Công', 156000, 57, '5/11/2023', N'NXB Compass Publishing', 7),
+(N'Thế Giới Trong Bạn', 199000, 69, '6/16/2021', N'NXB Tổng hợp TP.HCM', 7),
+(N'Jiddu Krishnamurti', 124000, 97, '5/30/2021', N'NXB ĐH Kinh tế Quốc dân', 7),
+(N'Sức Mạnh Của Ngôn Từ', 187000, 58, '7/5/2022', N'NXB Compass Publishing', 7);
 
-insert into [dbo].[SACH] (MASACH, TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MAPHATHANH, MADM)
+insert into [dbo].[SACH] (TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG, NHAXUATBAN, MADM)
 values
-(Default, N'Tiếng Nhật Chuyên Ngành Điều Dưỡng Dành Cho Người Mới Bắt Đầu - Kiến Thức Cơ Bản', 95000, 32, '1990-01-29', N'NXB ĐH Kinh tế Quốc dân', 25, 8), -- Mitsuhashi Asako
-(Default, N'Tiếng Nhật Công Nghệ Thông Tin Trong Ngành Phần Mềm', 140000, 41, '2000-12-04', N'NXB Tổng hợp TP.HCM', 26, 8), --Nhiều tác giả
-(Default, N'Building Skills For The TOEFL iBT Beginning', 100000, 25, '2020-02-18', N'NXB Trẻ ',27, 8), -- Nhiều tác giả
-(Default, N'Lập Trình IoT Với Arduino (Tái Bản 2019)', 99000, 39, '2023-05-18', N'NXB ĐH Quốc Gia Hà Nội', 28, 8), -- Phạm Quang Huy
-(Default, N'Lập Trình Hệ Thống Thương Mại Điện Tử ',200000 , 26, '2000-08-04', N'NXB Trẻ ', 29, 8),-- Nhiều tác giả
-(Default, N'Lập Trình Hệ Thống Nhúng Với Raspberry ', 187000, 1, '2021-10-10', N'NXB First New', 30, 8), -- Phạm Quang Huy
-(Default, N'Lập Trình Với PLC S7 1500 Và Rslogix KS', 184000, 15, '1987-02-09', N'NXB Hồng Đức', 19, 8), -- Phạm Quang
-(Default, N'Mạng Truyền Thông Công Nghiệp SCADA (Lý Thuyết - Thực Hành)', 55000, 19, '1980-01-12', N'NXB First New', 1, 8), -- Phạm Quang Huy
-(Default, N'Nâng Cao Vốn Từ Vựng Tiếng Nhật Theo Chủ Đề Bằng Hình Ảnh', 189000, 3, '1987-07-09', N'NXB ĐH Quốc Gia TP.HCM', 2, 8), --  Phương Dung
-(Default, N'Chất Lừ Lừ Với Tiếng Anh Của Woo Bo Hyun ', 170000, 17, '1990-02-09', N'NXB Hồng Đức', 3, 8), -- Woo Bo Hyun
-(Default, N'Khai Thác, Ứng Dụng Adobe Flash & VBA Trong Dạy Học Số Và Truyền Thông', 132000, 42, '2000-09-05', N'NXB ĐH Quốc Gia Hà Nội', 4, 8), -- Nhiều tác giả
-(Default, N'10 Ngày Có Thể Nói 1000 Câu Tiếng Hoa - Công Sở (Kèm 1 CD)', 197000, 4, '2002-03-04', N'NXB First New', 21, 8), -- Tri Thức Việt
-(Default, N'Bài Tập Mạch Điện - Tính Toán, Mô Phỏng Mạch Điện Dùng Phần Mềm Tina', 189000, 37, '2003-12-01', N'NXB ĐH Quốc Gia TP.HCM', 22, 8), --Lê Mỹ Hà
-(Default, N'Listening Strategies For The IELTS Test - Book 2 (Kèm 1 CD)', 115000, 23, '2017-01-10', N'NXB First New', 23, 8), --Lý Á Tân
-(Default, N'Breaking News English! (Kèm 1 CD)', 185000, 13, '2015-06-14', N'NXB ĐH Quốc Gia Hà Nội', 24, 8), -- Tim Ferry
-(Default, N'TOEIC Champion 1000 LC + RC (Kèm 1 CD)', 17000, 22, '2013-08-27', N'NXB Hồng Đức', 25, 8),-- Sunny Choi
-(Default, N'500 Câu Hỏi Luyện Thi Năng Lực Nhật Ngữ - Trình Độ N3', 100000, 11, '2012-11-05', N'NXB Tổng hợp TP.HCM', 5, 8),-- Sasaki Hitoko
-(Default, N'CAD Trong Điện - Điện Tử: Vi Điều Khiển Và Ứng Dụng Lê Ngọc Bích', 149000, 23, '2000-10-27', N'NXB Trẻ ', 6, 8),--- Phạm Quang Huy
-(Default, N'Nhện Chân Dài (Kèm 1 CD)', 112000, 3, '2004-10-10', N'NXB Tổng hợp TP.HCM', 7, 8), -- Nhiều tác giả
-(Default, N'Ứng Dụng Tin Học Triển Khai Hiệu Quả Chương Trình CDIO Và HEEAP', 176000, 35, '2004-10-01', N'NXB Tổng hợp TP.HCM', 8, 8),--Phan Long
-(Default, N'Master Toefl Junior Basic (CEFR Level A2) - Listening Comprehension (Kèm 1 CD)', 155000, 5, '2003-02-16', N'NXB ĐH Quốc Gia TP.HCM', 9, 8),-- Richie Hahn
-(Default, N'Điều Khiển Và Giám Sát Trong Công nghiệp Lê Ngọc Bích', 90000, 9, '2001-12-01', N'NXB First New', 10, 8),--- Phạm Quang Huy
-(Default, N'Vẽ Bề Mặt Phức Tạp (Surface) Và Gia Công Khuôn Với Pro Engineer Trương Minh Trí', 181000, 18, '1972-07-05', N'NXB Compass Publishing', 11, 8),--  - Trần Tường Thụy
-(Default, N'Solidworks & Rapidform Xor - Dành Cho Người Tự Học', 127000, 26, '1986-05-07', N'NXB Compass Publishing', 12, 8),-- Trương Minh Trí 
-(Default, N'Toeic Smart - Yellow Book Listening (Kèm 1 MP3) ', 187000, 30, '1993-06-23', N'NXB Hồng Đức', 13, 8),-- Nhân Trí Việt
-(Default, N'Cẩm Nang Chat - Messenger Và Cách Tạo Email, Gmail Blog Trên Internet', 85000, 15, '2009-01-18', N'NXB ĐH Kinh tế Quốc dân', 14, 8),-- Công Bình
-(Default, N'Hướng Dẫn Học Windows XP Căn Bản', 191000, 24, '2007-09-19', N'NXB Trẻ ', 15, 8), -- Hoàng Phương
-(Default, N'Khám phá Internet Mỗi Ngày ', 153000, 29, '1985-01-14', N'NXB Tổng hợp TP.HCM', 16, 8), -- Việt Văn Books
-(Default, N'Tiếng Anh Cho Người Định Cư Ở Nước Ngoài (Vấn Đề An Toàn Và Sức Khỏe)', 127000, 22, '1974-05-26', N'NXB Trẻ ', 17, 8), --  Nguyễn Thành Yến
-(Default, N'Sống Sót Nơi Công Sở English Conversation- Tự Tin Giao Tiếp Với 25 Động Từ Và 75 Cấu Trúc Cơ Bản', 159000, 7, '1999-12-10', N'NXB ĐH Quốc Gia TP.HCM', 18, 8) --  Oh Soktae
+(N'Tiếng Nhật Chuyên Ngành Điều Dưỡng Dành Cho Người Mới Bắt Đầu - Kiến Thức Cơ Bản', 95000, 32, '1990-01-29', N'NXB ĐH Kinh tế Quốc dân', 8), -- Mitsuhashi Asako
+(N'Tiếng Nhật Công Nghệ Thông Tin Trong Ngành Phần Mềm', 140000, 41, '2000-12-04', N'NXB Tổng hợp TP.HCM', 8), --Nhiều tác giả
+(N'Building Skills For The TOEFL iBT Beginning', 100000, 25, '2020-02-18', N'NXB Trẻ ', 8), -- Nhiều tác giả
+(N'Lập Trình IoT Với Arduino (Tái Bản 2019)', 99000, 39, '2023-05-18', N'NXB ĐH Quốc Gia Hà Nội', 8), -- Phạm Quang Huy
+(N'Lập Trình Hệ Thống Thương Mại Điện Tử ',200000 , 26, '2000-08-04', N'NXB Trẻ ', 8),-- Nhiều tác giả
+(N'Lập Trình Hệ Thống Nhúng Với Raspberry ', 187000, 1, '2021-10-10', N'NXB First New', 8), -- Phạm Quang Huy
+(N'Lập Trình Với PLC S7 1500 Và Rslogix KS', 184000, 15, '1987-02-09', N'NXB Hồng Đức', 8), -- Phạm Quang
+(N'Mạng Truyền Thông Công Nghiệp SCADA (Lý Thuyết - Thực Hành)', 55000, 19, '1980-01-12', N'NXB First New', 8), -- Phạm Quang Huy
+(N'Nâng Cao Vốn Từ Vựng Tiếng Nhật Theo Chủ Đề Bằng Hình Ảnh', 189000, 3, '1987-07-09', N'NXB ĐH Quốc Gia TP.HCM', 8), --  Phương Dung
+(N'Chất Lừ Lừ Với Tiếng Anh Của Woo Bo Hyun ', 170000, 17, '1990-02-09', N'NXB Hồng Đức', 8), -- Woo Bo Hyun
+(N'Khai Thác, Ứng Dụng Adobe Flash & VBA Trong Dạy Học Số Và Truyền Thông', 132000, 42, '2000-09-05', N'NXB ĐH Quốc Gia Hà Nội',  8), -- Nhiều tác giả
+(N'10 Ngày Có Thể Nói 1000 Câu Tiếng Hoa - Công Sở (Kèm 1 CD)', 197000, 4, '2002-03-04', N'NXB First New', 8), -- Tri Thức Việt
+(N'Bài Tập Mạch Điện - Tính Toán, Mô Phỏng Mạch Điện Dùng Phần Mềm Tina', 189000, 37, '2003-12-01', N'NXB ĐH Quốc Gia TP.HCM', 8), --Lê Mỹ Hà
+(N'Listening Strategies For The IELTS Test - Book 2 (Kèm 1 CD)', 115000, 23, '2017-01-10', N'NXB First New', 8), --Lý Á Tân
+(N'Breaking News English! (Kèm 1 CD)', 185000, 13, '2015-06-14', N'NXB ĐH Quốc Gia Hà Nội', 8), -- Tim Ferry
+( N'TOEIC Champion 1000 LC + RC (Kèm 1 CD)', 17000, 22, '2013-08-27', N'NXB Hồng Đức', 8),-- Sunny Choi
+(N'500 Câu Hỏi Luyện Thi Năng Lực Nhật Ngữ - Trình Độ N3', 100000, 11, '2012-11-05', N'NXB Tổng hợp TP.HCM', 8),-- Sasaki Hitoko
+(N'CAD Trong Điện - Điện Tử: Vi Điều Khiển Và Ứng Dụng Lê Ngọc Bích', 149000, 23, '2000-10-27', N'NXB Trẻ ', 8),--- Phạm Quang Huy
+(N'Nhện Chân Dài (Kèm 1 CD)', 112000, 3, '2004-10-10', N'NXB Tổng hợp TP.HCM', 8), -- Nhiều tác giả
+(N'Ứng Dụng Tin Học Triển Khai Hiệu Quả Chương Trình CDIO Và HEEAP', 176000, 35, '2004-10-01', N'NXB Tổng hợp TP.HCM', 8),--Phan Long
+( N'Master Toefl Junior Basic (CEFR Level A2) - Listening Comprehension (Kèm 1 CD)', 155000, 5, '2003-02-16', N'NXB ĐH Quốc Gia TP.HCM', 8),-- Richie Hahn
+(N'Điều Khiển Và Giám Sát Trong Công nghiệp Lê Ngọc Bích', 90000, 9, '2001-12-01', N'NXB First New', 8),--- Phạm Quang Huy
+(N'Vẽ Bề Mặt Phức Tạp (Surface) Và Gia Công Khuôn Với Pro Engineer Trương Minh Trí', 181000, 18, '1972-07-05', N'NXB Compass Publishing', 8),--  - Trần Tường Thụy
+(N'Solidworks & Rapidform Xor - Dành Cho Người Tự Học', 127000, 26, '1986-05-07', N'NXB Compass Publishing', 8),-- Trương Minh Trí 
+(N'Toeic Smart - Yellow Book Listening (Kèm 1 MP3) ', 187000, 30, '1993-06-23', N'NXB Hồng Đức', 8),-- Nhân Trí Việt
+(N'Cẩm Nang Chat - Messenger Và Cách Tạo Email, Gmail Blog Trên Internet', 85000, 15, '2009-01-18', N'NXB ĐH Kinh tế Quốc dân', 8),-- Công Bình
+(N'Hướng Dẫn Học Windows XP Căn Bản', 191000, 24, '2007-09-19', N'NXB Trẻ ', 8), -- Hoàng Phương
+(N'Khám phá Internet Mỗi Ngày ', 153000, 29, '1985-01-14', N'NXB Tổng hợp TP.HCM', 8), -- Việt Văn Books
+(N'Tiếng Anh Cho Người Định Cư Ở Nước Ngoài (Vấn Đề An Toàn Và Sức Khỏe)', 127000, 22, '1974-05-26', N'NXB Trẻ ', 8), --  Nguyễn Thành Yến
+(N'Sống Sót Nơi Công Sở English Conversation- Tự Tin Giao Tiếp Với 25 Động Từ Và 75 Cấu Trúc Cơ Bản', 159000, 7, '1999-12-10', N'NXB ĐH Quốc Gia TP.HCM', 8) --  Oh Soktae
 
 
 
-insert into SACH(TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG,NHAXUATBAN,MAPHATHANH, MADM)  VALUES
-  							  (N'Toeic Analyst Second Edition (Kèm CD)', 144000 ,73 ,'20200208', N'Nxb Tổng hợp TP.HCM', 24, 9),
-							('Very Easy Toeic - Second Edition', 134000 ,64 ,'20180407', N'Nxb Tổng hợp TP.HCM', 27, 9), 
-							('Developing Skills For The Toeic Test', 146000 ,23 ,'20190205', N'Nxb Tổng hợp TP.HCM', 23, 9), 
-							( N'Marugoto - Ngôn Ngữ Và Văn Hóa Nhật Bản - Trung Cấp 2 - B1', 220000 ,91 ,'20180429', N'Nxb Đại học Quốc gia TPHCM', 29, 9),
-							(N'Ngữ Pháp Pali', 180000 ,25 ,'20200421', N'Nxb Thế giới', 21, 9), --Charles Duroselle
-							(N'Very Easy Toeic (Tái Bản)', 110000 ,15 ,'20200102', N'NXB Compass Publishing', 24, 9), --Garrett Byrne
-							(N'Mind Map 24H English - Giao Tiếp - Học Tiếng Anh Giao Tiếp Thực Chiến Cực Kỳ Hiệu Quả Thông Qua Sơ Đồ Tư Duy', 318000 ,36 ,'20201118', N'NXB Hồng Đức', 19, 9), --Huyền Windy
-							(N'Hộp Flash Cards - 600 Essential Words For The TOEIC (Tái Bản 2021)', 140000 ,12 ,'20210207', N'Nxb Tổng hợp TP.HCM', 17, 9), -- Dr. Lin Lougheed
-							(N'Hộp Flash Cards - 600 Essential Words For The IELTS', 130000 ,76 ,'20220807', N'Nxb Tổng hợp TP.HCM', 15, 9), --Dr. Lin Lougheed
-							('Barron''s_IELTS Practice Exams 3rd Edition', 238000 ,77 ,'20200120', N'Nxb Tổng hợp TP.HCM', 16, 9), -- Dr. Lin Lougheed
-							(N'Essential Words For The IELTS 3rd Edition (Tái Bản)', 208000 ,44 ,'20230110', N'Nxb Tổng hợp TP.HCM', 18, 9),
-							('Very Easy Toeic 1 - Introduction', 228000 ,38 ,'20211210', N'NXB Compass Publishing', 26, 9), --Mary Albright, Garrett Byrne, Mary Chadwick, Sam Robinson
-							('Ielts Vocab - No Worries!', 169000 ,153 ,'20220408', N'NXB ĐH Kinh tế Quốc dân', 20, 9), --Vũ Hải	
-							(N'Tiếng Nhật Công Nghệ Thông Tin Trong Ngành Phần Mềm', 95000 ,52 ,'20230702', N'Nxb Trẻ', 4, 9), --Nhiều tác giả
-							('Building Skills For The TOEFL iBT Beginning', 364000 ,51 ,'20230404', N'Nxb Tổng hợp TP.HCM', 1, 9), --Nhiều tác giả
-							(N'Tự Học Tiếng Anh Trong 24 Ngày (Tái Bản)', 40000 , 13 ,'20200308', N'NXB ĐH Kinh tế Quốc dân', 2, 9), --Nguyễn Đại
-							('Easy Toeic (Kèm 1 Audio CD)', 163000 , 45 ,'20220408', N'Nxb Tổng hợp TP.HCM', 8, 9), -- Young Sook Sohn, Brian J.Stuart
-							('Ielts Vocab - From Beginning!', 129000 , 23 ,'20210108', N'NXB ĐH Kinh tế Quốc dân', 7, 9),						
-							(N'Tự Học Viết Tiếng Nhật Căn Bản', 41000 ,13 ,'20210403', N'Nxb Tổng hợp TP.HCM', 3, 9), --Jim Gleeson
-							('Starter Toeic Third Edition', 169000 ,43 ,'20190102', N'NXB First New', 5, 9), --Compass
-							(N'Tự Học Viết Tiếng Nhật (Tập 1) - 200 Chữ Kanji Căn Bản', 72000 ,23 ,'20210208', N'Nxb Đại học Quốc gia TPHCM', 10, 9), --Eriko Sato
-							(N'Happy Reader - Những Bài Diễn Văn Nổi Tiếng Thế Giới (Tái Bản)', 58000 ,56 ,'20180208', N'Nxb Tổng hợp TP.HCM', 6, 9), --Park Jong Bae
-							(N'Tự Học Viết Tiếng Nhật Căn Bản - KATAKANA (Tái Bản 2022)', 41000 , 41 ,'20200201', N'Nxb Đại học Quốc gia Hà Nội', 12, 9), --Jim Glesson
-							(N'Bùng Nổ Tiếng Anh - 27 Giới Từ Hữu Ích Trong Tiếng Anh Giao Tiếp', 199000 , 100 ,'20190408', N'Nxb Thế giới', 14, 9), --  Moon Deok , Jihu Ju
-							(N'Ngôn Ngữ Và Văn Hóa Nhật Bản - Trung Cấp 1 - B1', 200000 ,50 ,'20210206', N'Nxb Đại học Quốc gia TPHCM', 11, 9), --The Japan Foundation
-							(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 1', 98000 ,40 ,'20210528', N'Nxb Tổng hợp TP.HCM', 15, 9), --Masateru Takatsu
-							(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 2', 98000 ,45 ,'20210818', N'Nxb Tổng hợp TP.HCM', 13, 9),
-							(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 3', 98000 ,37 ,'20220718', N'Nxb Tổng hợp TP.HCM', 20, 9),
-							(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 4', 98000 ,97 ,'20230828', N'Nxb Tổng hợp TP.HCM', 22, 9),
+insert into SACH(TENSACH, GIATIEN, SLTONKHO, NGAYNHAPHANG,NHAXUATBAN, MADM)
+VALUES
+  							  (N'Toeic Analyst Second Edition (Kèm CD)', 144000 ,73 ,'20200208', N'Nxb Tổng hợp TP.HCM', 9),
+							('Very Easy Toeic - Second Edition', 134000 ,64 ,'20180407', N'Nxb Tổng hợp TP.HCM', 9), 
+							('Developing Skills For The Toeic Test', 146000 ,23 ,'20190205', N'Nxb Tổng hợp TP.HCM', 9), 
+							( N'Marugoto - Ngôn Ngữ Và Văn Hóa Nhật Bản - Trung Cấp 2 - B1', 220000 ,91 ,'20180429', N'Nxb Đại học Quốc gia TPHCM',9),
+							(N'Ngữ Pháp Pali', 180000 ,25 ,'20200421', N'Nxb Thế giới', 9), --Charles Duroselle
+							(N'Very Easy Toeic (Tái Bản)', 110000 ,15 ,'20200102', N'NXB Compass Publishing',  9), --Garrett Byrne
+							(N'Mind Map 24H English - Giao Tiếp - Học Tiếng Anh Giao Tiếp Thực Chiến Cực Kỳ Hiệu Quả Thông Qua Sơ Đồ Tư Duy', 318000 ,36 ,'20201118', N'NXB Hồng Đức', 9), --Huyền Windy
+							(N'Hộp Flash Cards - 600 Essential Words For The TOEIC (Tái Bản 2021)', 140000 ,12 ,'20210207', N'Nxb Tổng hợp TP.HCM', 9), -- Dr. Lin Lougheed
+							(N'Hộp Flash Cards - 600 Essential Words For The IELTS', 130000 ,76 ,'20220807', N'Nxb Tổng hợp TP.HCM', 9), --Dr. Lin Lougheed
+							('Barron''s_IELTS Practice Exams 3rd Edition', 238000 ,77 ,'20200120', N'Nxb Tổng hợp TP.HCM', 9), -- Dr. Lin Lougheed
+							(N'Essential Words For The IELTS 3rd Edition (Tái Bản)', 208000 ,44 ,'20230110', N'Nxb Tổng hợp TP.HCM',9),
+							('Very Easy Toeic 1 - Introduction', 228000 ,38 ,'20211210', N'NXB Compass Publishing', 9), --Mary Albright, Garrett Byrne, Mary Chadwick, Sam Robinson
+							('Ielts Vocab - No Worries!', 169000 ,153 ,'20220408', N'NXB ĐH Kinh tế Quốc dân',  9), --Vũ Hải	
+							(N'Tiếng Nhật Công Nghệ Thông Tin Trong Ngành Phần Mềm', 95000 ,52 ,'20230702', N'Nxb Trẻ', 9), --Nhiều tác giả
+							('Building Skills For The TOEFL iBT Beginning', 364000 ,51 ,'20230404', N'Nxb Tổng hợp TP.HCM',9), --Nhiều tác giả
+							(N'Tự Học Tiếng Anh Trong 24 Ngày (Tái Bản)', 40000 , 13 ,'20200308', N'NXB ĐH Kinh tế Quốc dân', 9), --Nguyễn Đại
+							('Easy Toeic (Kèm 1 Audio CD)', 163000 , 45 ,'20220408', N'Nxb Tổng hợp TP.HCM',  9), -- Young Sook Sohn, Brian J.Stuart
+							('Ielts Vocab - From Beginning!', 129000 , 23 ,'20210108', N'NXB ĐH Kinh tế Quốc dân', 9),						
+							(N'Tự Học Viết Tiếng Nhật Căn Bản', 41000 ,13 ,'20210403', N'Nxb Tổng hợp TP.HCM',  9), --Jim Gleeson
+							('Starter Toeic Third Edition', 169000 ,43 ,'20190102', N'NXB First New', 9), --Compass
+							(N'Tự Học Viết Tiếng Nhật (Tập 1) - 200 Chữ Kanji Căn Bản', 72000 ,23 ,'20210208', N'Nxb Đại học Quốc gia TPHCM',  9), --Eriko Sato
+							(N'Happy Reader - Những Bài Diễn Văn Nổi Tiếng Thế Giới (Tái Bản)', 58000 ,56 ,'20180208', N'Nxb Tổng hợp TP.HCM',  9), --Park Jong Bae
+							(N'Tự Học Viết Tiếng Nhật Căn Bản - KATAKANA (Tái Bản 2022)', 41000 , 41 ,'20200201', N'Nxb Đại học Quốc gia Hà Nội',  9), --Jim Glesson
+							(N'Bùng Nổ Tiếng Anh - 27 Giới Từ Hữu Ích Trong Tiếng Anh Giao Tiếp', 199000 , 100 ,'20190408', N'Nxb Thế giới',  9), --  Moon Deok , Jihu Ju
+							(N'Ngôn Ngữ Và Văn Hóa Nhật Bản - Trung Cấp 1 - B1', 200000 ,50 ,'20210206', N'Nxb Đại học Quốc gia TPHCM', 9), --The Japan Foundation
+							(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 1', 98000 ,40 ,'20210528', N'Nxb Tổng hợp TP.HCM',  9), --Masateru Takatsu
+							(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 2', 98000 ,45 ,'20210818', N'Nxb Tổng hợp TP.HCM',  9),
+							(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 3', 98000 ,37 ,'20220718', N'Nxb Tổng hợp TP.HCM',  9),
+							(N'Tiếng Nhật Không Khó - Tiếng Nhật Cho Người Mới Học 4', 98000 ,97 ,'20230828', N'Nxb Tổng hợp TP.HCM', 9),
 --=======================================================================================================================================================
-						  		(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 1 - Từ 1 Đến 20, Số Tự Nhiên Thật Thú Vị', 109000 ,18 ,'20180208', N'Nxb Thế giới', 20, 10), --Park Young Hoon
-							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 2 - Số Nào Lớn Hơn, Số Nào Nhỏ Hơn', 109000 ,24 ,'20180407', N'Nxb Thế giới', 20, 10),
-							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 3 - Phép Cộng Trừ Chẳng Khó', 109000 ,23 ,'20200205', N'Nxb Thế giới', 20, 10),
-							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 4 - Cùng Em Luyện Cộng Trừ', 109000 ,32 ,'20210202', N'Nxb Thế giới', 20, 10),
-							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 5 - Cộng Trừ Khắp Quanh Ta', 109000 ,25 ,'20220421', N'Nxb Thế giới', 20, 10),
-							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 6 - Em Cộng Trừ Thành Thạo', 109000 ,92 ,'20230802', N'Nxb Thế giới', 20, 10),
-							(N'Bé Tập Tô Phát Triển Tư Duy - Câu Đố Về Các Loài Cây', 25000 ,22 ,'20210918', N'Nxb Lao động', 19, 10), -- MOM, Khanh Vũ
-							(N'Vở Nhận Biết Và Tập Viết ABC Qua Các Trò Chơi Trí Tuệ - Tập 2 (Từ 4-6 Tuổi) (Tái Bản)', 25000 ,12 ,'20210207', N'Nxb Lao động', 17, 10), --Kawa, Bảo Việt
-							(N'Bé Tập Tô Phát Triển Tư Duy - Câu Đố Về Đồ Vật', 20000 ,126 ,'20220807', N'Nxb Lao động', 15, 10), -- mom, khanh vu
-							(N'Vở Nhận Biết Và Tập Viết ABC Qua Các Trò Chơi Trí Tuệ - Tập 1 (2021)', 30000 ,97 ,'20200120', N'Nxb Lao động', 21, 10), --Kawa, Bảo Việt
-							(N'Top 1 Môn Toán (Combo 2 cuốn)', 409000 ,49 ,'20230110', N'NXB Đà Nẵng', 18, 10), --Nhiều tác giả
-							(N'Tóm Tắt Kiến Thức Toán Phổ Thông', 145000 ,38 ,'20211210', N'NXB Thế giới', 26, 10), --Đỗ Minh Triết
-							(N'Toán Tiểu Học Tương Tác - Kỳ Thú Phân Số Và Số Thập Phân', 89000 ,113 ,'20220408', N'NXB Dân Trí', 22, 10), --	 Rosie Hore
-							(N'Toán Tiểu Học Tương Tác - Kỳ Thú Đơn Vị Đo Lường', 85000 ,52 ,'20230702', N'Nxb Dân Trí', 22, 10),
-							(N'Toán Tiểu Học Tương Tác - Kỳ Thú Phép Nhân', 85000 ,51 ,'20230404', N'Nxb Dân Trí', 22, 10),
-							(N'Học Thế Nào Bây Giờ? - Hướng Dẫn Trẻ Học Cách Tự Chủ - Dành Cho Học Sinh Tiểu Học', 99000 , 13 ,'20200308', N'NXB Khoa học xã hội', 2, 10), --  Luana Rinaldo
-							(N'Super Môn Toán - Tập 1: Hình Học Không Gian 11&12', 79000 ,45 ,'20200208', N'Nxb Đại học Quốc gia Hà Nội', 9, 10), --Trần Công Diêu
-							(N'Top 1 Môn Toán Tập 7 - Phương Pháp Tọa Độ Trong Không Gian OXYZ', 220000 , 53 ,'20200108', N'NXB Đà Nẵng', 7, 10), 
-							(N'Top 1 Môn Toán Tập 1 Hàm Số Và Ứng Dụng Của Đạo Hàm', 189000 ,13 ,'20200213', N'Nxb Đà Nẵng', 3, 10), 
-							(N'Ôn Luyện Thi Tốt Nghiệp THPT Môn Ngữ Văn Theo Định Hướng Đổi Mới', 80000 ,43 ,'20190102', N'NXB Thanh Niên', 5, 10), --Nhiều tác giả
-							(N'Cẩm Nang Định Hướng Đột Phá Học Tiếng Anh', 200000 ,23 ,'20210208', N'Nxb Thế giới', 10, 10), -- Nhiều tác giả
-							(N'Bộ Đề Kiểm Tra Đánh Giá Năng Lực - Môn Lịch Sử - Lớp 9', 80000 ,56 ,'20180208', N'Nxb Đại học Quốc gia Hà Nội', 11, 10), --Nguyễn Văn Ninh
-							(N'Ôn Luyện Thi Vào Lớp 10 THPT Năm 2020 Môn Ngữ Văn', 55000 , 41 ,'20200201', N'Nxb Thanh Niên', 15, 10), -- Nhiều tác giả
-							(N'E-Test Luyện Đề Môn Toán - Chinh Phục Kì Thi THPT Quốc Gia', 139000 , 100 ,'20190408', N'Nxb Đại học Quốc gia Hà Nội', 14, 10), --Nguyễn Thị Lanh
-							(N'Bài Tập Bổ Trợ Và Phát Triển Năng Lực Môn Tiếng Anh Lớp 10 - Tập 1', 45000 ,50 ,'20210206', N'Nxb Đại học Quốc gia Hà Nội', 12, 10), --Nguyễn Hồng Quân
-							(N'Ôn Luyện Thi THPT Quốc Gia Năm 2020 Môn Ngữ Văn', 50000 ,40 ,'20200128', N'Nxb Đại học Quốc gia Hà Nội', 24, 10), --Nhiều tác giả
-							(N'Ôn Luyện Thi THPT Quốc Gia Năm 2020 Môn Toán', 50000 ,55 ,'20190817', N'Nxb Đại học Quốc gia Hà Nội', 23, 10), --Nhiều tác giả
-							(N'Phát Triển Năng Lực Thi Trắc Nghiệm Môn Địa Lí', 109000 ,17 ,'20230218', N'Nxb Đại học Quốc gia Hà Nội', 29, 10), --Đỗ Ngọc Tiến
-							(N'Trọng Tâm Kiến Thức Và Phát Triển Năng Lực Thi Trắc Nghiệm Môn Giáo Dục Công Dân', 109000 ,97 ,'20230828', N'Nxb Đại học Quốc gia Hà Nội', 21, 10), --Nhiều tác giả
-							(N'Bài Giảng Ôn Thi Theo Chủ Đề Hình Học 11', 104000 ,23 ,'20230208', N'Nxb Đại học Quốc gia Hà Nội', 30, 10), -- Nhiều tác giả
-							(N'Luyện Thi Olympic Khoa Học - Lớp 4 (Song Ngữ)', 128000 ,63 ,'20221218', N'NXB Dân Trí', 30, 10), -- NXB Sheth
+						  		(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 1 - Từ 1 Đến 20, Số Tự Nhiên Thật Thú Vị', 109000 ,18 ,'20180208', N'Nxb Thế giới',  10), --Park Young Hoon
+							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 2 - Số Nào Lớn Hơn, Số Nào Nhỏ Hơn', 109000 ,24 ,'20180407', N'Nxb Thế giới',  10),
+							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 3 - Phép Cộng Trừ Chẳng Khó', 109000 ,23 ,'20200205', N'Nxb Thế giới',  10),
+							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 4 - Cùng Em Luyện Cộng Trừ', 109000 ,32 ,'20210202', N'Nxb Thế giới',  10),
+							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 5 - Cộng Trừ Khắp Quanh Ta', 109000 ,25 ,'20220421', N'Nxb Thế giới',  10),
+							(N'Ươm Mầm Giỏi Toán Từ Tiểu Học - Tiểu Học 6 - Em Cộng Trừ Thành Thạo', 109000 ,92 ,'20230802', N'Nxb Thế giới',  10),
+							(N'Bé Tập Tô Phát Triển Tư Duy - Câu Đố Về Các Loài Cây', 25000 ,22 ,'20210918', N'Nxb Lao động', 10), -- MOM, Khanh Vũ
+							(N'Vở Nhận Biết Và Tập Viết ABC Qua Các Trò Chơi Trí Tuệ - Tập 2 (Từ 4-6 Tuổi) (Tái Bản)', 25000 ,12 ,'20210207', N'Nxb Lao động', 10), --Kawa, Bảo Việt
+							(N'Bé Tập Tô Phát Triển Tư Duy - Câu Đố Về Đồ Vật', 20000 ,126 ,'20220807', N'Nxb Lao động', 10), -- mom, khanh vu
+							(N'Vở Nhận Biết Và Tập Viết ABC Qua Các Trò Chơi Trí Tuệ - Tập 1 (2021)', 30000 ,97 ,'20200120', N'Nxb Lao động', 10), --Kawa, Bảo Việt
+							(N'Top 1 Môn Toán (Combo 2 cuốn)', 409000 ,49 ,'20230110', N'NXB Đà Nẵng', 10), --Nhiều tác giả
+							(N'Tóm Tắt Kiến Thức Toán Phổ Thông', 145000 ,38 ,'20211210', N'NXB Thế giới', 10), --Đỗ Minh Triết
+							(N'Toán Tiểu Học Tương Tác - Kỳ Thú Phân Số Và Số Thập Phân', 89000 ,113 ,'20220408', N'NXB Dân Trí', 10), --	 Rosie Hore
+							(N'Toán Tiểu Học Tương Tác - Kỳ Thú Đơn Vị Đo Lường', 85000 ,52 ,'20230702', N'Nxb Dân Trí', 10),
+							(N'Toán Tiểu Học Tương Tác - Kỳ Thú Phép Nhân', 85000 ,51 ,'20230404', N'Nxb Dân Trí', 10),
+							(N'Học Thế Nào Bây Giờ? - Hướng Dẫn Trẻ Học Cách Tự Chủ - Dành Cho Học Sinh Tiểu Học', 99000 , 13 ,'20200308', N'NXB Khoa học xã hội', 10), --  Luana Rinaldo
+							(N'Super Môn Toán - Tập 1: Hình Học Không Gian 11&12', 79000 ,45 ,'20200208', N'Nxb Đại học Quốc gia Hà Nội', 10), --Trần Công Diêu
+							(N'Top 1 Môn Toán Tập 7 - Phương Pháp Tọa Độ Trong Không Gian OXYZ', 220000 , 53 ,'20200108', N'NXB Đà Nẵng', 10), 
+							(N'Top 1 Môn Toán Tập 1 Hàm Số Và Ứng Dụng Của Đạo Hàm', 189000 ,13 ,'20200213', N'Nxb Đà Nẵng', 10), 
+							(N'Ôn Luyện Thi Tốt Nghiệp THPT Môn Ngữ Văn Theo Định Hướng Đổi Mới', 80000 ,43 ,'20190102', N'NXB Thanh Niên', 10), --Nhiều tác giả
+							(N'Cẩm Nang Định Hướng Đột Phá Học Tiếng Anh', 200000 ,23 ,'20210208', N'Nxb Thế giới', 10), -- Nhiều tác giả
+							(N'Bộ Đề Kiểm Tra Đánh Giá Năng Lực - Môn Lịch Sử - Lớp 9', 80000 ,56 ,'20180208', N'Nxb Đại học Quốc gia Hà Nội', 10), --Nguyễn Văn Ninh
+							(N'Ôn Luyện Thi Vào Lớp 10 THPT Năm 2020 Môn Ngữ Văn', 55000 , 41 ,'20200201', N'Nxb Thanh Niên', 10), -- Nhiều tác giả
+							(N'E-Test Luyện Đề Môn Toán - Chinh Phục Kì Thi THPT Quốc Gia', 139000 , 100 ,'20190408', N'Nxb Đại học Quốc gia Hà Nội', 10), --Nguyễn Thị Lanh
+							(N'Bài Tập Bổ Trợ Và Phát Triển Năng Lực Môn Tiếng Anh Lớp 10 - Tập 1', 45000 ,50 ,'20210206', N'Nxb Đại học Quốc gia Hà Nội', 10), --Nguyễn Hồng Quân
+							(N'Ôn Luyện Thi THPT Quốc Gia Năm 2020 Môn Ngữ Văn', 50000 ,40 ,'20200128', N'Nxb Đại học Quốc gia Hà Nội', 10), --Nhiều tác giả
+							(N'Ôn Luyện Thi THPT Quốc Gia Năm 2020 Môn Toán', 50000 ,55 ,'20190817', N'Nxb Đại học Quốc gia Hà Nội', 10), --Nhiều tác giả
+							(N'Phát Triển Năng Lực Thi Trắc Nghiệm Môn Địa Lí', 109000 ,17 ,'20230218', N'Nxb Đại học Quốc gia Hà Nội', 10), --Đỗ Ngọc Tiến
+							(N'Trọng Tâm Kiến Thức Và Phát Triển Năng Lực Thi Trắc Nghiệm Môn Giáo Dục Công Dân', 109000 ,97 ,'20230828', N'Nxb Đại học Quốc gia Hà Nội',  10), --Nhiều tác giả
+							(N'Bài Giảng Ôn Thi Theo Chủ Đề Hình Học 11', 104000 ,23 ,'20230208', N'Nxb Đại học Quốc gia Hà Nội',  10), -- Nhiều tác giả
+							(N'Luyện Thi Olympic Khoa Học - Lớp 4 (Song Ngữ)', 128000 ,63 ,'20221218', N'NXB Dân Trí', 10), -- NXB Sheth
 --=======================================================================================================================================================		 									
-						(N'Lịch Treo Tường 2018 - The Little Prince', 100000 , 73 ,'20200328', null, 20, 11),
-						(N'Lịch Để Bàn 2019 - VietNam Football Calendar 2019', 89000 ,23 ,'20201018', N'NXB Hồng Đức', 1, 11),
-						(N'Lịch Treo Tường 2019 - VietNam Football Calendar 2019', 89000 ,36 ,'20230514', N'NXB Hồng Đức', 2, 11),
-						(N'Lịch Để Bàn - Lịch Thư Pháp 2019', 59000 ,83 ,'20191218', N'NXB Hồng Đức', 5, 11),
-						(N'Lịch Bàn Đế Nhựa Kỷ Hợi 2019', 99000 ,64 ,'20200219', N'NXB Hồng Đức', 16, 11),
-						(N'Lịch Bàn 4 Miếng - Quê Hương 3', 43000 ,36 ,'20230309', NULL, 24, 11),					
-						(N'Lịch Bàn 4 Miếng - Việt Nam Thơ', 40000 ,16 ,'20201028',NULL, 27, 11),
-						(N'Lịch Bàn Chữ B - Phong Cảnh Việt', 109000 ,18 ,'20200228',NULL, 27, 11),
-						(N'Lịch Bloc Đại Đặc Biệt VL-07 (14.5x20.5) - Mẫu Áo 1', 150000 ,34 ,'20221128', N'NXB Hồng Đức', 22, 11),
-						(N'Lịch Để Bàn 2017 - Ôi Quê Hương Vĩnh Cửu', 50000 ,74 ,'20211210', N'Nxb Thế giới', 18, 11),
-						(N'Notebook Polaris (CE 33916)', 76000 ,72 ,'20200815', null, 11, 11),
-						(N'Bút Dạ Màu Luxor 12M (6106/12WT)', 23000 ,83 ,'20200218', null, 8, 11),
-						(N'Chì Màu Stabilo Swans CL1869-24 (Dùng Cho Sách Tô Màu Dành Cho Người Lớn)', 149000 ,98 ,'20220725',null, 5, 11),
-						(N'Sổ Tay Agenda 2019 (Phiên Bản Agenda Hoa Văn)', 80000 ,47 ,'20230221', null, 6, 11),
-						(N'Lịch Để Bàn - Lịch Thư Pháp 2019', 59000 ,33 ,'20230722', null, 2, 11),
-						(N'Lịch Bàn Chữ A 2019 - Yummy Vietnam', 120000 ,66 ,'20230522',N'NXB Hồng Đức', 1, 11),
-						(N'Lịch Bàn Chữ A 2019 - Vietnam Posters (Hanoi-Hue-Saigon)', 120000 ,54 ,'20230725', N'NXB Hồng Đức', 1, 11),
-						(N'Lịch Bàn Chữ A 2019 - Vietnam Poster', 120000 ,74 ,'20230625', N'NXB Hồng Đức', 1, 11),
-						(N'Lịch Bàn Chữ A 2019 - Interesting Vehicle', 120000 ,25 ,'20230829', N'NXB Hồng Đức', 23, 11),
-						(N'Lịch Bàn Chữ A 2019 - Side Walk In Vietnam', 120000 ,61 ,'20231015', N'NXB Hồng Đức', 28, 11),
-						(N'Lịch Bàn Chữ A 2019 - Movie Posters', 120000 ,79 ,'20221125', N'NXB Hồng Đức', 16, 11),
-						(N'Lịch Bàn Chữ A 2019 - Life In Vietnam', 109000 ,64 ,'20230715', N'NXB Hồng Đức', 15, 11),
-						(N'Lịch Bàn Chữ A 2019 - Vietnamese Folk Paintings', 109000 ,55 ,'20230815', N'NXB Hồng Đức', 18, 11),
-						(N'Lịch Vạn Sự 2011 - Tân Mão Loại B Loại B', 32000 ,18 ,'20220125', N'NXB Thời Đại', 13, 11), 
-						(N'Lịch Để Bàn 2018 - Ở Xứ Diệu Kỳ', 109000 ,69 ,'20230315',N'NXB Thế giới', 14, 11),
-						(N'Lịch Bàn Pokémon 2018', 35000 ,112 ,'20230126',N'NXB Kim Đồng', 4, 11),
-						(N'Lịch Bàn Doraemon 2018', 35000 ,34 ,'20230221', N'NXB Kim Đồng', 2, 11),
-						(N'Lịch Treo Tường 2018 - The Life In Vietnam (W-B)', 100000 ,48 ,'20230522', null, 5, 11),
-						(N'Lịch Treo Tường 2018 - The Life In Vietnam (Colour)', 100000 ,28 ,'20230221', null, 6, 11),
-						(N'Lịch Treo Tường 2018 - Line Yummy', 100000 ,56 ,'20230415', null, 8, 11)
-
-
-
-
+						(N'Lịch Treo Tường 2018 - The Little Prince', 100000 , 73 ,'20200328', null, 11),
+						(N'Lịch Để Bàn 2019 - VietNam Football Calendar 2019', 89000 ,23 ,'20201018', N'NXB Hồng Đức',  11),
+						(N'Lịch Treo Tường 2019 - VietNam Football Calendar 2019', 89000 ,36 ,'20230514', N'NXB Hồng Đức', 11),
+						(N'Lịch Để Bàn - Lịch Thư Pháp 2019', 59000 ,83 ,'20191218', N'NXB Hồng Đức',11),
+						(N'Lịch Bàn Đế Nhựa Kỷ Hợi 2019', 99000 ,64 ,'20200219', N'NXB Hồng Đức',11),
+						(N'Lịch Bàn 4 Miếng - Quê Hương 3', 43000 ,36 ,'20230309', NULL, 11),					
+						(N'Lịch Bàn 4 Miếng - Việt Nam Thơ', 40000 ,16 ,'20201028',NULL, 11),
+						(N'Lịch Bàn Chữ B - Phong Cảnh Việt', 109000 ,18 ,'20200228',NULL, 11),
+						(N'Lịch Bloc Đại Đặc Biệt VL-07 (14.5x20.5) - Mẫu Áo 1', 150000 ,34 ,'20221128', N'NXB Hồng Đức', 11),
+						(N'Lịch Để Bàn 2017 - Ôi Quê Hương Vĩnh Cửu', 50000 ,74 ,'20211210', N'Nxb Thế giới',  11),
+						(N'Notebook Polaris (CE 33916)', 76000 ,72 ,'20200815', null, 11),
+						(N'Bút Dạ Màu Luxor 12M (6106/12WT)', 23000 ,83 ,'20200218', null, 11),
+						(N'Chì Màu Stabilo Swans CL1869-24 (Dùng Cho Sách Tô Màu Dành Cho Người Lớn)', 149000 ,98 ,'20220725',null, 11),
+						(N'Sổ Tay Agenda 2019 (Phiên Bản Agenda Hoa Văn)', 80000 ,47 ,'20230221', null,11),
+						(N'Lịch Để Bàn - Lịch Thư Pháp 2019', 59000 ,33 ,'20230722', null,11),
+						(N'Lịch Bàn Chữ A 2019 - Yummy Vietnam', 120000 ,66 ,'20230522',N'NXB Hồng Đức', 11),
+						(N'Lịch Bàn Chữ A 2019 - Vietnam Posters (Hanoi-Hue-Saigon)', 120000 ,54 ,'20230725', N'NXB Hồng Đức', 11),
+						(N'Lịch Bàn Chữ A 2019 - Vietnam Poster', 120000 ,74 ,'20230625', N'NXB Hồng Đức', 11),
+						(N'Lịch Bàn Chữ A 2019 - Interesting Vehicle', 120000 ,25 ,'20230829', N'NXB Hồng Đức', 11),
+						(N'Lịch Bàn Chữ A 2019 - Side Walk In Vietnam', 120000 ,61 ,'20231015', N'NXB Hồng Đức', 11),
+						(N'Lịch Bàn Chữ A 2019 - Movie Posters', 120000 ,79 ,'20221125', N'NXB Hồng Đức', 11),
+						(N'Lịch Bàn Chữ A 2019 - Life In Vietnam', 109000 ,64 ,'20230715', N'NXB Hồng Đức', 11),
+						(N'Lịch Bàn Chữ A 2019 - Vietnamese Folk Paintings', 109000 ,55 ,'20230815', N'NXB Hồng Đức', 11),
+						(N'Lịch Vạn Sự 2011 - Tân Mão Loại B Loại B', 32000 ,18 ,'20220125', N'NXB Thời Đại', 11), 
+						(N'Lịch Để Bàn 2018 - Ở Xứ Diệu Kỳ', 109000 ,69 ,'20230315',N'NXB Thế giới', 11),
+						(N'Lịch Bàn Pokémon 2018', 35000 ,112 ,'20230126',N'NXB Kim Đồng',11),
+						(N'Lịch Bàn Doraemon 2018', 35000 ,34 ,'20230221', N'NXB Kim Đồng', 11),
+						(N'Lịch Treo Tường 2018 - The Life In Vietnam (W-B)', 100000 ,48 ,'20230522', null,11),
+						(N'Lịch Treo Tường 2018 - The Life In Vietnam (Colour)', 100000 ,28 ,'20230221', null,11),
+						(N'Lịch Treo Tường 2018 - Line Yummy', 100000 ,56 ,'20230415', null, 11)
 
 select * from SACH
+DELETE FROM KHACHHANG
 -- KHACH HANG
-insert into KHACHHANG (TENKH, SDT, DIACHI, email, ACCOUNT, PASS)
+insert into KHACHHANG (TENKH, SDT, DIACHI, email, ACCOUNT, PASS, MATICHLUY)
 values 
-(N'Đinh Nhật Nam', '542-601-7857', 'Drew-Clifton', 'adrewclifton0@ihg.com', 'tz1TsXNdPkGrTsumumNpfp4KtTuhzm2Prvrs', 'qQ9@H480|+<X@'''),
-(N'Nguyễn Trung Tín', '911-614-2852', 'Maletratt', 'kmaletratt1@elegantthemes.com', 'tz1dPZmgynL9JWWaJmb3L5ThZkNiqbyMjQ4G', 'fA9}V`q,z'),
-(N'Edward Thái', '682-932-1422', 'Bridewell', 'lbridewell2@noaa.gov', 'tz1dsyBGEgcXrRoRhrwUKjPVg7F2EUDNJm9S', 'tB1%tL|C'),
-(N'Thi Anh Đào', '346-819-4930', 'Boram', 'dboram3@paypal.com', 'tz1RH5rasWhmjWdhErozqFfbi5ESDAotKS6n', 'jP2{M9'')a'),
-(N'Tạ Minh Tuấn', '370-992-5302', 'Vlies', 'cvlies4@ifeng.com', 'tz1e3XzRqWRTCSNNd7c9DwnzCfL2VkoPbULo', 'xZ6,)$VpP6D4iN@Q'),
-(N'Mai Trường Giang', '973-425-0805', 'Vigours', 'gvigours5@tuttocitta.it', 'tz1achaAysCMaiQQrKLaec4WoF2vQKizwqmv', 'oI5~Rghm#Yf|'),
-(N'Nguyễn Hà Đông', '383-822-9625', 'Ginnally', 'lginnally6@imdb.com', 'tz1fX839PWDRFkiWpoEeQdvpcTRXqsckcCpV', 'nQ0_surMV/OE'),
-(N'Lương Duy Hoài', '272-226-6881', 'Baxter', 'bbaxter7@wp.com', 'tz1a7mLG449axQarxVjqhNk1aYsMf6Rxgbsu', 'nW7?#V(7Nbi2\'),
-(N'Tạ Sơn Tùng', '981-463-1268', 'Balden', 'bbalden8@infoseek.co.jp', 'tz1XPW55jVDM5mabawN9UgERgXnyEFACSCou', 'xO7!%gYwKDAFaE'),
-(N'Lê Hoàng Uyên Vy', '552-304-4628', 'De Mico', 'mde9@alexa.com', 'tz1ev7cBAguoc1RxEaiBeAPnAAxZJiRrE1FC', 'kQ7{17R!+nhSgr'),
-(N'Ngô Thùy Ngọc Tú', '860-731-0035', 'Bidgood', 'sbidgooda@devhub.com', 'tz1V2Gw8w8H67Yc4tY5ERNxqxLJffxkb7N9w', 'hY7(/V9_1W9v/f'),
-(N'Trương Thanh Thủy', '237-985-5616', 'Lepoidevin', 'blepoidevinb@mapy.cz', 'tz1KeK9gpBj3aNLVtEuDKw3KbwFGEdxNoG2L', 'oK2<W''(wp''oh'),
-(N'Phạm Lê Nguyên', '202-876-6199', 'Dobbie', 'kdobbiec@hc360.com', 'tz1cpcwbaTQHmYArFivz5CAK7cqmLNqYZ7DZ', 'qE2/Q~+DBq/'),
-(N'Nguyễn Hữu Cát Thư', '550-788-3103', 'Stockle', 'pstockled@squarespace.com', 'tz1TfYq78XhcpL8TGJvaRmjFXTE5H5Rk8GED', 'iQ8!(1sEiM(~fE'),
-(N'Lê Hùng Việt Bảo', '273-986-5037', 'Shilito', 'hshilitoe@github.com', 'tz1Xmpah4N5fjga2j3vEjkCQoS2PKGPAogkK', 'qW9>N+pbwb9''J@Cg'),
-(N'Phạm Toàn Thắng', '247-175-4446', 'Dedenham', 'ddedenhamf@ted.com', 'tz1baFRX1bWVG55LeHjfXczPSARc2hjTiXQy', 'tB2~P*`xq6J6'),
-(N'Hàng Lâm Trang Anh', '175-164-6169', 'Hevner', 'shevnerg@mozilla.org', 'tz1SKGugZaqgwMgovPaJZxHwy26Bcx1gHgsi', 'jI0(V6$gxvW~IMz*'),
-(N'Hoàng Thùy', '880-292-5790', 'Truse', 'mtruseh@themeforest.net', 'tz1KxsvLLnL8yoyzceXfN3yRmm5rCVPmhiwp', 'hB7<w>WC/!,/('),
-(N'Nguyễn Ngọc Hưng', '631-738-2767', 'Teape', 'steapei@yahoo.com', 'tz1SZhemYDqPNKGb3YS1Y8DS1jLgo9i1qyms', 'dK2>zsIM!~5'),
-(N'Trịnh Mai Trang ', '484-295-0762', 'Bohike', 'ebohikej@ocn.ne.jp', 'tz1TBpChkwPTcRmRA15c4XZF4zgRfy23waAT', 'hJ7=Zzjt'),
-(N'Nguyễn Thanh Hải', '976-770-6041', 'Seignior', 'lseigniork@timesonline.co.uk', 'tz1SBYv59VJGTRnppUQPU337ZAp1QY2hj7vm', 'dU1,OJj(R'),
-(N'Nguyễn Phi Phi Anh', '243-970-5864', 'Matchitt', 'gmatchittl@nih.gov', 'tz1YES3kMMCvoL6YGSBwq6tcwxVJK2bDxaZX', 'uP3#gWIQLfvc3@'),
-(N'Trần Quang Đức', '560-162-6071', 'Losty', 'mlostym@weebly.com', 'tz1LPtjg9TuhkerTNHLt6e5NMLskHLgsqBcD', 'hP5"W+iTEs%_J)u6'),
-(N'Trần Đức Việt', '384-389-7039', 'Rayman', 'rraymann@chron.com', 'tz1RX5p3GF829CrDzRHoC4nzbStExLVF6xDr', 'jU3,{qdHR'),
-(N'Lê Quang Liêm', '114-942-2473', 'Kelland', 'akellando@cisco.com', 'tz1Vpa6d6buc6aspqk9VZS6eW8WLFRiekYYx', 'lD4)8E9_'),
-(N'Nguyễn Thị Ánh Viên', '302-235-0070', 'O''Harney', 'doharneyp@independent.co.uk', 'tz1c7ZNUHrLLNYvR5eFYaTXE3zDdrrDH2YRn', 'jQ4=4$6HTxz@S,'),
-(N'Trần Khởi My', '467-718-4118', 'Gritsunov', 'ggritsunovq@dropbox.com', 'tz1XQ5D53XPYAqtcSmeAPyNLYupiGAgWh7XM', 'lT6_1qE<S<in9O#'),
-(N'Huỳnh Trấn Thành', '601-919-9199', 'Archell', 'carchellr@cnbc.com', 'tz1Yq3qGtSe5ZwD6V5HZFxMXCEy1NsRjFf5m', 'cZ9=Wt*_k'),
-(N'Trần Phương My', '929-845-3634', 'Constantine', 'cconstantines@ovh.net', 'tz1eTECTmynaJXcRyZZXiiPQKnC2MMMvMNSB', 'rQ5"_58)8f'),
-(N'Hoàng Đức Minh', '459-952-2593', 'Dreinan', 'ddreinant@wiley.com', 'tz1Kym4YJkjGsUPS35PCtHCDT8BQkg9zX4tQ', 'bC4!\+M*Ni6x')
+(N'Đinh Nhật Nam', '542-601-7857', 'Drew-Clifton', 'adrewclifton0@ihg.com', 'tz1TsXNdPkGrTsumumNpfp4KtTuhzm2Prvrs', 'qQ9@H480|+<X@''', NULL),
+(N'Nguyễn Trung Tín', '911-614-2852', 'Maletratt', 'kmaletratt1@elegantthemes.com', 'tz1dPZmgynL9JWWaJmb3L5ThZkNiqbyMjQ4G', 'fA9}V`q,z', NULL),
+(N'Edward Thái', '682-932-1422', 'Bridewell', 'lbridewell2@noaa.gov', 'tz1dsyBGEgcXrRoRhrwUKjPVg7F2EUDNJm9S', 'tB1%tL|C', NULL),
+(N'Thi Anh Đào', '346-819-4930', 'Boram', 'dboram3@paypal.com', 'tz1RH5rasWhmjWdhErozqFfbi5ESDAotKS6n', 'jP2{M9'')a', NULL),
+(N'Tạ Minh Tuấn', '370-992-5302', 'Vlies', 'cvlies4@ifeng.com', 'tz1e3XzRqWRTCSNNd7c9DwnzCfL2VkoPbULo', 'xZ6,)$VpP6D4iN@Q', NULL),
+(N'Mai Trường Giang', '973-425-0805', 'Vigours', 'gvigours5@tuttocitta.it', 'tz1achaAysCMaiQQrKLaec4WoF2vQKizwqmv', 'oI5~Rghm#Yf|', NULL),
+(N'Nguyễn Hà Đông', '383-822-9625', 'Ginnally', 'lginnally6@imdb.com', 'tz1fX839PWDRFkiWpoEeQdvpcTRXqsckcCpV', 'nQ0_surMV/OE', NULL),
+(N'Lương Duy Hoài', '272-226-6881', 'Baxter', 'bbaxter7@wp.com', 'tz1a7mLG449axQarxVjqhNk1aYsMf6Rxgbsu', 'nW7?#V(7Nbi2\', NULL),
+(N'Tạ Sơn Tùng', '981-463-1268', 'Balden', 'bbalden8@infoseek.co.jp', 'tz1XPW55jVDM5mabawN9UgERgXnyEFACSCou', 'xO7!%gYwKDAFaE',NULL),
+(N'Lê Hoàng Uyên Vy', '552-304-4628', 'De Mico', 'mde9@alexa.com', 'tz1ev7cBAguoc1RxEaiBeAPnAAxZJiRrE1FC', 'kQ7{17R!+nhSgr', NULL),
+(N'Ngô Thùy Ngọc Tú', '860-731-0035', 'Bidgood', 'sbidgooda@devhub.com', 'tz1V2Gw8w8H67Yc4tY5ERNxqxLJffxkb7N9w', 'hY7(/V9_1W9v/f', NULL),
+(N'Trương Thanh Thủy', '237-985-5616', 'Lepoidevin', 'blepoidevinb@mapy.cz', 'tz1KeK9gpBj3aNLVtEuDKw3KbwFGEdxNoG2L', 'oK2<W''(wp''oh', NULL),
+(N'Phạm Lê Nguyên', '202-876-6199', 'Dobbie', 'kdobbiec@hc360.com', 'tz1cpcwbaTQHmYArFivz5CAK7cqmLNqYZ7DZ', 'qE2/Q~+DBq/', NULL),
+(N'Nguyễn Hữu Cát Thư', '550-788-3103', 'Stockle', 'pstockled@squarespace.com', 'tz1TfYq78XhcpL8TGJvaRmjFXTE5H5Rk8GED', 'iQ8!(1sEiM(~fE', NULL),
+(N'Lê Hùng Việt Bảo', '273-986-5037', 'Shilito', 'hshilitoe@github.com', 'tz1Xmpah4N5fjga2j3vEjkCQoS2PKGPAogkK', 'qW9>N+pbwb9''J@Cg', NULL),
+(N'Phạm Toàn Thắng', '247-175-4446', 'Dedenham', 'ddedenhamf@ted.com', 'tz1baFRX1bWVG55LeHjfXczPSARc2hjTiXQy', 'tB2~P*`xq6J6', NULL),
+(N'Hàng Lâm Trang Anh', '175-164-6169', 'Hevner', 'shevnerg@mozilla.org', 'tz1SKGugZaqgwMgovPaJZxHwy26Bcx1gHgsi', 'jI0(V6$gxvW~IMz*', NULL),
+(N'Hoàng Thùy', '880-292-5790', 'Truse', 'mtruseh@themeforest.net', 'tz1KxsvLLnL8yoyzceXfN3yRmm5rCVPmhiwp', 'hB7<w>WC/!,/(', NULL),
+(N'Nguyễn Ngọc Hưng', '631-738-2767', 'Teape', 'steapei@yahoo.com', 'tz1SZhemYDqPNKGb3YS1Y8DS1jLgo9i1qyms', 'dK2>zsIM!~5', NULL),
+(N'Trịnh Mai Trang ', '484-295-0762', 'Bohike', 'ebohikej@ocn.ne.jp', 'tz1TBpChkwPTcRmRA15c4XZF4zgRfy23waAT', 'hJ7=Zzjt', NULL),
+(N'Nguyễn Thanh Hải', '976-770-6041', 'Seignior', 'lseigniork@timesonline.co.uk', 'tz1SBYv59VJGTRnppUQPU337ZAp1QY2hj7vm', 'dU1,OJj(R', NULL),
+(N'Nguyễn Phi Phi Anh', '243-970-5864', 'Matchitt', 'gmatchittl@nih.gov', 'tz1YES3kMMCvoL6YGSBwq6tcwxVJK2bDxaZX', 'uP3#gWIQLfvc3@', NULL),
+(N'Trần Quang Đức', '560-162-6071', 'Losty', 'mlostym@weebly.com', 'tz1LPtjg9TuhkerTNHLt6e5NMLskHLgsqBcD', 'hP5"W+iTEs%_J)u6', NULL),
+(N'Trần Đức Việt', '384-389-7039', 'Rayman', 'rraymann@chron.com', 'tz1RX5p3GF829CrDzRHoC4nzbStExLVF6xDr', 'jU3,{qdHR', NULL),
+(N'Lê Quang Liêm', '114-942-2473', 'Kelland', 'akellando@cisco.com', 'tz1Vpa6d6buc6aspqk9VZS6eW8WLFRiekYYx', 'lD4)8E9_', NULL),
+(N'Nguyễn Thị Ánh Viên', '302-235-0070', 'O''Harney', 'doharneyp@independent.co.uk', 'tz1c7ZNUHrLLNYvR5eFYaTXE3zDdrrDH2YRn', 'jQ4=4$6HTxz@S,', NULL),
+(N'Trần Khởi My', '467-718-4118', 'Gritsunov', 'ggritsunovq@dropbox.com', 'tz1XQ5D53XPYAqtcSmeAPyNLYupiGAgWh7XM', 'lT6_1qE<S<in9O#', NULL),
+(N'Huỳnh Trấn Thành', '601-919-9199', 'Archell', 'carchellr@cnbc.com', 'tz1Yq3qGtSe5ZwD6V5HZFxMXCEy1NsRjFf5m', 'cZ9=Wt*_k', NULL),
+(N'Trần Phương My', '929-845-3634', 'Constantine', 'cconstantines@ovh.net', 'tz1eTECTmynaJXcRyZZXiiPQKnC2MMMvMNSB', 'rQ5"_58)8f', NULL),
+(N'Hoàng Đức Minh', '459-952-2593', 'Dreinan', 'ddreinant@wiley.com', 'tz1Kym4YJkjGsUPS35PCtHCDT8BQkg9zX4tQ', 'bC4!\+M*Ni6x', NULL)
 
 ﻿--SachThieuNhi
 
 select * from KHACHHANG
-
+SELECT * FROM NHANVIEN
 -- insert don hang
-INSERT INTO DONHANG (TENSHIPPER, SDTSHIPPER, DIACHIGH, MAKH, MANV, MASHIPPER, PTDATHANG, NGAYDATHANG, NGAYDUDINHSHIP)
+INSERT INTO DONHANG ([MANV], [MASHIPPER], [MAKH], TENSHIPPER, SDTSHIPPER, DIACHIGH, PTDATHANG, NGAYDATHANG, NGAYDUDINHSHIP, TONGGIA, MATRANGTHAI)
 VALUES
-('Stormi Brewse', '540-790-2941', '15041 Thackeray Point', 23, 14, 1, N'trả khi nhận hàng', '20210221', '20220310'),
-('Jasmina Abrams', '452-973-0894', '7758 Bluestem Street', 28, 9, 2, N'trả bằng thẻ', '20231003', '20231103'),
-('Jean Simmonett', '495-937-6702', '03271 Hauk Alley', 3, 13, 3, N'trả bằng thẻ', '20230908', '20230928'),
-('Genny Clausen-Thue', '263-250-7831', '84 Sunfield Plaza', 8, 21, 1, N'trả khi nhận hàng', '20231128', '20231205'),
-('Kriste Gritsunov', '963-244-0174', '34 Grasskamp Alley', 7, 12, 2, N'trả bằng thẻ', '20230812', '20230819'),
-('Melosa Thoresbie', '418-370-3923', '892 Sachtjen Parkway', 6, 18, 3, N'trả khi nhận hàng', '20230918', '20230925'),
-('Malinda Davoren', '989-498-5067', '7050 Tennessee Lane', 10, 20, 1, N'trả bằng thẻ', '20231216', '20231223'),
-('Rutherford Eaglestone', '637-511-7830', '880 Mendota Way', 5, 11, 2, N'trả khi nhận hàng', '20221010', '20221017'),
-('Clarance Morby', '570-397-6278', '56557 Kings Way', 15, 13, 3, N'trả bằng thẻ', '20231021', '20231030'),
-('Katie Cunrado', '135-468-0369', '79 Talmadge Circle', 18, 14, 1, N'trả khi nhận hàng', '20221118', '20221125'),
-('Sloan Marcoolyn', '670-295-7234', '2576 Kensington Circle', 8, 7, 2, N'trả bằng thẻ', '20221128', '20221228'),
-('Chastity Shoreman', '877-970-0637', '1902 Mariners Cove Park', 5, 1, 3, N'trả khi nhận hàng', '20220102', '20220125'),
-('Donella O''Finan', '495-827-1940', '49 Logan Pass', 20, 9, 1, N'trả bằng thẻ', '20230901', '20230921'),
-('Malina Carress', '945-274-8370', '09517 Parkside Point', 24, 6, 2, N'trả khi nhận hàng', '20231103', '20231120'),
-('Antoinette Adriaan', '820-926-3534', '2412 Corben Alley', 15, 20, 3, N'trả bằng thẻ', '20230717', '20230807'),
-('Vivienne Gummery', '561-792-9752', '266 Cody Center', 24, 30, 1, N'trả bằng thẻ', '20230923', '20230930'),
-('Eugenie Tander', '152-478-6166', '78 Bayside Place', 29, 16, 2, N'trả bằng thẻ', '20230715', '20230815'),
-('Ashia Charter', '500-960-7167', '21 Armistice Circle', 25, 11, 3, N'trả khi nhận hàng', '20230903', '20230910'),
-('Molly Tankus', '869-788-6565', '81361 Upham Avenue', 5, 27, 1, N'trả khi nhận hàng', '20231024', '20231124'),
-('Herman Rolin', '730-366-4868', '12289 Farwell Hill', 19, 4, 2, N'trả bằng thẻ', '20231010', '20231025'),
-('Dallas Dible', '590-679-9168', '7473 Briar Crest Way', 30, 3, 3, N'trả bằng thẻ', '20231224', '20231231'),
-('Law Widd', '168-690-9570', '3 Goodland Plaza', 10, 8, 1, N'trả khi nhận hàng', '20221207', '20221217'),
-('Conway Janowicz', '356-756-1653', '0 Butterfield Center', 23, 10, 2, N'trả khi nhận hàng', '20220804', '20220825'),
-('Lay Siret', '920-639-4222', '1423 Oakridge Place', 7, 23, 3, N'trả bằng thẻ', '20230915', '20230925'),
-('Ty Burgiss', '925-369-0547', '1 Erie Plaza', 5, 20, 1, N'trả khi nhận hàng', '20231011', '20231018'),
-('Saleem Cockerill', '718-592-1265', '2206 Crest Line Plaza', 9, 10, 2, N'trả bằng thẻ', '20220826', '20220926'),
-('Ferdinande Ohrtmann', '554-840-5116', '36473 Messerschmidt Point', 27, 27, 3, N'trả khi nhận hàng', '20230529', '20230620'),
-('Karlis Langabeer', '615-514-1049', '59 Ridgeview Lane', 28, 23, 1, N'trả khi nhận hàng', '20231216', '20231231'),
-('Pietrek Jeskins', '168-135-2901', '4 Forest Dale Road', 5, 30, 2, N'trả bằng thẻ', '20230818', '20230918'),
-('Val Antoniottii', '332-367-4248', '3763 Milwaukee Alley', 13, 12, 3, N'trả bằng thẻ', '20230826', '20230926'),
-(N'Nguyễn Tuấn Tài', '351-664-9650', '585 Surrey Avenue', 2, 5, 1, N'trả khi nhận hàng', '20230901', '20230908'),
-(N'Huỳnh Tất Hiếu', '213-866-1388', '20 Onsgard Drive', 1, 5, 2, N'trả khi nhận hàng', '20230908', '20230922'),
-(N'Nguyễn Anh Hoàng', '294-944-1863', '519 5th Circle', 30, 2, 3, N'trả khi nhận hàng', '20231008', '20231015'),
-(N'Tạ Phi Hùng', '419-204-0067', '055 Marcy Plaza', 21, 3, 1, N'trả khi nhận hàng', '20230928', '20231005'),
-(N'Phạm Hiệp Hà', '612-157-0122', '16944 Starling Junction', 15, 2, 3, N'trả khi nhận hàng', '20231024', '20231031'),
-(N'Chử Quang Trung', '926-302-2755', '0 Hoffman Plaza', 22, 6, 2, N'trả khi nhận hàng', '20230916', '20230930'),
-(N'Nguyễn Chí Bảo', '164-538-4350', '3036 Anderson Way', 14, 9, 1, N'trả khi nhận hàng', '20231017', '20231024'),
-(N'Đỗ Minh Toàn', '693-694-2941', '98 Sunnyside Terrace', 22, 5, 3, N'trả khi nhận hàng', '20231006', '20231014'),
-(N'Huỳnh Bảo Quốc', '955-959-1567', '67359 Manitowish Plaza', 23, 3, 1, N'trả khi nhận hàng', '20230930', '20231007'),
-(N'Phạm Trí Thắng', '635-858-2611', '7511 Bonner Circle', 11, 4, 2, N'trả khi nhận hàng', '20231002', '20231009'),
-(N'Nguyễn Phi Nhung', '847-856-7507', '5 Ridgeview Plaza', 4, 24, 1, N'trả khi nhận hàng', '20231008', '20231015'),
-(N'Mạc Nguyệt Lan', '644-713-1821', '5531 Blackbird Lane', 2, 30, 3, N'trả khi nhận hàng', '20231008', '20231015'),
-(N'Lưu Gia Minh', '315-770-6707', '9627 Dahle Terrace', 3, 6, 3, N'trả khi nhận hàng', '20221123', '20221130'),
-(N'Nguyễn Thiên Ðức', '392-131-8413', '796 2nd Trail', 10, 15, 2, N'trả khi nhận hàng', '20230802', '20230809'),
-(N'Thạch Phước An', '773-525-1401', '1495 Sachs Street', 13, 12, 1, N'trả khi nhận hàng', '20230921', '20230928'),
-(N'Phan Hồng Quý', '628-236-6324', '7 Caliangt Court', 16, 14, 1, N'trả khi nhận hàng', '20230324', '20230331'),
-(N'Trần Ngọc Đại', '665-563-1951', '99 Ludington Hill', 19, 17, 2, N'trả bằng thẻ', '20230903', '20230910'),
-(N'Nguyễn Cao Tiến', '567-944-7660', '8 Porter Crossing', 25, 18, 2, N'trả khi nhận hàng', '20230926', '20231003'),
-(N'Lâm Quốc Việt', '797-626-6455', '3148 Arkansas Center', 21, 20, 2, N'trả bằng thẻ', '20230918', '20230925'),
-(N'Nguyễn Khắc Triệu', '966-595-9825', '1 Buhler Pass', 22, 21, 1, N'trả khi nhận hàng', '20230704', '20230711'),
-(N'Tống Tất Hiếu', '824-304-7953', '6 Superior Crossing', 2, 25, 1, N'trả khi nhận hàng', '20230915', '20230922'),
-(N'Bành Ðình Toàn', '160-240-1369', '9 La Follette Street', 3, 28, 2, N'trả bằng thẻ', '20231014', '20231021'),
-(N'Lâm Kim Sơn', '591-172-0966', '96 Mockingbird Lane', 5, 24, 3, N'trả khi nhận hàng', '20230112', '20230122'),
-(N'Tạ Quốc Ðại', '457-505-2579', '0 Pierstorff Crossing', 5, 23, 2, N'trả khi nhận hàng', '20230904', '20230911'),
-(N'Trần Việt Long', '683-679-9827', '8851 Heffernan Circle', 1, 15, 1, N'trả khi nhận hàng', '20230128', '20230207'),
-(N'Đinh Hữu Nam', '164-575-4236', '84835 Farragut Lane', 2, 12, 2, N'trả bằng thẻ', '20230912', '20230919'),
-(N'Nguyễn Ngọc Thạch', '611-192-7537', '2 Myrtle Center', 1, 8, 3, N'trả bằng thẻ', '20231011', '20231018'),
-(N'Nguyễn Nguyên Ðan', '403-364-2999', '77236 North Terrace', 2, 5, 2, N'trả khi nhận hàng', '20231001', '20231008'),
-(N'Thủy Bá Phước', '131-989-0401', '079 Sunbrook Parkway', 3, 9, 1, N'trả bằng thẻ', '20230810', '20230818'),
-(N'Dương Sơn Quyền', '965-574-4428', '8 Fairfield Circle', 6, 3, 1, N'trả bằng thẻ', '20230823', '20230830');
+(1	,	1,	1, 'Stormi Brewse', '540-790-2941', '15041 Thackeray Point', N'trả khi nhận hàng', '20210221', '20220310', NULL, NULL),
+(2	,	2,	2,'Jasmina Abrams', '452-973-0894', '7758 Bluestem Street', 'trả bằng thẻ', '20231003', '20231103', NULL, NULL),
+(3, 3, 3,'Jean Simmonett', '495-937-6702', '03271 Hauk Alley', N'trả bằng thẻ', '20230908', '20230928', NULL, NULL),
+(4	,	1,	4	,'Genny Clausen-Thue', '263-250-7831', '84 Sunfield Plaza',N'trả khi nhận hàng', '20231128', '20231205', NULL, NULL),
+(5	,	2,	5	,'Kriste Gritsunov', '963-244-0174', '34 Grasskamp Alley',  N'trả bằng thẻ', '20230812', '20230819', NULL, NULL),
+(6	,	3,	6	,'Melosa Thoresbie', '418-370-3923', '892 Sachtjen Parkway',  N'trả khi nhận hàng', '20230918', '20230925', NULL, NULL),
+(7	,	1,	7	,'Malinda Davoren', '989-498-5067', '7050 Tennessee Lane',  N'trả bằng thẻ', '20231216', '20231223', NULL, NULL),
+(8	,	2	,	8	,'Rutherford Eaglestone', '637-511-7830', '880 Mendota Way',  N'trả khi nhận hàng', '20221010', '20221017', NULL, NULL),
+(9	,	3	,	9	,'Clarance Morby', '570-397-6278', '56557 Kings Way',  N'trả bằng thẻ', '20231021', '20231030', NULL, NULL),
+(10	,	1	,	10	,'Katie Cunrado', '135-468-0369', '79 Talmadge Circle',  N'trả khi nhận hàng', '20221118', '20221125', NULL, NULL),
+(11	,	2	,	11	,'Sloan Marcoolyn', '670-295-7234', '2576 Kensington Circle',  N'trả bằng thẻ', '20221128', '20221228', NULL, NULL),
+(12	,	3	,	12	,'Chastity Shoreman', '877-970-0637', '1902 Mariners Cove Park',  N'trả khi nhận hàng', '20220102', '20220125', NULL, NULL),
+(13	,	1	,	13	,'Donella O''Finan', '495-827-1940', '49 Logan Pass',  N'trả bằng thẻ', '20230901', '20230921', NULL, NULL),
+(14	,	2	,	14	,'Malina Carress', '945-274-8370', '09517 Parkside Point',  N'trả khi nhận hàng', '20231103', '20231120', NULL, NULL),
+(15	,	3	,	15	,'Antoinette Adriaan', '820-926-3534', '2412 Corben Alley',   N'trả bằng thẻ', '20230717', '20230807', NULL, NULL),
+(16	,	1	,	16	,'Vivienne Gummery', '561-792-9752', '266 Cody Center',  N'trả bằng thẻ', '20230923', '20230930', NULL, NULL),
+(17	,	2	,	17	,'Eugenie Tander', '152-478-6166', '78 Bayside Place',  N'trả bằng thẻ', '20230715', '20230815', NULL, NULL),
+(18	,	3	,	18	,'Ashia Charter', '500-960-7167', '21 Armistice Circle',  N'trả khi nhận hàng', '20230903', '20230910', NULL, NULL),
+(19	,	1	,	19	,'Molly Tankus', '869-788-6565', '81361 Upham Avenue',  N'trả khi nhận hàng', '20231024', '20231124', NULL, NULL),
+(20	,	2	,	20	,'Herman Rolin', '730-366-4868', '12289 Farwell Hill',  N'trả bằng thẻ', '20231010', '20231025', NULL, NULL),
+(21	,	3	,	21	,'Dallas Dible', '590-679-9168', '7473 Briar Crest Way',  N'trả bằng thẻ', '20231224', '20231231', NULL, NULL),
+(22	,	1	,	22	,'Law Widd', '168-690-9570', '3 Goodland Plaza',  N'trả khi nhận hàng', '20221207', '20221217', NULL, NULL),
+(23	,	2	,	23	,'Conway Janowicz', '356-756-1653', '0 Butterfield Center', N'trả khi nhận hàng', '20220804', '20220825', NULL, NULL),
+(24	,	3	,	24	,'Lay Siret', '920-639-4222', '1423 Oakridge Place',  N'trả bằng thẻ', '20230915', '20230925', NULL, NULL),
+(25	,	1	,	25	,'Ty Burgiss', '925-369-0547', '1 Erie Plaza', N'trả khi nhận hàng', '20231011', '20231018', NULL, NULL),
+(26	,	2	,	26	,'Saleem Cockerill', '718-592-1265', '2206 Crest Line Plaza', N'trả bằng thẻ', '20220826', '20220926', NULL, NULL),
+(27	,	3	,	27	,'Ferdinande Ohrtmann', '554-840-5116', '36473 Messerschmidt Point', N'trả khi nhận hàng', '20230529', '20230620', NULL, NULL),
+(28	,	1	,	28	,'Karlis Langabeer', '615-514-1049', '59 Ridgeview Lane',  N'trả khi nhận hàng', '20231216', '20231231', NULL, NULL),
+(29	,	2	,	29	,'Pietrek Jeskins', '168-135-2901', '4 Forest Dale Road', N'trả bằng thẻ', '20230818', '20230918', NULL, NULL),
+(30	,	3	,	30	,'Val Antoniottii', '332-367-4248', '3763 Milwaukee Alley',  N'trả bằng thẻ', '20230826', '20230926', NULL, NULL),
+(1	,	1	,	1	,N'Nguyễn Tuấn Tài', '351-664-9650', '585 Surrey Avenue', N'trả khi nhận hàng', '20230901', '20230908', NULL, NULL),
+(2	,	2	,	2	,N'Huỳnh Tất Hiếu', '213-866-1388', '20 Onsgard Drive',  N'trả khi nhận hàng', '20230908', '20230922', NULL, NULL),
+(3	,	3	,	3	,N'Nguyễn Anh Hoàng', '294-944-1863', '519 5th Circle',  N'trả khi nhận hàng', '20231008', '20231015', NULL, NULL),
+(4	,	1	,	4	,N'Tạ Phi Hùng', '419-204-0067', '055 Marcy Plaza',  N'trả khi nhận hàng', '20230928', '20231005', NULL, NULL),
+(5	,	2	,	5	,N'Phạm Hiệp Hà', '612-157-0122', '16944 Starling Junction', N'trả khi nhận hàng', '20231024', '20231031', NULL, NULL),
+(6	,	3	,	6	,N'Chử Quang Trung', '926-302-2755', '0 Hoffman Plaza',  N'trả khi nhận hàng', '20230916', '20230930', NULL, NULL),
+(7	,	1	,	7	,N'Nguyễn Chí Bảo', '164-538-4350', '3036 Anderson Way', N'trả khi nhận hàng', '20231017', '20231024', NULL, NULL),
+(8	,	2	,	8	,N'Đỗ Minh Toàn', '693-694-2941', '98 Sunnyside Terrace',  N'trả khi nhận hàng', '20231006', '20231014', NULL, NULL),
+(9	,	3	,	9	,N'Huỳnh Bảo Quốc', '955-959-1567', '67359 Manitowish Plaza',  N'trả khi nhận hàng', '20230930', '20231007', NULL, NULL),
+(10	,	1	,	10	,N'Phạm Trí Thắng', '635-858-2611', '7511 Bonner Circle', N'trả khi nhận hàng', '20231002', '20231009', NULL, NULL),
+(11	,	2	,	11	,N'Nguyễn Phi Nhung', '847-856-7507', '5 Ridgeview Plaza',  N'trả khi nhận hàng', '20231008', '20231015', NULL, NULL),
+(12	,	3	,	12	,N'Mạc Nguyệt Lan', '644-713-1821', '5531 Blackbird Lane',  N'trả khi nhận hàng', '20231008', '20231015', NULL, NULL),
+(13	,	1	,	13	,N'Lưu Gia Minh', '315-770-6707', '9627 Dahle Terrace', N'trả khi nhận hàng', '20221123', '20221130', NULL, NULL),
+(14	,	2	,	14	,N'Nguyễn Thiên Ðức', '392-131-8413', '796 2nd Trail',  N'trả khi nhận hàng', '20230802', '20230809', NULL, NULL),
+(15	,	3	,	15	,N'Thạch Phước An', '773-525-1401', '1495 Sachs Street',  N'trả khi nhận hàng', '20230921', '20230928', NULL, NULL),
+(16	,	1	,	16	,N'Phan Hồng Quý', '628-236-6324', '7 Caliangt Court', N'trả khi nhận hàng', '20230324', '20230331', NULL, NULL),
+(17	,	2	,	17	,N'Trần Ngọc Đại', '665-563-1951', '99 Ludington Hill',  N'trả bằng thẻ', '20230903', '20230910', NULL, NULL),
+(18	,	3	,	18	,N'Nguyễn Cao Tiến', '567-944-7660', '8 Porter Crossing',  N'trả khi nhận hàng', '20230926', '20231003', NULL, NULL),
+(19	,	1	,	19	,N'Lâm Quốc Việt', '797-626-6455', '3148 Arkansas Center', N'trả bằng thẻ', '20230918', '20230925', NULL, NULL),
+(20	,	2	,	20	,N'Nguyễn Khắc Triệu', '966-595-9825', '1 Buhler Pass', N'trả khi nhận hàng', '20230704', '20230711', NULL, NULL),
+(21	,	3	,	21	,N'Tống Tất Hiếu', '824-304-7953', '6 Superior Crossing',  N'trả khi nhận hàng', '20230915', '20230922', NULL, NULL),
+(22	,	1	,	22	,N'Bành Ðình Toàn', '160-240-1369', '9 La Follette Street', N'trả bằng thẻ', '20231014', '20231021', NULL, NULL),
+(23	,	2	,	23	,N'Lâm Kim Sơn', '591-172-0966', '96 Mockingbird Lane',  N'trả khi nhận hàng', '20230112', '20230122', NULL, NULL),
+(24	,	3	,	24	,N'Tạ Quốc Ðại', '457-505-2579', '0 Pierstorff Crossing', N'trả khi nhận hàng', '20230904', '20230911', NULL, NULL),
+(25	,	1	,	25	,N'Trần Việt Long', '683-679-9827', '8851 Heffernan Circle', N'trả khi nhận hàng', '20230128', '20230207', NULL, NULL),
+(26	,	2	,	26	,N'Đinh Hữu Nam', '164-575-4236', '84835 Farragut Lane', N'trả bằng thẻ', '20230912', '20230919', NULL, NULL),
+(27	,	3	,	27	,N'Nguyễn Ngọc Thạch', '611-192-7537', '2 Myrtle Center', N'trả bằng thẻ', '20231011', '20231018', NULL, NULL),
+(28	,	1	,	28	,N'Nguyễn Nguyên Ðan', '403-364-2999', '77236 North Terrace',  N'trả khi nhận hàng', '20231001', '20231008', NULL, NULL),
+(29	,	2	,	29	,N'Thủy Bá Phước', '131-989-0401', '079 Sunbrook Parkway',  N'trả bằng thẻ', '20230810', '20230818', NULL, NULL),
+(30	,	3	,	30	,N'Dương Sơn Quyền', '965-574-4428', '8 Fairfield Circle', N'trả bằng thẻ', '20230823', '20230830', NULL, NULL);
 
 
 select * from DONHANG
@@ -873,551 +873,570 @@ values
 (122, 10,'20050615','20300215'),
 (121, 14,'20140830','20240306')
 
-select MASACH from SACH
-------------------------------------------------nho them ID
--- insert sang tac
-insert into SANGTAC (MATG, MASACH, NAMST)
-values 
-()
+SELECT * FROM TACGIA
 
-insert into SANGTAC (MATG, MASACH, NAMST) values (1, '9E167D8C-5F24-4323-90DE-0072C9B911A2', 1984);
-insert into SANGTAC (MATG, MASACH, NAMST) values (2, 'F90DE53D-CB7B-4255-BF13-00B4CD5F5F5E', 2010);
-insert into SANGTAC (MATG, MASACH, NAMST) values (3, '86634179-E93C-464C-A952-014B05E6EF88', 2002);
-insert into SANGTAC (MATG, MASACH, NAMST) values (4, '5485A0DA-10E5-4D17-A0D0-0184E73254DD', 1998);
-insert into SANGTAC (MATG, MASACH, NAMST) values (5, '9862E0E2-EE4A-48CB-B7AE-01B380258260', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (6, 'E45C407A-0D6C-4739-BBF7-023509186D4C', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (7, '906EA26A-0E96-4317-8058-0253B9121FD6', 2002);
-insert into SANGTAC (MATG, MASACH, NAMST) values (8, '387BBBF4-38C7-4194-A354-0286CE037E02', 2004);
-insert into SANGTAC (MATG, MASACH, NAMST) values (9, 'F9754226-A18D-4F41-9DB5-02B833468AE4', 2005);
-insert into SANGTAC (MATG, MASACH, NAMST) values (10, '7808777A-4BB6-434C-86C2-02E7CB1CDC44', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (11, '0ADAD6F4-6CD8-410D-91C4-030C5D326196', 1995);
-insert into SANGTAC (MATG, MASACH, NAMST) values (12, 'DA39D41A-113C-414D-924A-03B674E4CF12', 2011);
-insert into SANGTAC (MATG, MASACH, NAMST) values (13, '338805F6-B1E1-422D-BFF9-0931E6DE60D9', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (14, 'BB14F9D7-AE6B-4C49-9B7A-0A757F16CE93', 2007);
-insert into SANGTAC (MATG, MASACH, NAMST) values (15, '3AE415A6-1174-43EC-BFA3-0E0EA3E67292', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (16, '6B2A78AD-5797-483B-A11F-0F035B6C0D85', 1978);
-insert into SANGTAC (MATG, MASACH, NAMST) values (17, 'AC2553FF-D2AB-4869-9C03-10131BA144F1', 1999);
-insert into SANGTAC (MATG, MASACH, NAMST) values (18, '7E7FDAEB-CD0E-4D74-B8C2-107C69C41388', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (19, '1DE6BD68-511C-4724-A7E8-10BDD851E3AA', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (20, '9088984C-866A-49B0-B1D0-1143A3EB88FF', 2012);
-insert into SANGTAC (MATG, MASACH, NAMST) values (21, '73F722EB-6076-4D28-BEB1-114C47EF65A9', 2005);
-insert into SANGTAC (MATG, MASACH, NAMST) values (22, '36B2B55B-1986-4619-9CC0-11AA71F275CB', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (23, 'DDBF8F03-41F1-4893-95F1-1254FE21358D', 1990);
-insert into SANGTAC (MATG, MASACH, NAMST) values (24, '1E5FF42B-8909-41C3-A942-13A7DE09DF09', 2000);
-insert into SANGTAC (MATG, MASACH, NAMST) values (25, 'BED71C9B-376B-4CFC-8E0E-1778D6C5924C', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (26, '93E4A8D9-9C26-4585-9CDA-19C3FF89E6FB', 2002);
-insert into SANGTAC (MATG, MASACH, NAMST) values (27, '7EF9DBB5-D7E9-47B9-B998-19F50BD45200', 1998);
-insert into SANGTAC (MATG, MASACH, NAMST) values (28, '41EF7D8A-2CF4-4EA2-B09F-19FEA73590DE', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (29, 'AF3568E1-F456-421C-B0E1-1A11ABB535AB', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (30, '57779E6F-075E-422B-A917-1A9740AA3FA8', 2012);
-insert into SANGTAC (MATG, MASACH, NAMST) values (31, '7D44B3CD-6B2B-4791-8F56-1BF5AFE03270', 2012);
-insert into SANGTAC (MATG, MASACH, NAMST) values (32, '0FE39CCE-CC83-4698-B2D0-1DDB747EF470', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (33, '33826A6F-C351-48DF-A9DF-1DE34842F951', 1988);
-insert into SANGTAC (MATG, MASACH, NAMST) values (34, '1AA3488A-0221-40CA-B922-1DFF026DF0B6', 1998);
-insert into SANGTAC (MATG, MASACH, NAMST) values (35, 'C283D88A-46BC-4AEE-B489-1EBEC2F8E71A', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (36, 'DA472FE8-328A-486F-BA3D-1F130EDD68C8', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (37, '5AFCC4ED-32F8-4314-B51A-1F3568BC7861', 2001);
-insert into SANGTAC (MATG, MASACH, NAMST) values (38, '52F254F1-54E4-4C40-9668-1F7DB3980726', 1996);
-insert into SANGTAC (MATG, MASACH, NAMST) values (39, 'D5C2236D-AC01-417B-98A7-1FCFA96EEBF7', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (40, '437575F4-5956-42E8-96A0-1FD5728A25FF', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (41, '66AB2C61-2AE1-42B9-89A9-20613FDC1F22', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (42, '0453A4F1-7780-4EA3-8B6F-206F02EC34DE', 2011);
-insert into SANGTAC (MATG, MASACH, NAMST) values (43, '857C2470-D60B-43CE-AF65-2114D73499FA', 2000);
-insert into SANGTAC (MATG, MASACH, NAMST) values (44, '11272E0B-97FB-4510-924E-22A4302D7196', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (45, '1AC24E71-252F-47C7-8228-23640302E38C', 2001);
-insert into SANGTAC (MATG, MASACH, NAMST) values (46, '98BEF5E7-8147-4F00-8FE1-23EE3270FBFD', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (47, '7E73D74A-4916-43DC-BFEC-24ABDC0D9649', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (48, '50BAE974-9EAA-4CF1-AE31-257C0E025D14', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (49, 'B1E9CF17-8BED-4A77-ABFE-259638713F03', 1996);
-insert into SANGTAC (MATG, MASACH, NAMST) values (50, 'CCFEE7AD-9683-478E-A20B-2723AEE3C76A', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (51, '0A12FE94-585C-4B33-B0D8-28302CAF6506', 1986);
-insert into SANGTAC (MATG, MASACH, NAMST) values (52, 'B4E2B15B-C2B9-4179-88E0-2A21E86E15B6', 2010);
-insert into SANGTAC (MATG, MASACH, NAMST) values (53, 'A272AA44-EB07-4CF8-BDD8-2ACB727B39E3', 1999);
-insert into SANGTAC (MATG, MASACH, NAMST) values (54, '5E8EE1B1-7800-499B-9CFE-2B6C02A08C69', 1978);
-insert into SANGTAC (MATG, MASACH, NAMST) values (55, '887E2DB7-D8FA-48F5-9FFA-2BA743E04C6F', 1990);
-insert into SANGTAC (MATG, MASACH, NAMST) values (56, 'F79CA10B-CCE2-4FCD-BCB5-2CAF3E7B7537', 1969);
-insert into SANGTAC (MATG, MASACH, NAMST) values (57, 'CF060181-F9FE-4080-B99E-2CE94D159852', 1986);
-insert into SANGTAC (MATG, MASACH, NAMST) values (58, '086C0637-835B-4DA6-8683-2CE9D7C9EACB', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (59, 'B6058E90-FF76-4D2E-9CDD-2DAAE2228A7F', 2001);
-insert into SANGTAC (MATG, MASACH, NAMST) values (60, 'A3560972-EB88-47B4-9690-2ECC2BACED52', 1989);
-insert into SANGTAC (MATG, MASACH, NAMST) values (61, '8DFA0829-C4CC-46B5-92AA-2F2C79A88F6D', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (62, '6BE94D83-9E09-4168-B3E0-2FF473A1CCCC', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (63, '33A78EAF-8E57-4AA1-A801-2FFABBE44049', 2002);
-insert into SANGTAC (MATG, MASACH, NAMST) values (64, 'C598D376-4620-419E-80D9-30438B5B8C29', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (65, 'A40A899F-96FD-41FA-ACBD-3107AA9BF8A9', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (66, 'B991E029-4924-4A38-B06B-31C6B41A2F56', 2000);
-insert into SANGTAC (MATG, MASACH, NAMST) values (67, 'AA751C47-3E15-4EEA-A09D-3230A0253789', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (68, '8CBD4438-5CD2-4941-AC04-3318513C8CE5', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (69, 'DBEBF02D-FAAF-4292-A0EA-353AB9D29FCD', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (70, 'A41A356A-9EDE-44A7-A8C3-36FE3180E0C7', 1989);
-insert into SANGTAC (MATG, MASACH, NAMST) values (71, 'A8F466E0-0A7C-4383-B872-376098A6C51C', 1986);
-insert into SANGTAC (MATG, MASACH, NAMST) values (72, '873DBDF4-F96A-429D-B143-39EA60E46656', 2004);
-insert into SANGTAC (MATG, MASACH, NAMST) values (73, 'C2746E0A-549A-4655-B90E-3B2FB60A8E7D', 1966);
-insert into SANGTAC (MATG, MASACH, NAMST) values (74, '19CC70DC-EAC7-4501-A1FA-3B6392390A5C', 1999);
-insert into SANGTAC (MATG, MASACH, NAMST) values (75, '4DE274F5-84B6-47EB-B9CD-3BD9FCEAC1D8', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (76, 'F83E1F09-32F2-401D-8909-3D3B7B59CEA0', 1986);
-insert into SANGTAC (MATG, MASACH, NAMST) values (77, 'AEB68B97-A560-47AA-88ED-3E9C88DB1D95', 1998);
-insert into SANGTAC (MATG, MASACH, NAMST) values (78, '5124409A-8882-458F-B762-3EBB2FE7327F', 2012);
-insert into SANGTAC (MATG, MASACH, NAMST) values (79, 'C4A0BB6D-EBFD-4282-905F-3F143B1D88BE', 1996);
-insert into SANGTAC (MATG, MASACH, NAMST) values (80, 'A807B0B3-B0E6-4263-8194-3F827FCFA5A1', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (81, 'BE0B2ED3-2829-4C4C-A823-3FDBAEA698DB', 2001);
-insert into SANGTAC (MATG, MASACH, NAMST) values (82, 'DEE72548-5B5E-4B99-90E2-410F291D80AF', 2002);
-insert into SANGTAC (MATG, MASACH, NAMST) values (83, '0CEAC23B-8A82-4D2F-9556-411D96DA20C0', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (84, '8C3AA3F4-AED4-47A9-A929-4126BBB2A614', 2010);
-insert into SANGTAC (MATG, MASACH, NAMST) values (85, 'E3F0A9AF-C8B3-4154-8517-4279AF8F8AD1', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (86, 'BE54DEE9-D505-409C-AC86-44B79E574186', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (87, '3DC497A2-BF9C-4E15-8AB5-47D50682DAB4', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (88, 'C6968E0C-10D4-48DF-819C-49142018D30C', 2001);
-insert into SANGTAC (MATG, MASACH, NAMST) values (89, 'A2C5F0CE-B5F7-4DD2-929D-4A7426E21506', 2010);
-insert into SANGTAC (MATG, MASACH, NAMST) values (180, 'A2C5F0CE-B5F7-4DD2-929D-4A7426E21506', 2010);
-insert into SANGTAC (MATG, MASACH, NAMST) values (181, '71EB80FC-3A45-49AF-861F-4A767690FFBA', 2010);
-insert into SANGTAC (MATG, MASACH, NAMST) values (182, 'B51C26D0-F9E7-4231-9111-4B60B9B7B9C8', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (183, 'E0CAC21D-73BA-41E1-8061-4BA03314B4F5', 2002);
-insert into SANGTAC (MATG, MASACH, NAMST) values (184, '832A4FD3-571D-428B-B8B0-4C2FA366746E', 2000);
-insert into SANGTAC (MATG, MASACH, NAMST) values (185, 'AF365034-715A-4A97-A425-4C704D7A6A91', 1998);
-insert into SANGTAC (MATG, MASACH, NAMST) values (186, 'AE7902C0-4E0C-44FD-8BE4-4CBCF5ED3931', 1999);
-insert into SANGTAC (MATG, MASACH, NAMST) values (187, 'C4BF060B-F1E1-4DA0-B1DC-4CE79F2A8711', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (188, '3C4DC511-E9F1-4271-ADA0-4FB209FEE8BA', 2005);
-insert into SANGTAC (MATG, MASACH, NAMST) values (189, '3999AD26-40AB-47C9-BFEF-504F424B6C29', 2004);
-insert into SANGTAC (MATG, MASACH, NAMST) values (190, 'F9D1CEC7-936C-4F04-A0CE-507B8B1D7B51', 1984);
-insert into SANGTAC (MATG, MASACH, NAMST) values (191, '3C4AAFF7-7646-4D50-9A1D-51AB1CF6C945', 2005);
-insert into SANGTAC (MATG, MASACH, NAMST) values (192, '78371972-A1E5-4DA9-8EA5-52016F29E10A', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (193, '4134379B-490A-4C65-9058-527D14C4EBA9', 1989);
-insert into SANGTAC (MATG, MASACH, NAMST) values (194, '4BADABA2-B72C-47A4-B16C-5313AB08B38C', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (195, '7B0D6B2E-87E0-4ED3-9F78-538085F491CA', 1995);
-insert into SANGTAC (MATG, MASACH, NAMST) values (196, 'CF2E98F9-3A74-4D1F-8693-53FA62CD04DE', 1999);
-insert into SANGTAC (MATG, MASACH, NAMST) values (106, '29F757C3-31AC-4224-9D85-5515D47BA54C', 1996);
-insert into SANGTAC (MATG, MASACH, NAMST) values (107, '40CDF05A-1B8A-4EB6-83E2-55905E6B2BA1', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (108, 'E047C845-EBB6-4BDA-945E-560144497CE4', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (109, '907D88D5-1B6D-47E2-8297-5843F169404B', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (110, 'FB62F90D-1C5E-4906-9F37-58B59C3E771C', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (111, '0BC2D64D-9078-4AEB-A5FD-592DAA06325E', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (112, 'F738578D-83D2-4DAA-A602-5B12497313BE', 2012);
-insert into SANGTAC (MATG, MASACH, NAMST) values (113, 'B78508B8-2419-439B-885D-5B5C83CF9414', 1989);
-insert into SANGTAC (MATG, MASACH, NAMST) values (114, '9C8FFF66-4B16-4B84-8D47-5BF4D822AD5C', 2007);
-insert into SANGTAC (MATG, MASACH, NAMST) values (115, '8A05E4A2-514F-4B8A-9B7D-5C3AFFED4D7F', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (116, '8521740D-9E54-4D19-BBE1-5D025ADF9ED1', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (117, '358C6D27-616C-4567-9A39-5F4835DC4977', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (118, 'D71DEC6F-9B96-40E6-B07D-6069401A91A5', 2005);
-insert into SANGTAC (MATG, MASACH, NAMST) values (119, 'BA25FED7-2250-44F5-B5FD-6162A8C9FB2E', 1975);
-insert into SANGTAC (MATG, MASACH, NAMST) values (120, '49C69CB7-3A02-4C25-B108-619E29E54D79', 2004);
-insert into SANGTAC (MATG, MASACH, NAMST) values (121, 'ECD1D884-F5C2-41BF-9B2C-62562A6EAA33', 2002);
-insert into SANGTAC (MATG, MASACH, NAMST) values (122, '8A382D15-7153-4CB1-BCF7-647AC1EAD88C', 1998);
-insert into SANGTAC (MATG, MASACH, NAMST) values (123, 'D547E7D0-0169-4012-AC15-65D22ED6DA4B', 1987);
-insert into SANGTAC (MATG, MASACH, NAMST) values (124, '6B7AA959-BF9C-4314-91B5-66E48E7860E4', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (125, '3647D6C1-3E34-44D9-BA69-66F77EEA507A', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (126, 'EE448738-C84E-4D64-ABCE-682FDD379D1D', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (127, '3603B0C0-F755-4044-90F9-686943942248', 2005);
-insert into SANGTAC (MATG, MASACH, NAMST) values (128, '93A8B4D9-45DC-49E3-BE58-69330C27E354', 2010);
-insert into SANGTAC (MATG, MASACH, NAMST) values (129, '435AF550-99C1-4E5B-B282-69C158453D84', 1990);
-insert into SANGTAC (MATG, MASACH, NAMST) values (130, '50351FCD-9188-4484-8643-6BE278BD9307', 2011);
-insert into SANGTAC (MATG, MASACH, NAMST) values (131, '2265BC04-B996-4DE2-8EE3-6C52B53CED11', 2000);
-insert into SANGTAC (MATG, MASACH, NAMST) values (132, '7020E58C-BD48-47E7-94BF-6CDD6DA1545B', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (133, '820CA790-A6C5-4D3C-9390-6E3E2C7536D1', 2011);
-insert into SANGTAC (MATG, MASACH, NAMST) values (134, '5E5AB112-D415-4ED1-BCCC-6E9B4878F42D', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (135, 'BF914F6D-0AC2-4BAB-91EE-6ECC6E5020A1', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (136, '0C728CC8-FBA5-45CC-825E-6EDA34CE29A6', 2002);
-insert into SANGTAC (MATG, MASACH, NAMST) values (137, '830A0A5F-61A4-4789-B5E9-6EEB0BB4FE8A', 1985);
-insert into SANGTAC (MATG, MASACH, NAMST) values (138, '07A63917-5B04-40F6-B851-715421352EEF', 2007);
-insert into SANGTAC (MATG, MASACH, NAMST) values (139, 'D2FBE25E-8E7A-43F3-AE45-729B967ABFC6', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (140, '08A47B76-0E98-48CB-AC59-732FE0D10656', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (141, '5E66B4E6-5ED6-4D96-9271-740E88E7BA81', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (142, 'F0178EDA-D7C3-44BD-A223-7483AB4256BF', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (143, 'DC47AA67-C51F-4741-B2E7-74ABC0013A75', 1998);
-insert into SANGTAC (MATG, MASACH, NAMST) values (144, '2D8F9764-2AB3-4F0C-858A-74FB323AB0E5', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (145, '1128AF1F-F1AF-4DE8-A6EA-7511276DB206', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (146, '147B2293-F51B-4968-98CE-7541CB4BC891', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (147, 'E9777206-965C-46E1-8803-76DA02D6CD6E', 1967);
-insert into SANGTAC (MATG, MASACH, NAMST) values (148, '187102F3-27FA-4B42-AF79-77890DBB3089', 1995);
-insert into SANGTAC (MATG, MASACH, NAMST) values (149, '7F9E045F-CE93-43BE-9BC7-77D26CE5545E', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (150, '7C100596-909D-42D6-A796-78F48B09A21B', 2004);
-insert into SANGTAC (MATG, MASACH, NAMST) values (151, '7ED49EBF-CE57-409E-AEDD-7B56928E0AD7', 2001);
-insert into SANGTAC (MATG, MASACH, NAMST) values (152, '6A3087B2-C366-4270-915E-7C3E5EAE8157', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (153, 'AA829280-AEBD-453A-9C48-7C76C17F1BC4', 2005);
-insert into SANGTAC (MATG, MASACH, NAMST) values (154, 'D4515A9B-5A12-4178-92E2-7D9A600AB1A1', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (155, '9CEC48BF-657D-4B09-8185-7FAB594DD749', 2007);
-insert into SANGTAC (MATG, MASACH, NAMST) values (156, 'C51E72E4-7599-4EF5-BB8B-806A4893AD0A', 1997);
---===============================================
-select *from SANGTAC
-select * from TACGIA
-insert into SANGTAC (MATG, MASACH, NAMST) values (1, '74C38035-ACEA-4C48-A546-806BADB744C6', 2004);
-insert into SANGTAC (MATG, MASACH, NAMST) values (2, 'A1916B37-30EA-4A05-A8C5-80E075765E3C', 2005);
-insert into SANGTAC (MATG, MASACH, NAMST) values (3, '38646E7D-637B-4D1D-BA07-81D89FE73520', 2007);
-insert into SANGTAC (MATG, MASACH, NAMST) values (4, 'B4EB57E3-52E4-4F8B-908B-81FA8D34E34F', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (5, '62FB3812-D5F3-424E-A7A4-83D3E2DF9862', 2005);
-insert into SANGTAC (MATG, MASACH, NAMST) values (6, '9E4E2C58-8E35-4D2D-BC30-83FC61638FE8', 2010);
-insert into SANGTAC (MATG, MASACH, NAMST) values (7, '89424A56-A4EA-4E1A-B751-841F9BC3CB40', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (8, '2CD897DC-B230-498E-904B-84A57B1FD5AE', 2011);
-insert into SANGTAC (MATG, MASACH, NAMST) values (9, '0EBAA3F4-A58C-4A3D-BF52-875A3457794E', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (10, 'FB80CEA4-C4E7-4011-B64B-8795DAEB6CF1', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (11, 'CA5E2502-8CBD-4765-9E8E-87B8D952302A', 1999);
-insert into SANGTAC (MATG, MASACH, NAMST) values (12, '91061E54-6AA1-4FEE-8AB3-88535322D226', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (13, '4029FC77-9E98-4B2F-8CB9-888C281A0BE8', 1991);
-insert into SANGTAC (MATG, MASACH, NAMST) values (14, 'D22CCF90-292F-4491-AB81-88C569FFE93E', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (15, '4C075DB1-F86B-4312-8730-89A1DC3993FC', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (16, 'C8BC8C14-4DB8-4D6E-B2E0-8AA207C69D3B', 2000);
-insert into SANGTAC (MATG, MASACH, NAMST) values (17, '662EC710-F23D-49D1-96D9-8AE7B4D708BE', 1996);
-insert into SANGTAC (MATG, MASACH, NAMST) values (18, '48A5DFF5-43B1-47F2-97EB-8AEBE5DADD20', 2011);
-insert into SANGTAC (MATG, MASACH, NAMST) values (19, '1AF336B0-6F64-4088-8EFE-8BA2B02E0F4B', 2005);
-insert into SANGTAC (MATG, MASACH, NAMST) values (20, '8DEAE1B7-C789-476D-9EBB-8C42359A2D5E', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (21, 'F0BE3CE1-EA63-47C1-8A17-8CF1CD03B85E', 2010);
-insert into SANGTAC (MATG, MASACH, NAMST) values (22, '7F89D710-02AE-4B04-A5D8-8D1AAD869415', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (23, '6DA39958-DBE1-4B3F-9257-8D5EB1113969', 1991);
-insert into SANGTAC (MATG, MASACH, NAMST) values (24, '364FB889-105B-4EE2-A3D7-8D642B121C7E', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (25, 'BF678C80-EF0D-4F49-ADA1-8DE10C451196', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (26, '24B11BA8-1A5A-4D4A-AA64-8E0C9B924730', 1995);
-insert into SANGTAC (MATG, MASACH, NAMST) values (27, '926F581C-2AB4-4D9E-81D2-8F0D445E0DD3', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (28, 'D492FBD9-4111-4F15-BEC6-8FB84C5518B2', 2002);
-insert into SANGTAC (MATG, MASACH, NAMST) values (29, 'EFD44E0E-589F-48AD-9B40-912BBB4F3F58', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (30, 'AA51DD02-8D56-476A-AABB-9237A7CDD701', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (31, '879A5AE0-A770-45F3-A6C9-9250D9E47A57', 2007);
-insert into SANGTAC (MATG, MASACH, NAMST) values (32, '12D25254-F473-4761-AF17-926A28491E10', 2005);
-insert into SANGTAC (MATG, MASACH, NAMST) values (33, '59A4E331-B14C-42E4-B90F-930DDD6EE6A0', 2010);
-insert into SANGTAC (MATG, MASACH, NAMST) values (34, 'F9B6F3A8-EEED-4D60-919D-9383543A1BE9', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (35, '5F7ACFB4-633E-4805-BDD8-947F3768E41B', 2005);
-insert into SANGTAC (MATG, MASACH, NAMST) values (36, 'AB541EC3-84B5-42AD-BAF3-94C383F88335', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (37, 'FFB27FBB-8AF5-4622-9236-9584D2280680', 1987);
-insert into SANGTAC (MATG, MASACH, NAMST) values (38, 'C51EF1AD-708F-46F5-8FC2-9635486CED8C', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (39, '36EDEA17-507C-40A8-B32E-96DF6B6A8D25', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (40, 'C7A8F437-F365-49AD-A679-96FD883FF82C', 1987);
-insert into SANGTAC (MATG, MASACH, NAMST) values (41, '034F1DA2-A621-46AA-849C-980CB7455F4B', 1999);
-insert into SANGTAC (MATG, MASACH, NAMST) values (42, '72D31293-3B19-4C9F-9D03-983ACC756EEA', 2000);
-insert into SANGTAC (MATG, MASACH, NAMST) values (43, 'B3F95202-4F28-4CFB-99C1-983B93B3B546', 2002);
-insert into SANGTAC (MATG, MASACH, NAMST) values (44, '8C1BF1C9-A907-45C6-B050-98D36EA98D2A', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (45, '26AB1366-0B4F-4BFB-BDAC-992DD18E4867', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (46, '4F765ABF-B76B-48DF-8CD3-99C15306C177', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (47, '1E41AAA2-0A8A-4B70-891F-99E0D31CB18C', 1999);
-insert into SANGTAC (MATG, MASACH, NAMST) values (48, 'D4282298-00A5-4DE1-8492-9A1B100D5A6A', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (49, '1E65A8C0-45EA-4A66-B961-9A6A2C437479', 1984);
-insert into SANGTAC (MATG, MASACH, NAMST) values (50, '4BD3608C-C6D3-459A-9689-9B1047EB0C0F', 2007);
-insert into SANGTAC (MATG, MASACH, NAMST) values (51, 'FB660F55-65BA-4293-8545-9BD46140AB2B', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (52, 'AEEFC595-D81D-49A2-B87D-9C1D0EAE626E', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (53, '4266360D-E520-4974-AF7A-9CF08596A3CB', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (54, '9E2DDCB0-5A17-4DB6-944D-9DE9795373F3', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (55, '8422EF57-913D-4524-9055-9E109887412B', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (56, '449EE83B-9406-4CAE-9788-9FE5988FCDC4', 2000);
-insert into SANGTAC (MATG, MASACH, NAMST) values (57, 'ABBA85EA-E7F4-4B9E-B249-A0A6C97DEED8', 1986);
-insert into SANGTAC (MATG, MASACH, NAMST) values (58, '1B77CE7E-592C-40D6-932C-A0BFCD9E5F7C', 2007);
-insert into SANGTAC (MATG, MASACH, NAMST) values (59, 'D73F1043-295D-44D4-8457-A1C3204EEF55', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (60, '27A7BF98-3002-4158-8B4D-A2E335731E2E', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (61, '5B473731-0F28-47AE-B5AA-A326E6BFF37D', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (62, '776BB220-A257-4046-9A02-A34E392A0A37', 1996);
-insert into SANGTAC (MATG, MASACH, NAMST) values (63, 'C720CF22-7DC0-4751-9651-A41C806E066E', 2000);
-insert into SANGTAC (MATG, MASACH, NAMST) values (64, 'F3BD913A-2ACF-4E13-BDB5-A5AC76866B43', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (65, '7A2E251C-A4DF-4A99-B3E2-A5CCDDAEE758', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (66, '858CCC86-B654-4934-B3BC-A650E77ABCDD', 1965);
-insert into SANGTAC (MATG, MASACH, NAMST) values (67, '7898E83B-5C1A-4A5E-B7EC-A72F02BC8F7C', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (68, '3C1F4D39-EAA7-4A11-8A7D-A7AF3152D7AC', 1996);
-insert into SANGTAC (MATG, MASACH, NAMST) values (69, 'B23F2C60-11B0-4586-93DA-A7BD270BDDCB', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (70, '70FF11BC-A1D1-472E-8796-A7D35C2F6EAC', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (71, 'CD564833-4AD7-4FC3-8CCA-A9F6B63B48FC', 2010);
-insert into SANGTAC (MATG, MASACH, NAMST) values (72, '1EF7E52F-5273-449D-8A7A-AA73DE0C3B5A', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (73, '32CB4437-40DE-453F-933D-AC962C0192C6', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (74, 'E57BDF34-77C6-4F25-B267-AD2C0B8E3305', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (75, '7218E8DD-467B-438B-B86E-AD4BCB4ABDF5', 2005);
-insert into SANGTAC (MATG, MASACH, NAMST) values (76, '87791421-E6B4-49DD-8250-AF3D49097E3C', 1984);
-insert into SANGTAC (MATG, MASACH, NAMST) values (77, '7EFDA341-01D9-4426-B25A-B090C86A5F15', 2012);
-insert into SANGTAC (MATG, MASACH, NAMST) values (78, 'CE13604B-8DEE-426F-A226-B0F1E92BA290', 2011);
-insert into SANGTAC (MATG, MASACH, NAMST) values (79, '140E9EE5-B617-4E84-B4F6-B1AAB7109975', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (80, 'A50F109C-46D4-4C82-8FD7-B343D7CD44BE', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (81, 'F7534896-DDD7-47CB-BA2E-B6E765E7B8E6', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (82, '1116438E-0459-4412-B237-B79B6574C3E0', 2013);
-insert into SANGTAC (MATG, MASACH, NAMST) values (83, '59899C50-E7C0-49D3-BFA5-B92B287B9C93', 2010);
-insert into SANGTAC (MATG, MASACH, NAMST) values (84, '4A44FA6D-B47D-4E05-9771-BA36A0979C35', 1999);
-insert into SANGTAC (MATG, MASACH, NAMST) values (85, 'D07ECD3A-8C0B-4EE6-9A7A-BAC463F39009', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (86, '5C39E9C6-9B8B-422B-A4EC-BCA1D6CA241B', 1999);
-insert into SANGTAC (MATG, MASACH, NAMST) values (87, 'D570784D-4057-49E7-BC42-BCAEF2EE18D4', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (87, 'FFE6E057-0EA1-43CE-ADE7-BDC8CA590DC9', 2001);
-insert into SANGTAC (MATG, MASACH, NAMST) values (89, 'EA426E11-F4A3-4BFA-AEA8-BE087B20F979', 2009);
--- Chèn dữ liệu mới với mã tác giả bắt đầu từ 157 và tăng dần
-insert into SANGTAC (MATG, MASACH, NAMST) values (157, '47713A80-0EDD-47C9-ACFE-BE8DAA5C69F7', 2002);
-insert into SANGTAC (MATG, MASACH, NAMST) values (158, '3C9AB5CE-98F4-49E6-B765-BEAEABE2960D', 2011);
-insert into SANGTAC (MATG, MASACH, NAMST) values (159, '86BB4225-8FFF-4C8C-910B-BF1BE00D717B', 1989);
-insert into SANGTAC (MATG, MASACH, NAMST) values (160, '8E49D593-FC2D-4E55-A118-BF765E29DBA8', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (161, '1A5EA50E-4444-4546-92BA-BFC693D76468', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (162, 'E5BDA0D0-A30E-47DD-BC46-C07A7BD6F957', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (163, 'B0A8BAB0-4D89-422B-9FB4-C25EB8978CFD', 2012);
-insert into SANGTAC (MATG, MASACH, NAMST) values (164, '9539D32D-DF09-4E89-9DD6-C297FD8EE3D8', 2001);
-insert into SANGTAC (MATG, MASACH, NAMST) values (165, '34FC769E-BDDA-4E8B-B3F0-C31A6360B666', 1998);
-insert into SANGTAC (MATG, MASACH, NAMST) values (166, '052A1F96-9EA2-4C16-84F6-C35EC18FC01D', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (167, 'C0A761E8-0ADD-4D1F-BFF4-C3BFF40EF7F7', 2006);
-insert into SANGTAC (MATG, MASACH, NAMST) values (168, '45586C5B-8AEB-4779-8868-C4899B4F20D3', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (169, 'E2A56211-B38E-4AD5-A1E7-C5687CB4543C', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (170, 'F0A616EE-B12B-4BBD-9212-C6054C925418', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (171, '03EF9A64-766F-4C5E-867E-C63A8A99BCE8', 2007);
-insert into SANGTAC (MATG, MASACH, NAMST) values (172, '1B0C0DE4-4075-4380-B0D6-C6FF08884528', 1994);
-insert into SANGTAC (MATG, MASACH, NAMST) values (173, '6070D1F6-7817-4A54-8B29-C886A0A1D148', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (174, 'E64A730E-A255-4C53-B823-C97EB2028573', 1998);
-insert into SANGTAC (MATG, MASACH, NAMST) values (175, '3B242684-2569-43F5-9D93-C9C3B2EE287C', 1991);
-insert into SANGTAC (MATG, MASACH, NAMST) values (176, '0775964A-A6B9-454A-ACE1-CAF5A235FA27', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (177, 'A62A631A-D75C-4DC0-999B-CB5A67A18E79', 1984);
-insert into SANGTAC (MATG, MASACH, NAMST) values (178, 'A905C0B4-FEFE-4FDC-9F42-CC106328BD8B', 2011);
-insert into SANGTAC (MATG, MASACH, NAMST) values (179, 'DCC67BA0-A8CA-4A4C-9803-CCB70E36D5BB', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (180, '6C3F8D14-0E34-437E-A27C-EE1ED6264C51', 1985);
-insert into SANGTAC (MATG, MASACH, NAMST) values (153, '4575D856-E39B-42AB-9EF4-F03567A1E114', 2003);
-insert into SANGTAC (MATG, MASACH, NAMST) values (154, 'DCA84A85-D0FF-44EF-9C0C-F1B66E56F173', 2000);
-insert into SANGTAC (MATG, MASACH, NAMST) values (155, '2663B71E-C0CA-44C9-8574-F3419D359671', 1983);
-insert into SANGTAC (MATG, MASACH, NAMST) values (156, '36DBE81B-8DED-4A45-A1F8-F3B50AB72BE5', 1985);
-insert into SANGTAC (MATG, MASACH, NAMST) values (1, '67095CC2-A121-49AF-A61E-F43BA895029B', 1999);
-insert into SANGTAC (MATG, MASACH, NAMST) values (2, 'F4756442-BAF2-40A6-970F-F4CD86DEBACB', 1996);
-insert into SANGTAC (MATG, MASACH, NAMST) values (3, 'F0669A37-1E55-4F34-9F3A-F4CF5979ED35', 2013);
-insert into SANGTAC (MATG, MASACH, NAMST) values (4, '912556BF-CC06-4924-AC34-F4D01FAE5CE4', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (5, '86025541-B8EF-4264-923A-F526EE5555B8', 1990);
-insert into SANGTAC (MATG, MASACH, NAMST) values (6, '6A2C8FB9-0D7A-4866-9199-F579A6729751', 2004);
-insert into SANGTAC (MATG, MASACH, NAMST) values (7, 'BD4A03DA-92A8-4EF3-8158-F7EF8679D722', 2009);
-insert into SANGTAC (MATG, MASACH, NAMST) values (8, 'C7692B72-199E-4BAD-820B-F859EF65C2D6', 2004);
-insert into SANGTAC (MATG, MASACH, NAMST) values (9, 'BEAE8CA4-1A2A-4DBD-90F7-F8C3E23C668A', 2011);
-insert into SANGTAC (MATG, MASACH, NAMST) values (10, '8B7E38B5-C356-467F-922D-F9A864639259', 2008);
-insert into SANGTAC (MATG, MASACH, NAMST) values (11, '75E29D4E-9915-4B58-B7BA-F9BEB4F53E47', 1996);
-insert into SANGTAC (MATG, MASACH, NAMST) values (12, 'DCC4E1E1-49C4-4004-996E-F9E2F734EA80', 1993);
-insert into SANGTAC (MATG, MASACH, NAMST) values (13, '17E949F3-6134-494D-B721-FA6261E194EB', 2004);
-insert into SANGTAC (MATG, MASACH, NAMST) values (123, '5148D4FC-F903-489E-BB63-FA6679C6C5C2', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (123, 'BDABE40C-29C4-4FBD-8B62-FB0461CA6A56', 1997);
-insert into SANGTAC (MATG, MASACH, NAMST) values (123, 'B1BC5A18-4AD3-4ECF-8602-FDCA1635B993', 2000);
-insert into SANGTAC (MATG, MASACH, NAMST) values (144, 'A2154192-E161-4346-A51E-FE197FC454C9', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (144, 'C7F62A96-C9FB-4EC7-A9F7-FE8797C1D334', 2010);
-insert into SANGTAC (MATG, MASACH, NAMST) values (13, '50439287-9324-468B-A77E-FF6F9393F899', 1992);
-insert into SANGTAC (MATG, MASACH, NAMST) values (14, 'BC960553-A668-4068-835D-FFE84AFAAB5B', 2003);
-
-
-
-------------------------------------------------nho them ID
--- insert don hang chi tiet
-insert into DONHANG_CHITIET (MADH, MASACH)
+-- INSERT SANG TAC
+insert into SANGTAC (MATG, MASACH, NAMST) values (1, 1, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (2, 2, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (3, 3, 1985);
+insert into SANGTAC (MATG, MASACH, NAMST) values (4, 4, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (5, 5, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (6, 6, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (7, 7, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (8, 8, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (9, 9, 2005);
+insert into SANGTAC (MATG, MASACH, NAMST) values (10, 10, 1956);
+insert into SANGTAC (MATG, MASACH, NAMST) values (11, 11, 1998);
+insert into SANGTAC (MATG, MASACH, NAMST) values (12, 12, 1967);
+insert into SANGTAC (MATG, MASACH, NAMST) values (13, 13, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (14, 14, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (15, 15, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (16, 16, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (17, 17, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (18, 18, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (19, 19, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (20, 20, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (21, 21, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (22, 22, 2000);
+insert into SANGTAC (MATG, MASACH, NAMST) values (23, 23, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (24, 24, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (25, 25, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (26, 26, 1998);
+insert into SANGTAC (MATG, MASACH, NAMST) values (27, 27, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (28, 28, 1999);
+insert into SANGTAC (MATG, MASACH, NAMST) values (29, 29, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (30, 30, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (31, 31, 1990);
+insert into SANGTAC (MATG, MASACH, NAMST) values (32, 32, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (33, 33, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (34, 34, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (35, 35, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (36, 36, 1984);
+insert into SANGTAC (MATG, MASACH, NAMST) values (37, 37, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (38, 38, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (39, 39, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (40, 40, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (41, 41, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (42, 42, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (43, 43, 1989);
+insert into SANGTAC (MATG, MASACH, NAMST) values (44, 44, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (45, 45, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (46, 46, 1957);
+insert into SANGTAC (MATG, MASACH, NAMST) values (47, 47, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (48, 48, 1980);
+insert into SANGTAC (MATG, MASACH, NAMST) values (49, 49, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (50, 50, 2005);
+insert into SANGTAC (MATG, MASACH, NAMST) values (51, 51, 1996);
+insert into SANGTAC (MATG, MASACH, NAMST) values (52, 52, 2005);
+insert into SANGTAC (MATG, MASACH, NAMST) values (53, 53, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (54, 54, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (55, 55, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (56, 56, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (57, 57, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (58, 58, 1996);
+insert into SANGTAC (MATG, MASACH, NAMST) values (59, 59, 1996);
+insert into SANGTAC (MATG, MASACH, NAMST) values (60, 60, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (61, 61, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (62, 62, 2013);
+insert into SANGTAC (MATG, MASACH, NAMST) values (63, 63, 2005);
+insert into SANGTAC (MATG, MASACH, NAMST) values (64, 64, 1986);
+insert into SANGTAC (MATG, MASACH, NAMST) values (65, 65, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (66, 66, 1990);
+insert into SANGTAC (MATG, MASACH, NAMST) values (67, 67, 1999);
+insert into SANGTAC (MATG, MASACH, NAMST) values (68, 68, 1988);
+insert into SANGTAC (MATG, MASACH, NAMST) values (69, 69, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (70, 70, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (71, 71, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (72, 72, 1996);
+insert into SANGTAC (MATG, MASACH, NAMST) values (73, 73, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (74, 74, 2003);
+insert into SANGTAC (MATG, MASACH, NAMST) values (75, 75, 1996);
+insert into SANGTAC (MATG, MASACH, NAMST) values (76, 76, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (77, 77, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (78, 78, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (79, 79, 1994);
+insert into SANGTAC (MATG, MASACH, NAMST) values (80, 80, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (81, 81, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (82, 82, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (83, 83, 1994);
+insert into SANGTAC (MATG, MASACH, NAMST) values (84, 84, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (85, 85, 1999);
+insert into SANGTAC (MATG, MASACH, NAMST) values (86, 86, 2008);
+insert into SANGTAC (MATG, MASACH, NAMST) values (87, 87, 1999);
+insert into SANGTAC (MATG, MASACH, NAMST) values (88, 88, 1996);
+insert into SANGTAC (MATG, MASACH, NAMST) values (89, 89, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (90, 90, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (91, 91, 1996);
+insert into SANGTAC (MATG, MASACH, NAMST) values (92, 92, 2008);
+insert into SANGTAC (MATG, MASACH, NAMST) values (93, 93, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (94, 94, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (95, 95, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (96, 96, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (97, 97, 1909);
+insert into SANGTAC (MATG, MASACH, NAMST) values (98, 98, 1999);
+insert into SANGTAC (MATG, MASACH, NAMST) values (99, 99, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (100, 100, 1991);
+insert into SANGTAC (MATG, MASACH, NAMST) values (101, 101, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (102, 102, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (103, 103, 2003);
+insert into SANGTAC (MATG, MASACH, NAMST) values (104, 104, 1998);
+insert into SANGTAC (MATG, MASACH, NAMST) values (105, 105, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (106, 106, 1991);
+insert into SANGTAC (MATG, MASACH, NAMST) values (107, 107, 1991);
+insert into SANGTAC (MATG, MASACH, NAMST) values (108, 108, 2000);
+insert into SANGTAC (MATG, MASACH, NAMST) values (109, 109, 2003);
+insert into SANGTAC (MATG, MASACH, NAMST) values (110, 110, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (111, 111, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (112, 112, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (113, 113, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (114, 114, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (115, 115, 2005);
+insert into SANGTAC (MATG, MASACH, NAMST) values (116, 116, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (117, 117, 1988);
+insert into SANGTAC (MATG, MASACH, NAMST) values (118, 118, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (119, 119, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (120, 120, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (121, 121, 1998);
+insert into SANGTAC (MATG, MASACH, NAMST) values (122, 122, 1990);
+insert into SANGTAC (MATG, MASACH, NAMST) values (123, 123, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (124, 124, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (125, 125, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (126, 126, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (127, 127, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (128, 128, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (129, 129, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (130, 130, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (131, 131, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (132, 132, 2003);
+insert into SANGTAC (MATG, MASACH, NAMST) values (133, 133, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (134, 134, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (135, 135, 2000);
+insert into SANGTAC (MATG, MASACH, NAMST) values (136, 136, 1962);
+insert into SANGTAC (MATG, MASACH, NAMST) values (137, 137, 1994);
+insert into SANGTAC (MATG, MASACH, NAMST) values (138, 138, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (139, 139, 1988);
+insert into SANGTAC (MATG, MASACH, NAMST) values (140, 140, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (141, 141, 2008);
+insert into SANGTAC (MATG, MASACH, NAMST) values (142, 142, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (143, 143, 1994);
+insert into SANGTAC (MATG, MASACH, NAMST) values (144, 144, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (145, 145, 2005);
+insert into SANGTAC (MATG, MASACH, NAMST) values (146, 146, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (147, 147, 1989);
+insert into SANGTAC (MATG, MASACH, NAMST) values (148, 148, 1998);
+insert into SANGTAC (MATG, MASACH, NAMST) values (149, 149, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (150, 150, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (151, 151, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (152, 152, 2005);
+insert into SANGTAC (MATG, MASACH, NAMST) values (153, 153, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (154, 154, 1994);
+insert into SANGTAC (MATG, MASACH, NAMST) values (155, 155, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (156, 156, 2005);
+insert into SANGTAC (MATG, MASACH, NAMST) values (157, 157, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (158, 158, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (159, 159, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (160, 160, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (161, 161, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (162, 162, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (163, 163, 1999);
+insert into SANGTAC (MATG, MASACH, NAMST) values (164, 164, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (165, 165, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (166, 166, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (167, 167, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (168, 168, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (169, 169, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (170, 170, 2000);
+insert into SANGTAC (MATG, MASACH, NAMST) values (171, 171, 2005);
+insert into SANGTAC (MATG, MASACH, NAMST) values (172, 172, 1957);
+insert into SANGTAC (MATG, MASACH, NAMST) values (173, 173, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (174, 174, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (175, 175, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (176, 176, 1998);
+insert into SANGTAC (MATG, MASACH, NAMST) values (177, 177, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (178, 178, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (179, 179, 1989);
+insert into SANGTAC (MATG, MASACH, NAMST) values (180, 180, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (181, 181, 1976);
+insert into SANGTAC (MATG, MASACH, NAMST) values (182, 182, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (183, 183, 2005);
+insert into SANGTAC (MATG, MASACH, NAMST) values (184, 184, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (185, 185, 1994);
+insert into SANGTAC (MATG, MASACH, NAMST) values (186, 186, 1999);
+insert into SANGTAC (MATG, MASACH, NAMST) values (187, 187, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (188, 188, 2003);
+insert into SANGTAC (MATG, MASACH, NAMST) values (189, 189, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (190, 190, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (191, 191, 1994);
+insert into SANGTAC (MATG, MASACH, NAMST) values (192, 192, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (193, 193, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (194, 194, 2008);
+insert into SANGTAC (MATG, MASACH, NAMST) values (195, 195, 1998);
+insert into SANGTAC (MATG, MASACH, NAMST) values (196, 196, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (1, 197, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (2, 198, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (3, 199, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (4, 200, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (5, 201, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (6, 202, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (7, 203, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (8, 204, 2003);
+insert into SANGTAC (MATG, MASACH, NAMST) values (9, 205, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (10, 206, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (11, 207, 1999);
+insert into SANGTAC (MATG, MASACH, NAMST) values (12, 208, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (13, 209, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (14, 210, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (15, 211, 2003);
+insert into SANGTAC (MATG, MASACH, NAMST) values (16, 212, 1996);
+insert into SANGTAC (MATG, MASACH, NAMST) values (17, 213, 1987);
+insert into SANGTAC (MATG, MASACH, NAMST) values (18, 214, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (19, 215, 1994);
+insert into SANGTAC (MATG, MASACH, NAMST) values (20, 216, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (21, 217, 1991);
+insert into SANGTAC (MATG, MASACH, NAMST) values (22, 218, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (23, 219, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (24, 220, 2013);
+insert into SANGTAC (MATG, MASACH, NAMST) values (25, 221, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (26, 222, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (27, 223, 1996);
+insert into SANGTAC (MATG, MASACH, NAMST) values (28, 224, 1994);
+insert into SANGTAC (MATG, MASACH, NAMST) values (29, 225, 1957);
+insert into SANGTAC (MATG, MASACH, NAMST) values (30, 226, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (31, 227, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (32, 228, 2005);
+insert into SANGTAC (MATG, MASACH, NAMST) values (33, 229, 1999);
+insert into SANGTAC (MATG, MASACH, NAMST) values (34, 230, 1994);
+insert into SANGTAC (MATG, MASACH, NAMST) values (35, 231, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (36, 232, 1965);
+insert into SANGTAC (MATG, MASACH, NAMST) values (37, 233, 2008);
+insert into SANGTAC (MATG, MASACH, NAMST) values (38, 234, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (39, 235, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (40, 236, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (41, 237, 1990);
+insert into SANGTAC (MATG, MASACH, NAMST) values (42, 238, 1994);
+insert into SANGTAC (MATG, MASACH, NAMST) values (43, 239, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (44, 240, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (45, 241, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (46, 242, 1996);
+insert into SANGTAC (MATG, MASACH, NAMST) values (47, 243, 2005);
+insert into SANGTAC (MATG, MASACH, NAMST) values (48, 244, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (49, 245, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (50, 246, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (51, 247, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (52, 248, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (53, 249, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (54, 250, 1999);
+insert into SANGTAC (MATG, MASACH, NAMST) values (55, 251, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (56, 252, 2008);
+insert into SANGTAC (MATG, MASACH, NAMST) values (57, 253, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (58, 254, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (59, 255, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (60, 256, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (61, 257, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (62, 258, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (63, 259, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (64, 260, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (65, 261, 2003);
+insert into SANGTAC (MATG, MASACH, NAMST) values (66, 262, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (67, 263, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (68, 264, 2000);
+insert into SANGTAC (MATG, MASACH, NAMST) values (69, 265, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (70, 266, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (71, 267, 2008);
+insert into SANGTAC (MATG, MASACH, NAMST) values (72, 268, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (73, 269, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (74, 270, 2008);
+insert into SANGTAC (MATG, MASACH, NAMST) values (75, 271, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (76, 272, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (77, 273, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (78, 274, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (79, 275, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (80, 276, 2002);
+insert into SANGTAC (MATG, MASACH, NAMST) values (81, 277, 2000);
+insert into SANGTAC (MATG, MASACH, NAMST) values (82, 278, 2006);
+insert into SANGTAC (MATG, MASACH, NAMST) values (83, 279, 1994);
+insert into SANGTAC (MATG, MASACH, NAMST) values (84, 280, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (85, 281, 1997);
+insert into SANGTAC (MATG, MASACH, NAMST) values (86, 282, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (87, 283, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (88, 284, 1992);
+insert into SANGTAC (MATG, MASACH, NAMST) values (89, 285, 2003);
+insert into SANGTAC (MATG, MASACH, NAMST) values (90, 286, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (91, 287, 2008);
+insert into SANGTAC (MATG, MASACH, NAMST) values (92, 288, 1991);
+insert into SANGTAC (MATG, MASACH, NAMST) values (93, 289, 1999);
+insert into SANGTAC (MATG, MASACH, NAMST) values (94, 290, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (95, 291, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (96, 292, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (97, 293, 1991);
+insert into SANGTAC (MATG, MASACH, NAMST) values (98, 294, 1984);
+insert into SANGTAC (MATG, MASACH, NAMST) values (99, 295, 2000);
+insert into SANGTAC (MATG, MASACH, NAMST) values (100, 296, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (101, 297, 2008);
+insert into SANGTAC (MATG, MASACH, NAMST) values (102, 298, 2008);
+insert into SANGTAC (MATG, MASACH, NAMST) values (103, 299, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (104, 300, 1990);
+insert into SANGTAC (MATG, MASACH, NAMST) values (105, 301, 1984);
+insert into SANGTAC (MATG, MASACH, NAMST) values (106, 302, 2013);
+insert into SANGTAC (MATG, MASACH, NAMST) values (107, 303, 2008);
+insert into SANGTAC (MATG, MASACH, NAMST) values (108, 304, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (109, 305, 2004);
+insert into SANGTAC (MATG, MASACH, NAMST) values (110, 306, 2011);
+insert into SANGTAC (MATG, MASACH, NAMST) values (111, 307, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (112, 308, 1996);
+insert into SANGTAC (MATG, MASACH, NAMST) values (113, 309, 2008);
+insert into SANGTAC (MATG, MASACH, NAMST) values (114, 310, 2001);
+insert into SANGTAC (MATG, MASACH, NAMST) values (115, 311, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (116, 312, 2005);
+insert into SANGTAC (MATG, MASACH, NAMST) values (117, 313, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (118, 314, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (119, 315, 1989);
+insert into SANGTAC (MATG, MASACH, NAMST) values (120, 316, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (121, 317, 2010);
+insert into SANGTAC (MATG, MASACH, NAMST) values (122, 318, 2011);
+--------- ADD 1 TAC GIA SANG TAC NHIEU HON 1 CUON SACH
+insert into SANGTAC (MATG, MASACH, NAMST) values (114, 319, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (114, 320, 1963);
+insert into SANGTAC (MATG, MASACH, NAMST) values (114, 321, 1998);
+insert into SANGTAC (MATG, MASACH, NAMST) values (114, 322, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (24, 323, 1990);
+insert into SANGTAC (MATG, MASACH, NAMST) values (32, 324, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (100, 325, 2012);
+insert into SANGTAC (MATG, MASACH, NAMST) values (114, 326, 1984);
+insert into SANGTAC (MATG, MASACH, NAMST) values (12, 327, 1994);
+insert into SANGTAC (MATG, MASACH, NAMST) values (12, 328, 2007);
+insert into SANGTAC (MATG, MASACH, NAMST) values (12, 329, 1993);
+insert into SANGTAC (MATG, MASACH, NAMST) values (15, 330, 1995);
+insert into SANGTAC (MATG, MASACH, NAMST) values (20, 331, 2009);
+insert into SANGTAC (MATG, MASACH, NAMST) values (30, 332, 1993);
+--Đơn hàng chi tiết 
+insert into DONHANG_CHITIET (MADH, MASACH, SOLUONG)
 values
-(1, '9E167D8C-5F24-4323-90DE-0072C9B911A2'), 
-(2, '387BBBF4-38C7-4194-A354-0286CE037E02'), 
-(3, 'DA39D41A-113C-414D-924A-03B674E4CF12'), 
-(4, '36B2B55B-1986-4619-9CC0-11AA71F275CB'), 
-(5, '7EF9DBB5-D7E9-47B9-B998-19F50BD45200'), 
-(6, '0FE39CCE-CC83-4698-B2D0-1DDB747EF470'), 
-(7, '66AB2C61-2AE1-42B9-89A9-20613FDC1F22'), 
-(8, 'CF060181-F9FE-4080-B99E-2CE94D159852'), 
-(9, '873DBDF4-F96A-429D-B143-39EA60E46656'), 
-(10, 'BE0B2ED3-2829-4C4C-A823-3FDBAEA698DB'), 
-(11, '3999AD26-40AB-47C9-BFEF-504F424B6C29'), 
-(12, '4BADABA2-B72C-47A4-B16C-5313AB08B38C'), 
-(13, '8A05E4A2-514F-4B8A-9B7D-5C3AFFED4D7F'), 
-(14, 'D547E7D0-0169-4012-AC15-65D22ED6DA4B'), 
-(15, '08A47B76-0E98-48CB-AC59-732FE0D10656'), 
-(16, '7F9E045F-CE93-43BE-9BC7-77D26CE5545E'), 
-(17, '38646E7D-637B-4D1D-BA07-81D89FE73520'), 
-(18, '4C075DB1-F86B-4312-8730-89A1DC3993FC'), 
-(19, 'BF678C80-EF0D-4F49-ADA1-8DE10C451196'), 
-(20, 'AA51DD02-8D56-476A-AABB-9237A7CDD701'), 
-(21, 'B3F95202-4F28-4CFB-99C1-983B93B3B546'), 
-(22, '449EE83B-9406-4CAE-9788-9FE5988FCDC4'), 
-(23, 'F3BD913A-2ACF-4E13-BDB5-A5AC76866B43'), 
-(24, '7EFDA341-01D9-4426-B25A-B090C86A5F15'), 
-(25, '4A44FA6D-B47D-4E05-9771-BA36A0979C35'), 
-(26, '8E49D593-FC2D-4E55-A118-BF765E29DBA8'), 
-(27, '03EF9A64-766F-4C5E-867E-C63A8A99BCE8'), 
-(28, 'A62A631A-D75C-4DC0-999B-CB5A67A18E79'), 
-(29, '3DA56219-FB3D-48D2-A45F-D4AE66980E7B'), 
-(30, '54C21FCB-B66D-46BE-A9AB-DE44B54E4BF4'), 
-(31, '869D1BEF-DEFD-4DAF-946A-E4868137C818'), 
-(32, '12FBC8E0-AAD4-4B86-9F9A-EC60B5DA2846'), 
-(33, '86025541-B8EF-4264-923A-F526EE5555B8'), 
-(34, '75E29D4E-9915-4B58-B7BA-F9BEB4F53E47'), 
-(35, 'BDABE40C-29C4-4FBD-8B62-FB0461CA6A56'), 
-(36, '50439287-9324-468B-A77E-FF6F9393F899'), 
-(37, '3BF83387-E195-4034-A9AC-E99358D12387'), 
-(38, '45512311-E84E-4200-AA1F-E45FBCD1661A'), 
-(39, '91B2A682-67FE-4D66-B173-DABC04E0F808'), 
-(40, '6B677B86-B473-4BE0-881E-D351229916B8'), 
-(41, '0563FC82-5E23-4889-B41D-D06BF481DCC0'), 
-(42, 'F0A616EE-B12B-4BBD-9212-C6054C925418'), 
-(43, '9539D32D-DF09-4E89-9DD6-C297FD8EE3D8'), 
-(44, 'EA426E11-F4A3-4BFA-AEA8-BE087B20F979'), 
-(45, 'D07ECD3A-8C0B-4EE6-9A7A-BAC463F39009'), 
-(46, '7EFDA341-01D9-4426-B25A-B090C86A5F15'), 
-(47, 'CD564833-4AD7-4FC3-8CCA-A9F6B63B48FC'), 
-(48, 'D73F1043-295D-44D4-8457-A1C3204EEF55'), 
-(49, '9E2DDCB0-5A17-4DB6-944D-9DE9795373F3'), 
-(50, '1E41AAA2-0A8A-4B70-891F-99E0D31CB18C'), 
-(51, 'FFB27FBB-8AF5-4622-9236-9584D2280680'), 
-(52, '879A5AE0-A770-45F3-A6C9-9250D9E47A57'), 
-(53, 'BF678C80-EF0D-4F49-ADA1-8DE10C451196'), 
-(54, 'C8BC8C14-4DB8-4D6E-B2E0-8AA207C69D3B'), 
-(55, '89424A56-A4EA-4E1A-B751-841F9BC3CB40'), 
+(1, 1, 1), 
+(1, 2, 2), 
+(1, 3, 1), 
+(1, 4, 3), 
+(2, 5, 4), 
+(2, 6, 1), 
+(2, 7, 2), 
+(3, 8, 3), 
+(3, 9, 4), 
+(3, 10, 1), 
+(4, 11, 2), 
+(4, 12, 2), 
+(4, 13, 3), 
+(5, 14, 3), 
+(5, 15, 3), 
+(6, 16, 4), 
+(6, 17, 1), 
+(6, 18, 2), 
+(7, 19, 2), 
+(8, 20, 2), 
+(9, 21, 1), 
+(10, 22, 2), 
+(10, 23, 2), 
+(11, 24, 2), 
+(11,25, 2), 
+(11, 26, 3), 
+(12, 27, 1), 
+(12, 28, 1), 
+(13,29, 2), 
+(13, 30, 3), 
+(13, 31, 3), 
+(14, 32, 1), 
+(14, 33, 1), 
+(14, 34, 2), 
+(14, 35, 3), 
+(15, 36, 1), 
+(15, 37, 2), 
+(15, 38, 2), 
+(16, 39, 3), 
+(16, 40, 1), 
+(17, 41, 2), 
+(18, 42, 2), 
+(19, 43, 3), 
+(20, 44, 4), 
+(20, 45, 1), 
+(20, 46, 2), 
+(21, 47, 3), 
+(21, 48, 1), 
+(22, 49, 2), 
+(23, 50, 3), 
+(24, 51, 2), 
+(24, 52, 3), 
+(25, 53, 1), 
+(25, 54, 1), 
+(25,55, 2), 
+(26, 56, 2), 
+(27, 57, 1), 
+(28, 58, 2), 
+(28, 59, 2), 
+(28, 60, 3), 
+(29, 61, 2), 
+(29, 62, 3), 
+(30, 63, 2), 
+(31, 64, 1), 
+(31, 65, 2), 
+(31, 66, 3), 
+(31, 67, 1), 
+(32, 68, 2), 
+(32, 69, 2), 
+(33, 70, 2), 
+(34, 71, 1), 
+(34, 72, 2), 
+(34, 73, 2), 
+(35, 74, 3), 
+(35, 75, 1), 
+(36, 76, 2), 
+(36, 77, 1), 
+(36, 78, 1), 
+(37, 79, 1), 
+(37, 80, 3), 
+(38, 81, 4), 
+(38, 82, 2), 
+(38, 83, 2),  
+(39, 84, 1), 
+(40, 85, 3), 
+(40, 86, 4), 
+(41, 87, 1), 
+(42, 88, 2), 
+(43, 89, 1), 
+(43, 90, 1), 
+(43, 91, 2),  
+(44, 92, 3), 
+(45, 93, 4), 
+(45, 94, 2), 
+(45, 95, 1), 
+(46, 96, 3), 
+(47, 97, 4),  
+(47, 98, 1), 
+(48, 99, 2), 
+(49, 100, 3), 
+(49, 101, 4),  
+(49, 102, 1), 
+(50, 103, 1), 
+(51, 104, 1), 
+(52, 105, 2), 
+(52, 106, 3), 
+(52, 107, 2),  
+(53, 108, 4), 
+(54, 109, 1), 
+(54, 110, 2), 
+(55, 111, 3), 
 -- 2 cuon giong nhau
-(56, '1128AF1F-F1AF-4DE8-A6EA-7511276DB206'), 
-(57, '1128AF1F-F1AF-4DE8-A6EA-7511276DB206'), 
+(56, 112, 2), 
+(56, 113, 1), 
+(57, 112, 2), 
+(57, 113, 3), 
 -- 3 cuon giong nhau
-(58, '820CA790-A6C5-4D3C-9390-6E3E2C7536D1'), 
-(59, '820CA790-A6C5-4D3C-9390-6E3E2C7536D1'), 
-(60, '820CA790-A6C5-4D3C-9390-6E3E2C7536D1')
-
---Đơn hàng chi tiết mới
-insert into DONHANG_CHITIET (MADH, MASACH)
-values
-(1, '9E167D8C-5F24-4323-90DE-0072C9B911A2'), 
-(1, '5485A0DA-10E5-4D17-A0D0-0184E73254DD'), 
-(1, '7808777A-4BB6-434C-86C2-02E7CB1CDC44'), 
-(1, '3AE415A6-1174-43EC-BFA3-0E0EA3E67292'), 
-(2, '387BBBF4-38C7-4194-A354-0286CE037E02'), 
-(2, '9088984C-866A-49B0-B1D0-1143A3EB88FF'), 
-(2, '73F722EB-6076-4D28-BEB1-114C47EF65A9'), 
-(3, 'DA39D41A-113C-414D-924A-03B674E4CF12'), 
-(3, 'DA472FE8-328A-486F-BA3D-1F130EDD68C8'), 
-(3, '3AE415A6-1174-43EC-BFA3-0E0EA3E67292'), 
-(4, '36B2B55B-1986-4619-9CC0-11AA71F275CB'), 
-(4, '5AFCC4ED-32F8-4314-B51A-1F3568BC7861'), 
-(4, '66AB2C61-2AE1-42B9-89A9-20613FDC1F22'), 
-(5, '7EF9DBB5-D7E9-47B9-B998-19F50BD45200'), 
-(5, 'C598D376-4620-419E-80D9-30438B5B8C29'), 
-(6, '0FE39CCE-CC83-4698-B2D0-1DDB747EF470'), 
-(6, 'DBEBF02D-FAAF-4292-A0EA-353AB9D29FCD'), 
-(6, '873DBDF4-F96A-429D-B143-39EA60E46656'), 
-(7, '66AB2C61-2AE1-42B9-89A9-20613FDC1F22'), 
-(8, 'CF060181-F9FE-4080-B99E-2CE94D159852'), 
-(9, '873DBDF4-F96A-429D-B143-39EA60E46656'), 
-(10, 'BE0B2ED3-2829-4C4C-A823-3FDBAEA698DB'), 
-(10, '3C4DC511-E9F1-4271-ADA0-4FB209FEE8BA'), 
-(11, '3999AD26-40AB-47C9-BFEF-504F424B6C29'), 
-(11, 'DBEBF02D-FAAF-4292-A0EA-353AB9D29FCD'), 
-(11, 'C598D376-4620-419E-80D9-30438B5B8C29'), 
-(12, '4BADABA2-B72C-47A4-B16C-5313AB08B38C'), 
-(12, '66AB2C61-2AE1-42B9-89A9-20613FDC1F22'), 
-(13, 'BE0B2ED3-2829-4C4C-A823-3FDBAEA698DB'), 
-(13, 'DA39D41A-113C-414D-924A-03B674E4CF12'), 
-(13, 'DBEBF02D-FAAF-4292-A0EA-353AB9D29FCD'), 
-(14, '3999AD26-40AB-47C9-BFEF-504F424B6C29'), 
-(14, 'D547E7D0-0169-4012-AC15-65D22ED6DA4B'), 
-(14, 'C6968E0C-10D4-48DF-819C-49142018D30C'), 
-(14, 'DA39D41A-113C-414D-924A-03B674E4CF12'), 
-(15, 'DBEBF02D-FAAF-4292-A0EA-353AB9D29FCD'), 
-(15, '08A47B76-0E98-48CB-AC59-732FE0D10656'), 
-(15, '3999AD26-40AB-47C9-BFEF-504F424B6C29'), 
-(16, '7F9E045F-CE93-43BE-9BC7-77D26CE5545E'), 
-(16, 'DA39D41A-113C-414D-924A-03B674E4CF12'), 
-(17, '38646E7D-637B-4D1D-BA07-81D89FE73520'), 
-(18, '4C075DB1-F86B-4312-8730-89A1DC3993FC'), 
-(19, 'BF678C80-EF0D-4F49-ADA1-8DE10C451196'), 
-(20, 'AA51DD02-8D56-476A-AABB-9237A7CDD701'), 
-(20, 'DA39D41A-113C-414D-924A-03B674E4CF12'), 
-(20, 'C6968E0C-10D4-48DF-819C-49142018D30C'), 
-(21, 'B3F95202-4F28-4CFB-99C1-983B93B3B546'), 
-(21, '7F9E045F-CE93-43BE-9BC7-77D26CE5545E'), 
-(22, '449EE83B-9406-4CAE-9788-9FE5988FCDC4'), 
-(23, 'F3BD913A-2ACF-4E13-BDB5-A5AC76866B43'), 
-(24, '4C075DB1-F86B-4312-8730-89A1DC3993FC'), 
-(24, 'B3F95202-4F28-4CFB-99C1-983B93B3B546'), 
-(25, '4A44FA6D-B47D-4E05-9771-BA36A0979C35'), 
-(25, 'F9D1CEC7-936C-4F04-A0CE-507B8B1D7B51'), 
-(25, 'DEE72548-5B5E-4B99-90E2-410F291D80AF'), 
-(26, '8E49D593-FC2D-4E55-A118-BF765E29DBA8'), 
-(27, '03EF9A64-766F-4C5E-867E-C63A8A99BCE8'), 
-(28, 'A62A631A-D75C-4DC0-999B-CB5A67A18E79'), 
-(28, '4A44FA6D-B47D-4E05-9771-BA36A0979C35'), 
-(28, 'DEE72548-5B5E-4B99-90E2-410F291D80AF'), 
-(29, '4A44FA6D-B47D-4E05-9771-BA36A0979C35'), 
-(29, 'F9D1CEC7-936C-4F04-A0CE-507B8B1D7B51'), 
-(30, '54C21FCB-B66D-46BE-A9AB-DE44B54E4BF4'), 
-(31, 'B3F95202-4F28-4CFB-99C1-983B93B3B546'), 
-(31, 'F9D1CEC7-936C-4F04-A0CE-507B8B1D7B51'), 
-(31, '869D1BEF-DEFD-4DAF-946A-E4868137C818'), 
-(31, 'F9D1CEC7-936C-4F04-A0CE-507B8B1D7B51'), 
-(31, '4A44FA6D-B47D-4E05-9771-BA36A0979C35'), 
-(32, 'AA51DD02-8D56-476A-AABB-9237A7CDD701'), 
-(32, 'DA39D41A-113C-414D-924A-03B674E4CF12'), 
-(33, '86025541-B8EF-4264-923A-F526EE5555B8'), 
-(34, 'AF365034-715A-4A97-A425-4C704D7A6A91'), 
-(34, 'AE7902C0-4E0C-44FD-8BE4-4CBCF5ED3931'), 
-(34, 'C4BF060B-F1E1-4DA0-B1DC-4CE79F2A8711'), 
-(35, 'F9D1CEC7-936C-4F04-A0CE-507B8B1D7B51'), 
-(35, '4A44FA6D-B47D-4E05-9771-BA36A0979C35'), 
-(36, '50439287-9324-468B-A77E-FF6F9393F899'), 
-(36, 'F9D1CEC7-936C-4F04-A0CE-507B8B1D7B51'), 
-(36, 'AF365034-715A-4A97-A425-4C704D7A6A91'), 
-(37, '3BF83387-E195-4034-A9AC-E99358D12387'), 
-(37, 'F9D1CEC7-936C-4F04-A0CE-507B8B1D7B51'), 
-(38, '3999AD26-40AB-47C9-BFEF-504F424B6C29'), 
-(38, 'D547E7D0-0169-4012-AC15-65D22ED6DA4B'), 
-(38, 'C6968E0C-10D4-48DF-819C-49142018D30C'),  
-(39, '91B2A682-67FE-4D66-B173-DABC04E0F808'), 
-(40, '6B677B86-B473-4BE0-881E-D351229916B8'), 
-(40, 'AF365034-715A-4A97-A425-4C704D7A6A91'), 
-(41, '0563FC82-5E23-4889-B41D-D06BF481DCC0'), 
-(42, 'F0A616EE-B12B-4BBD-9212-C6054C925418'), 
-(43, 'B3F95202-4F28-4CFB-99C1-983B93B3B546'), 
-(43, '7F9E045F-CE93-43BE-9BC7-77D26CE5545E'), 
-(43, '449EE83B-9406-4CAE-9788-9FE5988FCDC4'),  
-(44, 'EA426E11-F4A3-4BFA-AEA8-BE087B20F979'), 
-(45, 'F9D1CEC7-936C-4F04-A0CE-507B8B1D7B51'), 
-(45, 'AF365034-715A-4A97-A425-4C704D7A6A91'), 
-(45, '3BF83387-E195-4034-A9AC-E99358D12387'), 
-(45, 'F9D1CEC7-936C-4F04-A0CE-507B8B1D7B51'),  
-(46, '7EFDA341-01D9-4426-B25A-B090C86A5F15'), 
-(47, 'C6968E0C-10D4-48DF-819C-49142018D30C'),  
-(47, '91B2A682-67FE-4D66-B173-DABC04E0F808'), 
-(48, 'D73F1043-295D-44D4-8457-A1C3204EEF55'), 
-(49, '7F9E045F-CE93-43BE-9BC7-77D26CE5545E'), 
-(49, '449EE83B-9406-4CAE-9788-9FE5988FCDC4'),  
-(49, 'EA426E11-F4A3-4BFA-AEA8-BE087B20F979'), 
-(50, '1E41AAA2-0A8A-4B70-891F-99E0D31CB18C'), 
-(51, 'FFB27FBB-8AF5-4622-9236-9584D2280680'), 
-(52, 'F9D1CEC7-936C-4F04-A0CE-507B8B1D7B51'), 
-(52, '869D1BEF-DEFD-4DAF-946A-E4868137C818'), 
-(52, 'FFB27FBB-8AF5-4622-9236-9584D2280680'),  
-(53, 'BF678C80-EF0D-4F49-ADA1-8DE10C451196'), 
-(54, 'D73F1043-295D-44D4-8457-A1C3204EEF55'), 
-(54, '7F9E045F-CE93-43BE-9BC7-77D26CE5545E'), 
-(55, '89424A56-A4EA-4E1A-B751-841F9BC3CB40'), 
--- 2 cuon giong nhau
-(56, '6B677B86-B473-4BE0-881E-D351229916B8'), 
-(56, 'AF365034-715A-4A97-A425-4C704D7A6A91'), 
-(57, '6B677B86-B473-4BE0-881E-D351229916B8'), 
-(57, 'AF365034-715A-4A97-A425-4C704D7A6A91'), 
--- 3 cuon giong nhau
-(58, '3999AD26-40AB-47C9-BFEF-504F424B6C29'), 
-(58, 'D547E7D0-0169-4012-AC15-65D22ED6DA4B'), 
-(58, 'C6968E0C-10D4-48DF-819C-49142018D30C'),  
-(59, '820CA790-A6C5-4D3C-9390-6E3E2C7536D1'), 
-(60, '820CA790-A6C5-4D3C-9390-6E3E2C7536D1')
-(60, '7F9E045F-CE93-43BE-9BC7-77D26CE5545E')
+(58, 114, 2), 
+(58, 115, 1), 
+(58, 116, 2),  
+(59, 114, 3), 
+(60, 114, 4)
 select * from DONHANG_CHITIET
 
 -- insert binh luan
 insert into [dbo].[BINHLUAN] (MAKH, MASACH, DANHGIA)
 values
-(8,'9E167D8C-5F24-4323-90DE-0072C9B911A2', 1),
-(22,'9E167D8C-5F24-4323-90DE-0072C9B911A2', 5),
-(29,'9E167D8C-5F24-4323-90DE-0072C9B911A2', 4),
-(13,'7E73D74A-4916-43DC-BFEC-24ABDC0D9649', 2),
-(28,'7E73D74A-4916-43DC-BFEC-24ABDC0D9649', 5),
-(6,'6BE94D83-9E09-4168-B3E0-2FF473A1CCCC', 1),
-(24,'6BE94D83-9E09-4168-B3E0-2FF473A1CCCC', 2),
-(19,'6BE94D83-9E09-4168-B3E0-2FF473A1CCCC', 3),
-(18,'8CBD4438-5CD2-4941-AC04-3318513C8CE5', 4),
-(1,'8CBD4438-5CD2-4941-AC04-3318513C8CE5', 5),
+(8, 1, 1),
+(22, 2, 5),
+(29,3, 4),
+(13,4, 2),
+(28,4, 5),
+(6,1, 1),
+(24,1, 2),
+(19,1, 3),
+(18,2, 4),
+(1,1, 5),
 -- nhieu hon 1 nguoi danh gia
 ------------------------------------------------------
-(13,'A8F466E0-0A7C-4383-B872-376098A6C51C', 5),
-(1,'BE54DEE9-D505-409C-AC86-44B79E574186', 1),
-(15,'0BC2D64D-9078-4AEB-A5FD-592DAA06325E', 2),
-(1,'358C6D27-616C-4567-9A39-5F4835DC4977', 3),
-(27,'BF914F6D-0AC2-4BAB-91EE-6ECC6E5020A1', 4),
-(5,'187102F3-27FA-4B42-AF79-77890DBB3089', 5),
-(25,'B4EB57E3-52E4-4F8B-908B-81FA8D34E34F', 1),
-(9,'89424A56-A4EA-4E1A-B751-841F9BC3CB40', 2),
-(13,'4C075DB1-F86B-4312-8730-89A1DC3993FC', 3),
-(26,'1AF336B0-6F64-4088-8EFE-8BA2B02E0F4B', 4),
-(7,'BF678C80-EF0D-4F49-ADA1-8DE10C451196', 5),
-(19,'879A5AE0-A770-45F3-A6C9-9250D9E47A57', 1),
-(7,'C51EF1AD-708F-46F5-8FC2-9635486CED8C', 2),
-(3,'72D31293-3B19-4C9F-9D03-983ACC756EEA', 3),
-(9,'D73F1043-295D-44D4-8457-A1C3204EEF55', 4),
-(30,'F7534896-DDD7-47CB-BA2E-B6E765E7B8E6', 5),	
-(29,'1A5EA50E-4444-4546-92BA-BFC693D76468', 1),	
-(28,'6070D1F6-7817-4A54-8B29-C886A0A1D148', 2),	
-(24,'0563FC82-5E23-4889-B41D-D06BF481DCC0', 3),	
-(23,'42111C0E-7293-4EE9-A8EA-E37CB6963D02', 4),
-(22,'85A7E364-8938-4694-8B11-EDB775528FA1', 5),	
-(21,'C7692B72-199E-4BAD-820B-F859EF65C2D6', 1),	
-(20,'DCC4E1E1-49C4-4004-996E-F9E2F734EA80', 2),	
-(17,'B1BC5A18-4AD3-4ECF-8602-FDCA1635B993', 3),	
-(15,'0563FC82-5E23-4889-B41D-D06BF481DCC0', 4),	
-(14,'C0A761E8-0ADD-4D1F-BFF4-C3BFF40EF7F7', 5)	
+(13,5, 5),
+(1,6, 1),
+(15,7, 2),
+(1,8, 3),
+(27,9, 4),
+(5,10, 5),
+(25,11, 1),
+(9,12, 2),
+(13,112, 3),
+(26,145, 4),
+(7,112, 5),
+(19,16, 1),
+(7,179, 2),
+(3,278, 3),
+(9,19, 4),
+(30,331, 5),	
+(29,22, 1),	
+(28,23, 2),	
+(24,24, 3),	
+(23,312, 4),
+(22,263, 5),	
+(21,278, 1),	
+(20,66, 2),	
+(17,99, 3),	
+(15,100, 4),	
+(14,205, 5)	
 go
+
+insert into [dbo].[TICHLUY](DISCOUNT, TENTICHLUY)
+values
+(1, N'Cơ Bản'),
+(0.05, N'Đồng'),
+(0.1, N'Bạc'),
+(0.15, N'Vàng')
+GO
+
+insert into HOADON (NGAYTAOMA, MAPHATHANH) 
+values 
+('2023-04-27', 1),
+('2020-12-19', 2),
+('2021-07-05', 3),
+('2021-02-04', 4),
+('2021-12-29', 5),
+('2021-08-30', 6),
+('2021-09-11', 7),
+('2023-02-17', 8),
+('2021-04-29', 9),
+('2022-03-17', 10),
+('2021-12-06', 11),
+('2023-02-12', 12),
+('2022-01-31', 13),
+('2022-12-08', 14),
+('2022-02-26', 15),
+('2021-01-03', 16),
+('2023-02-08', 17),
+('2022-11-14', 18),
+('2021-04-09', 19),
+('2022-11-16', 20),
+('2021-06-20', 21),
+('2022-05-30', 22),
+('2022-04-17', 23),
+('2021-05-11', 24),
+('2021-01-23', 25),
+('2021-03-26', 26),
+('2023-04-05', 27),
+('2022-04-19', 28),
+('2023-03-01', 29),
+('2021-09-08', 30);
+
+
+
+INSERT INTO [dbo].[HOADON_CHITIET]
+VALUES
+GO
+
+SELECT * FROM [dbo].[DANHMUC]
+SELECT * FROM[dbo].[DONHANG] 
+SELECT * FROM[dbo].[HOADON]
+SELECT * FROM[dbo].[HOADON_CHITIET]
+SELECT * FROM[dbo].[HOPTAC]
+SELECT * FROM[dbo].[KHACHHANG]
+SELECT * FROM[dbo].[NHANVIEN] 
+SELECT * FROM[dbo].[PHATHANHSACH]
+SELECT * FROM[dbo].[SACH]
+SELECT * FROM[dbo].[SANGTAC]
+SELECT * FROM[dbo].[TACGIA]
+SELECT * FROM[dbo].[TRANGTHAI] --
+
 
