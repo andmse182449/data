@@ -1,0 +1,48 @@
+/*
+ BẢNG FUNCTION
+   FUNC1: Function tính lãi trong tháng và năm đã cho
+   FUNC2: Function tính tổng số tiền đã chi của khách hàng (phục vụ cho việc cập nhật tích lũy)
+   FUNC3: Function in ra lịch sử đặt hàng của khách hàng trong tháng và năm đã cho
+*/
+
+
+
+
+
+
+-- FUNC3
+Create FUNCTION func_3(@makh INT)
+RETURNS @c TABLE
+(
+    MADH INT,
+    MAKH INT,
+    TENKH NVARCHAR(MAX),
+    MASACH UNIQUEIDENTIFIER,
+    TENSACH NVARCHAR(MAX),
+    SOLUONG INT,
+    NGAYDATHANG DATE,
+    TRANGTHAIGIAODICH NVARCHAR(MAX)
+)
+AS 
+BEGIN
+    INSERT @c
+    SELECT
+        D.MADH,
+        kh.MAKH,
+        kh.TENKH,
+        s.MASACH,
+        s.TENSACH,
+        dhct.soluong,
+        d.NGAYDATHANG,
+        TENTRANGTHAI
+    FROM DONHANG d
+    JOIN DONHANG_CHITIET dhct ON d.MADH = dhct.MADH
+    JOIN SACH S ON s.MASACH = dhct.MASACH
+    JOIN KHACHHANG kh ON kh.MAKH = d.MAKH
+    JOIN TRANGTHAI_DONHANG TD ON TD.MATRANGTHAI = D.TRANGTHAI
+    WHERE kh.MAKH = @makh;
+
+    RETURN;
+END
+-- thực thi
+SELECT * from dbo.func_3(22)
