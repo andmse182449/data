@@ -1,14 +1,9 @@
-﻿/* BẢNG TRIGGER 
-   Trigger 1 : không cho xóa danh mục có chứa sản phẩm  
-   Trigger 2 : xong 
-   Trigger 3 : update trang thai
-   Trigger 4 : update membership 
-   BẢNG FUNCTION
-   FUNC1: tính lãi trong tháng nào ,năm nào
-   FUNC2: tính tổng số tiền đã chi của khách hàng 
-   FUNC3: tính tổng số sách đã bán được trong quý và lợi nhuận kiếm được từ quý đó 
+/* BẢNG TRIGGER 
+   Trigger 1 : Trigger ngăn câu lệnh xóa sách
+   Trigger 2 : Trigger cập nhật giá tiền, số lượng tồn kho của sách sau khi xuất hóa đơn bán hàng 
+   Trigger 3 : Trigger cập nhật trạng thái đơn hàng
 */
---====================== TR1
+--TR1
 create TRIGGER TrgDeleteBook
 ON sach
 instead of DELETE
@@ -25,7 +20,7 @@ go
 delete from SACH WHERE MASACH = '3D69F211-918D-4C71-A873-DF4320A8F681'
 insert into SACH(TENSACH, GIATIEN, SLTONKHO, NHAXUATBAN, MAPHATHANH) values(N'oke con de', 23000, 43, 'tgq', 11)
 select * from SACH where TENSACH = N'oke con de'
---====================== TR2			
+--TR2			
 ALTER TRIGGER TrgaddOrder
 ON [dbo].[DONHANG_CHITIET] 
 for INSERT, update
@@ -54,7 +49,7 @@ begin
 	)
 WHERE MADH IN (SELECT MADH FROM inserted) 
 
---======
+--THUC THI
 	update DONHANG set trangthai = 1 where MADH in (select MADH from inserted)
 	end
 	else 
@@ -64,7 +59,7 @@ WHERE MADH IN (SELECT MADH FROM inserted)
 	end
 END
 go
---===================================================
+--===============================================
 update DONHANG_CHITIET set soluong = 1 where MADH = 1078 and MASACH = '3CCCED2D-F67C-40E2-A52F-04BBC0798BFC'
 select * from SACH where MASACH = '3CCCED2D-F67C-40E2-A52F-04BBC0798BFC' 
 
@@ -78,51 +73,54 @@ insert into DONHANG_CHITIET values (1079,'3CCCED2D-F67C-40E2-A52F-04BBC0798BFC',
 update DONHANG_CHITIET set soluong = 2 where MADH = 1079 and MASACH = '73241A6A-3836-40F8-AFBD-E2EDEEF54C15'
 update DONHANG set tongtien_donhang = 0 where MADH = 1079 
 insert into DONHANG_CHITIET values	(1079,'73241A6A-3836-40F8-AFBD-E2EDEEF54C15',1, NULL)
---============================================= Tr3
-create TRIGGER TrgUpdateStatus
-ON [dbo].[DONHANG_CHITIET] 
-AFTER INSERT
+--TRIGGER 4
+alter TRIGGER TrgUpdateStatus
+ON DONHANG
+after UPDATE
 AS 
 BEGIN
-   update SACH 
-	set  SLTONKHO = SLTONKHO - (select sum(soluong)
-									from inserted b
-									where SACH.MASACH = b.MASACH)
-	where SACH.MASACH in (select MASACH from inserted)
-	
-    UPDATE DONHANG
-    SET tongtien_donhang = (
-	SELECT SUM(s.GIATIEN * a.soluong) - (SUM(s.GIATIEN * a.soluong) * t.ptgiam)						 
-							  FROM inserted a
-							 join SACH s on a.MASACH = s.MASACH
-                             JOIN DONHANG b ON a.MADH = b.MADH
-							 join KHACHHANG k on k.MAKH = b.MAKH
-							 join tichluy t on k.matichluy = t.MATL
-                             WHERE b.MADH IN (SELECT MADH FROM inserted) 
-							 group by t.ptgiam
-							)			
-							 WHERE MADH IN (SELECT MADH FROM inserted)
-						--	 declare @date date
-						-- select @date = NGAYDUDINHSHIP from DONHANG 
-	--declare @e int
-	--set @e = DATEDIFF(day,GETDATE(), @date)
-	--if @e > 7
-	--begin 
-	update DONHANG set trangthai = 1 where MADH in (select MADH from inserted)
-	--end
+if update(TRANGTHAI)
+BEGIN
+	declare @date date
+	select @date = NGAYDUDINHSHIP from DONHANG where MADH in (select MADH from inserted)
+	declare @e int
+	set @e = DATEDIFF(day,GETDATE(), @date)
+	--=========================
+	if @e <= -7 and (select TRANGTHAI from inserted) = 3 and (select count(MADH) from DONHANG_CHITIET dc where MADH = (select MADH from inserted)) >= 1
+	begin update DONHANG set trangthai = 3 where MADH = (select MADH from inserted) 
+	end
+	ELSE IF @e <= -7  and (select count(MADH) from DONHANG_CHITIET dc where MADH = (select MADH from inserted)) >= 1 and (select TRANGTHAI from inserted) = 1 
+	or @e <= -7  and (select count(MADH) from DONHANG_CHITIET dc where MADH = (select MADH from inserted)) >= 1 and (select TRANGTHAI from inserted) = 2
+	begin 
+	print N'Đơn hàng đã được giao'
+	rollback tran
+	end
+	--=========================
+	else if @e < 0 and  @e > -7 and (select TRANGTHAI from inserted) = 2 and (select count(MADH) from DONHANG_CHITIET dc where MADH = (select MADH from inserted)) >= 1
+	begin
+	update DONHANG set trangthai = 2 where MADH = (select MADH from inserted)
+	end
+	ELSE IF @e < 0 and  @e > -7 and (select count(MADH) from DONHANG_CHITIET dc where MADH = (select MADH from inserted)) >= 1 and (select TRANGTHAI from inserted) = 1 
+	or @e < 0 and  @e > -7 and (select count(MADH) from DONHANG_CHITIET dc where MADH = (select MADH from inserted)) >= 1  and (select TRANGTHAI from inserted) = 3
+	begin 
+	print N'Đơn hàng đang được giao'
+	rollback tran
+	end
+	else if (select TRANGTHAI from inserted) = 4 and (select count(MADH) from DONHANG_CHITIET dc where MADH = (select MADH from inserted)) >= 1 
+	begin 
+	print N'Đơn hàng không được phép hủy'
+	rollback tran
+	end
+	else if (select TRANGTHAI from inserted) != 4 and (select count(MADH) from DONHANG_CHITIET dc where MADH = (select MADH from inserted)) = 0 
+	begin 
+	print N'Đơn hàng không được phép giao'
+	rollback tran
+	end
+	--=========================
+END
 END
 go
-select * from TRANGTHAI_DONHANG
---============================================= Tr4
-						--	 declare @date date
-						-- select @date = NGAYDUDINHSHIP from DONHANG 
-	--declare @e int
-	--set @e = DATEDIFF(day,GETDATE(), @date)
-	--if @e > 7
-   select * from DONHANG
-   select * from DONHANG_CHITIET
-   select * from KHACHHANG
-   select * from tichluy
-   select * from TRANGTHAI_DONHANG
-
-
+update DONHANG set TRANGTHAI = 1 where MADH = 31
+update DONHANG SET TRANGTHAI = 4 where MADH = 32
+update DONHANG SET TRANGTHAI = 1 where MADH = 1080
+SELECT *FROM DONHANG
