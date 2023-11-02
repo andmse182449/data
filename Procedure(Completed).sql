@@ -6,6 +6,8 @@
    (tiêu chí bán chạy được tính bằng số sách được bán lớn hơn 2)
    PROC5: Procedure với giá trị đầu vào là một chuỗi kí tự, lấy ra thông tin gồm tên đầy đủ của sách,
    tên tác giả, giá tiền và nhà xuất bản có chứa chuỗi kí tự tương tự
+   PROC6: Procedure với giá trị đầu vào là mã đơn hàng, procedure sẽ tự cập nhật trạng thái đơn hàng, 
+   đồng thời kết hợp với trigger 3 để ngăn chặn việc cập thái được cập nhật một cách bất thường
 */
 -- PROC1
 create procedure proc_1(@tensach nvarchar(max), @kieudanhgia int,@soluongdanhgia int output)
@@ -70,6 +72,45 @@ as
 	end
 go
 execute proc_5 @ten = 'Second'
+-- PROC6
+alter procedure proc_6(@madh int)
+as
+	begin
+declare @date date
+	select @date = NGAYDUDINHSHIP from DONHANG where MADH = @madh
+	declare @e int
+	set @e = DATEDIFF(day,GETDATE(), @date)
+	--=========================
+	if @e <= -7 and (select count(MADH) from DONHANG_CHITIET dc where MADH = @madh) >= 1
+	begin update DONHANG set trangthai = 3 where MADH = @madh 
+	end
+	else if @e <= -7 and (select count(MADH) from DONHANG_CHITIET dc where MADH = @madh) = 0
+	begin update DONHANG set trangthai = 4 where MADH = @madh 
+	end
+	--=========================
+	else if @e < 0 and  @e > -7 and (select count(MADH) from DONHANG_CHITIET dc where MADH = @madh) >= 1
+	begin
+	update DONHANG set trangthai = 2 where MADH = @madh
+	end
+	else if @e < 0 and  @e > -7 and (select count(MADH) from DONHANG_CHITIET dc where MADH = @madh) = 0
+	begin update DONHANG set trangthai = 4 where MADH = @madh 
+	end
+	--=========================
+	else if @e > 0 and (select count(MADH) from DONHANG_CHITIET dc where MADH = @madh) >= 1
+	begin
+	update DONHANG set trangthai = 1 where MADH = @madh
+	end
+	else if @e > 0 and (select count(MADH) from DONHANG_CHITIET dc where MADH = @madh) = 0
+	begin update DONHANG set trangthai = 4 where MADH = @madh 
+	end
+	end
+go
+update DONHANG set TRANGTHAI = 4 where MADH = 34
+execute proc_6 @madh = 33
+execute proc_6 @madh = 34
+execute proc_6 @madh = 35
+select * from DONHANG where MADH in (33,34,35)
+
 
 
 
