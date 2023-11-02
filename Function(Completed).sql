@@ -71,9 +71,9 @@ as
 	)
 	if @a >= 100000 and @a < 300000
 	begin set @b = N'Đạt thẻ đồng' end 
-	ELSE if @a >= 300000 and @a < 100000000
+	ELSE if @a >= 300000 and @a < 1000000
 	begin set @b = N'Đạt Thẻ Bạc' end 
-	ELSE if @a >= 100000000
+	ELSE if @a >= 1000000
 	begin set @b = N'Đạt Thẻ Vàng' end 
 	else begin set @b = N'Thẻ Cơ Bản' end
 	insert @tk
